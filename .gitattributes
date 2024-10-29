@@ -1,3 +1,4 @@
 *.psd filter=lfs diff=lfs merge=lfs -text
 backend/venv/lib/python3.10/site-packages/tensorflow/libtensorflow_cc.2.dyli filter=lfs diff=lfs merge=lfs -text
 backend/venv/lib/python3.10/site-packages/numpy/.dylibs/libopenblas64_.0.dylib filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text

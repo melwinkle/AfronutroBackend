@@ -1,4 +1,5 @@
-# Virtual Environment
-venv/
-backend/venv/
+# Create/edit .gitignore
+echo "backend/venv/
 *.dylib
+__pycache__/
+*.pyc" > .gitignore

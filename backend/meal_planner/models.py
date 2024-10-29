@@ -1,0 +1,96 @@
+from django.db import models
+from django.conf import settings
+from django.utils import timezone
+from django.contrib.postgres.fields import ArrayField
+from django.core.validators import MaxLengthValidator,MinLengthValidator
+from django.core.exceptions import ObjectDoesNotExist
+import uuid
+import string
+from users.models import Recipe
+import random
+import logging
+logger = logging.getLogger(__name__)
+
+def content_file_path(instance, filename):
+    return f'educational_content/{instance.content_id}/{filename}'
+
+def generate_content_id():
+    # Generate a random 8-character alphanumeric string
+    chars = string.ascii_uppercase + string.ascii_lowercase + string.digits
+    return ''.join(random.choice(chars) for _ in range(8))
+
+class MealPlan(models.Model):
+    DRAFT = 'DR'
+    SAVED = 'SV'
+    STATUS_CHOICES = [
+        (DRAFT, 'Draft'),
+        (SAVED, 'Saved'),
+    ]
+
+    meal_plan_id = models.CharField(max_length=8, default=generate_content_id, primary_key=True, editable=False)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,  # This is the recommended way to reference User model
+        on_delete=models.CASCADE,
+        related_name='meal_plans'
+    )
+    name = models.CharField(max_length=255)
+    description = models.TextField()
+    meals_structure = models.JSONField(default=dict)
+    meals = models.ManyToManyField(Recipe, related_name='meal_plan_recipes')
+    tags = models.JSONField(default=dict)
+    status = models.CharField(max_length=2, choices=STATUS_CHOICES, default=DRAFT)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    @property
+    def total_calories(self):
+        return sum(meal.calories for meal in self.meals.all())
+
+    @property
+    def total_protein(self):
+        return sum(meal.protein for meal in self.meals.all())
+
+    @property
+    def total_carbs(self):
+        return sum(meal.carbs for meal in self.meals.all())
+
+    @property
+    def total_fat(self):
+        return sum(meal.fat for meal in self.meals.all())
+    
+    def save(self, *args, **kwargs):
+        # Ensure meals_structure is properly serialized before saving
+        if isinstance(self.meals_structure, dict):
+            self.meals_structure = dict(self.meals_structure)
+        super().save(*args, **kwargs)
+
+    def calculate_nutritional_composition(self):
+        """
+        Calculate the nutritional composition of meals grouped by meal type (breakfast, lunch, dinner, snack).
+        """
+        # Initialize a dictionary to store nutritional info for each meal type
+        nutritional_summary = {
+            'breakfast': {"calories": 0, "protein": 0, "carbs": 0, "fat": 0},
+            'lunch': {"calories": 0, "protein": 0, "carbs": 0, "fat": 0},
+            'dinner': {"calories": 0, "protein": 0, "carbs": 0, "fat": 0},
+            'snack': {"calories": 0, "protein": 0, "carbs": 0, "fat": 0}
+        }
+
+        # Loop through each meal type in the meal plan and aggregate nutrition data
+        for meal_type, meals in self.meals_structure.items():  # Assuming meals_structure stores meals by type
+            for meal in meals:
+                logger.info(f"Trying to fetch recipe with name: {meal}")  # Log the meal being processed
+                try:
+                    recipe = Recipe.objects.get(name=meal)  # Fetch the actual recipe object by name
+                    
+                    if recipe.nutrition:  # Check if the recipe has associated nutrition data
+                        nutritional_summary[meal_type]["calories"] += recipe.nutrition.calories
+                        nutritional_summary[meal_type]["protein"] += recipe.nutrition.protein
+                        nutritional_summary[meal_type]["carbs"] += recipe.nutrition.carbs
+                        nutritional_summary[meal_type]["fat"] += recipe.nutrition.fat
+                except ObjectDoesNotExist:
+                    logger.error(f"Recipe with name '{meal}' does not exist.")  # Log an error if the recipe is not found
+                except Exception as e:
+                    logger.error(f"Error fetching recipe '{meal}': {str(e)}")  # Log any other errors
+
+        return nutritional_summary

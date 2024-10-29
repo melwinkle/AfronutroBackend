@@ -1,0 +1,91 @@
+
+
+services:
+  redis:
+    image: redis:6.2
+    ports:
+      - "6379:6379"
+    networks:
+      - postgres-network
+
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=afronutro_db
+      - POSTGRES_USER=aileenlakpalu
+      - POSTGRES_PASSWORD=Aileenlisa24
+    networks:
+      - postgres-network
+
+  django:
+    build: ./backend
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+      - db
+    environment:
+      - DATABASE_URL=postgres://aileenlakpalu:Aileenlisa24@db:5432/afronutro_db
+      - EMAIL_HOST_PASSWORD=mgssyywnzmlgjipd
+      - EMAIL_USE_TLS=True
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0,api-gateway
+      - REDIS_HOST=redis
+    dns:
+      - 8.8.8.8  # Google's DNS
+      - 8.8.4.4  # Google's secondary DNS
+    networks:
+      - postgres-network
+
+  
+
+  celery:
+    build: ./backend
+    command: celery -A core worker --loglevel=info
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - redis
+      - django
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - REDIS_HOST=redis
+      - DATABASE_URL=postgres://aileenlakpalu:Aileenlisa24@db:5432/afronutro_db
+    networks:
+      - postgres-network
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "3000:3000"
+    depends_on:
+      - django
+    environment:
+      - DJANGO_SERVICE_URL=http://django:8000
+    networks:
+      - postgres-network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin-container
+    environment:
+      PGADMIN_DEFAULT_EMAIL: adzo.lisa@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: Aileenlisa
+      
+    ports:
+      - "5050:80"
+    networks:
+      - postgres-network
+volumes:
+  postgres_data:
+
+networks:
+  postgres-network:
+    driver: bridge
+
+

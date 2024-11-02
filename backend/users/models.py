@@ -8,6 +8,8 @@ from recipes.models import Ingredient
 import uuid
 import string
 import random
+import logging
+logger = logging.getLogger(__name__)
 
 class UserManager(BaseUserManager):
     """Define a model manager for User model with no username field."""

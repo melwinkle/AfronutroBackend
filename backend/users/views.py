@@ -25,6 +25,8 @@ from django.core.cache import cache
 import json
 import logging
 
+logger = logging.getLogger(__name__)
+
 User = get_user_model()
 
 class RegisterView(generics.CreateAPIView):

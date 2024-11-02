@@ -46,7 +46,7 @@ class UserManager(BaseUserManager):
 class User(AbstractUser):
     username = models.CharField(max_length=30, unique=True)
     email = models.EmailField(_('email address'), unique=True)
-    age = models.IntegerField(default=0)
+    date_of_birth = models.DateField(null=True, blank=True)
     gender = models.CharField(max_length=20,null=True)
     height = models.FloatField(default=0.0)
     weight = models.FloatField(default=0.0)
@@ -73,6 +73,19 @@ class User(AbstractUser):
     def set_password(self, raw_password):
         self.last_password_change = timezone.now()
         super().set_password(raw_password)
+    
+    @property
+    def age(self):
+        if self.date_of_birth:
+            today = date.today()
+            age = today.year - self.date_of_birth.year
+
+            # Adjust if the birthday hasn't occurred yet this year
+            if (today.month, today.day) < (self.date_of_birth.month, self.date_of_birth.day):
+                age -= 1
+
+            return age
+        return None
 
 class PasswordHistory(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

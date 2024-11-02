@@ -1,8 +1,7 @@
-# meal_planner/management/commands/generate_training_data.py
 from django.core.management.base import BaseCommand
 from django.contrib.auth import get_user_model
 from users.models import DietaryAssessment
-from recipes.models import Recipe, Rating,Ingredient
+from recipes.models import Recipe, Rating, Ingredient
 import pandas as pd
 import numpy as np
 import json
@@ -49,12 +48,14 @@ class Command(BaseCommand):
         
         for i in range(num_users):
             # Generate user data
-            age = random.randint(18, 70)
+            
+            date_of_birth = datetime.now() - timedelta(days=random.randint(18, 70)*365)  # Approximate DOB based on age
             gender = random.choice(['Male', 'Female'])
             height = round(random.uniform(150, 200), 1)  # cm
             weight = round(random.uniform(45, 120), 1)  # kg
             
             # Calculate BMI and TDEE
+            age=(datetime.now() - date_of_birth).days // 365
             bmi = round(weight / ((height/100) ** 2), 1)
             activity_factor = random.uniform(1.2, 2.0)
             if gender == 'male':
@@ -66,7 +67,7 @@ class Command(BaseCommand):
             user = User.objects.create(
                 username=f'user_{i}',
                 email=f'user_{i}@example.com',
-                age=age,
+                date_of_birth=date_of_birth,
                 gender=gender,
                 height=height,
                 weight=weight,
@@ -76,14 +77,13 @@ class Command(BaseCommand):
             users_data.append({
                 'id': user.id,
                 'username': user.username,
-                'age': age,
+                'date_of_birth': date_of_birth,
                 'gender': gender,
                 'height': height,
                 'weight': weight,
                 'bmi': bmi,
                 'tdee': tdee,
-                'is_active':"True"
-                
+                'is_active': "True"
             })
 
             # Generate dietary assessment
@@ -179,7 +179,6 @@ class Command(BaseCommand):
 
         # Save to CSV
         pd.DataFrame(ratings_data).to_csv('meal_planner/training_data/ratings.csv', index=False)
-
 
     def _export_data(self):
         self.stdout.write('Exporting data to CSV files...')

@@ -6,10 +6,10 @@ from .models import User
 class CustomUserAdmin(UserAdmin):
     model = User
     list_display = ('email', 'username','is_staff', 'is_active','is_verified','age','gender','height','weight','last_password_change',)
-    list_filter = ('email', 'is_staff', 'is_active','age','gender',)
+    list_filter = ('email', 'is_staff', 'is_active','gender',)
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        (_('Personal info'), {'fields': ('first_name', 'last_name', 'username','bio','age','gender','height','weight','last_password_change',)}),
+        (_('Personal info'), {'fields': ('first_name', 'last_name', 'username','bio','age','date_of_birth','gender','height','weight','last_password_change',)}),
         (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         (_('Important dates'), {'fields': ('last_login', 'date_joined')}),
     )

@@ -10,9 +10,10 @@ User = get_user_model()
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True, validators=[validate_password])
     password2 = serializers.CharField(write_only=True, required=True)
+    age = serializers.SerializerMethodField()
     class Meta:
         model = User
-        fields = ('id', 'email','username', 'password','password2', 'age','gender','height','weight','is_verified','activity_levels','tdee','bmi','last_password_change','is_active')
+        fields = ('id', 'email','username', 'password','password2', 'age','date_of_birth','gender','height','weight','is_verified','activity_levels','tdee','bmi','last_password_change','is_active')
         extra_kwargs = { 'email': {'required': True}}
         
 
@@ -25,11 +26,14 @@ class UserSerializer(serializers.ModelSerializer):
         validated_data.pop('password2')
         user = User.objects.create_user(**validated_data)
         return user
+    
+    def get_age(self, obj):
+        return obj.age
 
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'email','username', 'age','gender','height','weight','activity_levels','tdee','bmi','is_verified')
+        fields = ('id', 'email','username', 'age','date_of_birth','gender','height','weight','activity_levels','tdee','bmi','is_verified')
         read_only_fields = ('id', 'email')
 
 class PasswordResetRequestSerializer(serializers.Serializer):

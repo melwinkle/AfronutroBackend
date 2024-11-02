@@ -6,7 +6,7 @@ from django.core.validators import MaxLengthValidator,MinLengthValidator
 from django.core.exceptions import ObjectDoesNotExist
 import uuid
 import string
-from users.models import Recipe
+from recipes.models import Recipe
 import random
 import logging
 logger = logging.getLogger(__name__)

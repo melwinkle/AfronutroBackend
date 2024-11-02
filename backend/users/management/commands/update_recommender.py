@@ -2,7 +2,8 @@
 
 from django.core.management.base import BaseCommand
 from django.core.cache import cache
-from users.models import Recipe, Rating, User
+from users.models import  User
+from recipes.model import Recipe, Rating,
 from users.ai_model import HybridRecommender
 
 class Command(BaseCommand):

@@ -2,7 +2,8 @@
 from django.core.management.base import BaseCommand
 import pandas as pd
 from django.contrib.auth import get_user_model
-from users.models import DietaryAssessment, Ingredient, Recipe, Rating
+from users.models import DietaryAssessment
+from recipes.models import Ingredient, Recipe, Rating
 from django.db import transaction
 
 User = get_user_model()

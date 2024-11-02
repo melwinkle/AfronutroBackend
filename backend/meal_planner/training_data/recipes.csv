@@ -1,62 +1,62 @@
 recipe_id,name,ingredients,cuisine,tags,meal_type,dish_type,calories,protein,carbs,fat,fiber,vegetarian,vegan,gluten_free,halal,pescatarian
-m27HdV6p,Chicken Light Soup,"['chicken', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['high-protein'],"['lunch', 'dinner']","['soup', 'one-pot']",320,35.0,0.0,38.0,8.0,False,False,True,True,False
-B5P3qRxl,Jollof Rice,"['rice', 'tomatoes', 'onions', 'peppers']",['west african'],['moderate-carbs'],"['lunch', 'dinner']",['carb'],350,5.0,0.0,5.0,0.0,True,True,True,True,True
-fMTh70Hi,Grilled Chicken Suya,"['chicken', 'peanuts', 'spices']","['west african', 'nigerian']",['high-protein'],"['lunch', 'dinner']",['protein'],250,30.0,0.0,15.0,0.0,False,False,True,True,False
-EivC7a4c,Sautéed Spinach,"['spinach', 'garlic', 'olive oil']","['west african', 'european']",['organic'],"['lunch', 'dinner']",['vegetable'],50,3.0,0.0,3.0,0.0,True,True,True,True,True
-U24AVPWB,Moi Moi,"['beans', 'peppers', 'onions', 'spices']","['west african', 'nigerian']","['balanced', 'high-protein']","['lunch', 'dinner']",['side'],200,10.0,0.0,5.0,0.0,True,True,True,True,True
-E5CX11Dq,Bangers and Mash,"['sausages', 'potatoes', 'gravy']",['european'],"['balanced', 'moderate-protein', 'moderate-carbs']","['lunch', 'dinner']",['carb'],500,20.0,0.0,20.0,0.0,False,False,False,True,False
-kCUUAGJS,Spaghetti Carbonara,"['spaghetti', 'eggs', 'bacon', 'cheese']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],600,25.0,0.0,25.0,0.0,False,False,False,False,False
-cvu1apHp,Paella,"['rice', 'seafood', 'saffron']",['european'],['balanced'],"['lunch', 'dinner']",['protein'],400,25.0,0.0,15.0,0.0,False,False,True,True,True
-MTqbmk8e,Falafel Wrap,"['chickpeas', 'spices', 'vegetables']",['middle eastern'],['balanced'],"['lunch', 'dinner']","['protein', 'carb']",350,12.0,0.0,10.0,0.0,True,True,True,True,True
-PNqRcyJz,Chicken Biryani,"['chicken', 'spices', 'rice']",['asian'],['balanced'],"['lunch', 'dinner']",['protein'],450,30.0,0.0,10.0,0.0,False,False,False,True,False
-YjOtPCEF,Sushi,"['rice', 'seaweed', 'fish']",['asian'],['balanced'],"['lunch', 'dinner']",['side'],200,15.0,0.0,5.0,0.0,False,False,True,True,True
-NkG9FjA9,Pad Thai,"['noodles', 'shrimp', 'tofu']",['asian'],['balanced'],"['lunch', 'dinner']",['protein'],500,20.0,0.0,20.0,0.0,False,False,False,True,True
-wvaT0151,Dal Tadka,"['lentils', 'spices']",['indian'],['balanced'],"['lunch', 'dinner']",['protein'],250,15.0,0.0,8.0,0.0,True,True,True,True,False
-dx5D36N5,Nkrakra (Meat Light Soup),"['beef', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],436,32.0,0.0,40.0,0.0,False,False,True,True,False
-DGE7DOdC,Tilapia Light Soup,"['tilapia', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],280,30.0,0.0,38.0,0.0,False,False,True,True,True
-8Gku9ySR,Goat Meat Light Soup,"['goat meat', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],350,33.0,0.0,38.0,0.0,False,False,True,True,False
-xIK5ulv1,Tofu Light Soup,"['tofu', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],"['moderate-protein', 'balanced', 'low-fat']","['lunch', 'dinner']",['soup'],262,14.0,0.0,39.0,0.0,True,True,True,True,True
-fygt2rXy,Apofoanto Light Soup (Fresh Fish Light Soup),"['fresh fish', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],270,28.0,0.0,38.0,0.0,False,False,True,True,True
-fLc9j3UC,Abe Nkwan (Palm Nut Soup),"['red palm nut extract', 'snails', 'smoked fish', 'crabs', 'periwinkle', 'beef', 'fresh tomatoes', 'onions', 'pepper', 'kpakposhito', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],"['high-fat', 'moderate-protein', 'balanced', 'moderate-carbs']","['lunch', 'dinner']",['soup'],600,35.0,0.0,40.0,0.0,False,False,True,True,False
-6HPmarFL,Chow Mein,"['noodles', 'vegetables', 'soy sauce']",['asian'],['balanced'],"['lunch', 'dinner']",['carb'],450,10.0,0.0,15.0,0.0,True,True,False,True,False
-YOjncZCI,Fish and Chips,"['fish', 'potatoes']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],700,25.0,0.0,35.0,0.0,False,False,False,True,True
-kOqYMICU,Egusi Soup,"['melon seeds', 'spinach', 'meat']",['nigerian'],['balanced'],"['lunch', 'dinner']",['soup'],600,35.0,0.0,30.0,0.0,False,False,False,True,False
-DLw8ulZ0,Pasta Primavera,"['pasta', 'vegetables', 'cream']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],400,12.0,0.0,10.0,0.0,True,False,False,True,False
-dwnuUwhF,Tofu Stir Fry,"['tofu', 'vegetables', 'soy sauce']",['asian'],['balanced'],"['lunch', 'dinner']",['vegetable'],300,15.0,0.0,10.0,0.0,True,True,True,True,False
-8DDTMrWM,Fried Plantains,"['plantains', 'salt', 'oil']",['west african'],['moderate-carbs'],['breakfast'],['side'],300,2.0,0.0,15.0,0.0,True,True,False,True,False
-xCIWceC8,Miso Soup,"['seaweed', 'tofu', 'miso paste']",['asian'],['balanced'],"['lunch', 'dinner']",['soup'],100,5.0,0.0,4.0,0.0,True,True,True,True,False
-FcXoSIWK,Beef Stroganoff,"['beef', 'mushrooms', 'cream']",['european'],['balanced'],"['lunch', 'dinner']",['protein'],600,35.0,0.0,30.0,0.0,False,False,False,False,False
-0EzVhTsa,Bulgur Salad,"['bulgur', 'tomatoes', 'parsley']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['salad'],250,6.0,0.0,8.0,0.0,True,True,True,True,True
-4ymP2vDF,Samosa,"['flour', 'vegetables', 'spices']","['indian', 'west african']",['balanced'],['snack'],['side'],300,5.0,0.0,15.0,0.0,True,False,False,True,False
-KYQWOuPt,Bibimbap,"['rice', 'vegetables', 'egg']",['asian'],['balanced'],"['lunch', 'dinner']",['carb'],500,20.0,0.0,15.0,0.0,False,False,True,True,False
-mqvqevQR,Lamb Shawarma,"['lamb', 'spices', 'pita']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['protein'],700,30.0,0.0,30.0,0.0,False,False,False,True,False
-BK8FE1Km,Tom Yum Soup,"['shrimp', 'lemongrass', 'broth']",['asian'],['balanced'],"['lunch', 'dinner']",['soup'],150,10.0,0.0,5.0,0.0,False,False,True,True,True
-FUWywp2n,Fufu,"['cassava', 'plantains']",['ghanaian'],['balanced'],"['lunch', 'dinner']","['carb', 'side']",500,25.0,0.0,15.0,0.0,False,False,False,True,False
-o9yT4nry,Toad in the Hole,"['sausages', 'flour', 'gravy']",['european'],['balanced'],"['lunch', 'dinner']",['protein'],600,20.0,0.0,30.0,0.0,False,False,False,True,False
-nxkYj09Q,Vegetable Korma,"['vegetables', 'coconut milk', 'spices']",['indian'],['balanced'],"['lunch', 'dinner']",['sauce'],400,8.0,0.0,20.0,0.0,True,True,False,True,False
-BwPNGSrB,Chicken Tagine,"['chicken', 'apricots', 'spices']",['middle eastern'],['high-protein'],"['lunch', 'dinner']",['sauce'],550,30.0,0.0,20.0,0.0,False,False,True,True,False
-04oFvmya,Biryani with Vegetables,"['rice', 'vegetables', 'spices']",['asian'],['balanced'],"['lunch', 'dinner']",['carb'],400,8.0,0.0,10.0,0.0,True,True,True,True,False
-HGiR60oc,Roast Duck,"['duck', 'potatoes', 'vegetables']",['european'],['high-fat'],"['lunch', 'dinner']",['protein'],800,40.0,0.0,50.0,0.0,False,False,True,True,False
-9uhJRpll,Okonomiyaki,"['flour', 'cabbage', 'eggs', 'pork']",['asian'],['high-fat'],"['lunch', 'dinner']",['protein'],500,15.0,0.0,20.0,0.0,False,False,False,True,False
-3wKQFiO2,Chicken Caesar Salad,"['chicken', 'lettuce', 'parmesan', 'dressing']",['european'],['balanced'],"['lunch', 'dinner']",['salad'],350,25.0,0.0,20.0,0.0,False,False,True,True,False
-aHOw7qTH,Quinoa Salad,"['quinoa', 'vegetables', 'olive oil']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['salad'],300,10.0,0.0,10.0,0.0,True,True,True,True,True
-mo98yE6E,Spring Rolls,"['vegetables', 'rice paper', 'soy sauce']",['asian'],['moderate-carbs'],['snack'],['side'],150,3.0,0.0,5.0,0.0,True,True,True,True,True
-FH7XdwLL,Pork Adobo,"['pork', 'soy sauce', 'vinegar']",['asian'],['high-protein'],"['lunch', 'dinner']",['sauce'],600,35.0,0.0,40.0,0.0,False,False,False,False,False
-U8bmzQrx,Gado Gado,"['vegetables', 'peanut sauce', 'eggs']",['asian'],['balanced'],"['lunch', 'dinner']",['salad'],400,15.0,0.0,20.0,0.0,True,True,True,True,True
-ovRB4Nse,Shepherd's Pie,"['lamb', 'potatoes', 'vegetables']",['european'],['high-protein'],"['lunch', 'dinner']",['protein'],550,30.0,0.0,20.0,0.0,False,False,False,True,False
-lWScuRqI,Gnocchi with Pesto,"['potatoes', 'basil', 'parmesan']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],400,10.0,0.0,15.0,0.0,True,False,False,True,False
-oLRAgq5A,Chicken Satay,"['chicken', 'peanut sauce', 'rice']",['asian'],['balanced'],"['lunch', 'dinner']",['protein'],500,30.0,0.0,20.0,0.0,False,False,True,True,False
-hZEXpOSP,Mushroom Risotto,"['rice', 'mushrooms', 'parmesan']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],450,10.0,0.0,15.0,0.0,True,False,False,True,True
-Z4apxlgF,Red Lentil Curry,"['lentils', 'tomatoes', 'spices']",['indian'],['high-protein'],"['lunch', 'dinner']",['sauce'],300,20.0,0.0,10.0,0.0,True,True,True,True,True
-WBUDCzp4,Hummus and Veggie Wrap,"['hummus', 'vegetables', 'tortilla']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['main'],350,8.0,0.0,12.0,0.0,True,True,True,True,True
-9vCM5fVN,Chicken Tikka,"['chicken', 'yogurt', 'spices']",['indian'],['high-protein'],"['lunch', 'dinner']",['protein'],600,35.0,0.0,30.0,0.0,False,False,False,True,False
-l2jY6XyZ,Ratatouille,"['zucchini', 'tomatoes', 'eggplant']",['european'],"['moderate-carbs', 'balanced']","['lunch', 'dinner']",['vegetable'],150,5.0,0.0,5.0,0.0,True,True,True,True,True
-DaXYgZ7B,Vietnamese Pho,"['rice noodles', 'beef', 'broth']",['asian'],['moderate-carbs'],"['lunch', 'dinner']",['soup'],350,20.0,0.0,8.0,0.0,False,False,False,True,False
-G4UECIUK,Beef Bulgogi,"['beef', 'soy sauce', 'garlic']",['asian'],['high-protein'],"['lunch', 'dinner']",['protein'],500,35.0,0.0,20.0,0.0,False,False,False,True,False
-BQ8ftBVi,Caesar Wrap,"['chicken', 'lettuce', 'parmesan', 'tortilla']",['european'],['balanced'],"['lunch', 'dinner']",['main'],400,25.0,0.0,15.0,0.0,False,False,False,True,False
-jAwUaSm0,Grilled Salmon,"['salmon', 'lemon', 'vegetables']",['european'],['high-protein'],"['lunch', 'dinner']",['protein'],450,35.0,0.0,20.0,0.0,False,False,True,True,True
-cZK9agVW,Chicken Alfredo,"['chicken', 'pasta', 'cream']",['european'],"['high-protein', 'balanced']","['lunch', 'dinner']",['carb'],700,30.0,0.0,25.0,0.0,False,False,False,True,False
-3SugIfuh,Tilapia Light Soup,"['tilapia', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],280,30.0,0.0,38.0,0.0,False,False,True,True,True
-g9GNouOt,Goat Meat Light Soup,"['goat meat', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],350,33.0,0.0,38.0,0.0,False,False,True,True,False
-hdj0zyeI,Apofoanto Light Soup (Fresh Fish Light Soup),"['fresh fish', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],270,28.0,0.0,38.0,0.0,False,False,True,True,True
-6cGBdrNa,Abe Nkwan (Palm Nut Soup),"['red palm nut extract', 'snails', 'smoked fish', 'crabs', 'periwinkle', 'beef', 'fresh tomatoes', 'onions', 'pepper', 'kpakposhito', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],"['high-fat', 'moderate-protein', 'balanced', 'moderate-carbs']","['lunch', 'dinner']",['soup'],600,35.0,0.0,40.0,0.0,False,False,True,True,True
+k1bgscdt,Chicken Light Soup,"['chicken', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['high-protein'],"['lunch', 'dinner']","['soup', 'one-pot']",320,35.0,0.0,38.0,8.0,False,False,True,True,False
+tUC3N6uG,Jollof Rice,"['rice', 'tomatoes', 'onions', 'peppers']",['west african'],['moderate-carbs'],"['lunch', 'dinner']",['carb'],350,5.0,0.0,5.0,0.0,True,True,True,True,True
+uRy0QtoP,Grilled Chicken Suya,"['chicken', 'peanuts', 'spices']","['west african', 'nigerian']",['high-protein'],"['lunch', 'dinner']",['protein'],250,30.0,0.0,15.0,0.0,False,False,True,True,False
+jdB21FN1,Sautéed Spinach,"['spinach', 'garlic', 'olive oil']","['west african', 'european']",['organic'],"['lunch', 'dinner']",['vegetable'],50,3.0,0.0,3.0,0.0,True,True,True,True,True
+uH7iQL4u,Moi Moi,"['beans', 'peppers', 'onions', 'spices']","['west african', 'nigerian']","['balanced', 'high-protein']","['lunch', 'dinner']",['side'],200,10.0,0.0,5.0,0.0,True,True,True,True,True
+jzhVpOhI,Bangers and Mash,"['sausages', 'potatoes', 'gravy']",['european'],"['balanced', 'moderate-protein', 'moderate-carbs']","['lunch', 'dinner']",['carb'],500,20.0,0.0,20.0,0.0,False,False,False,True,False
+Qmdy9htZ,Spaghetti Carbonara,"['spaghetti', 'eggs', 'bacon', 'cheese']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],600,25.0,0.0,25.0,0.0,False,False,False,False,False
+0j71MKTb,Paella,"['rice', 'seafood', 'saffron']",['european'],['balanced'],"['lunch', 'dinner']",['protein'],400,25.0,0.0,15.0,0.0,False,False,True,True,True
+qJbCl7VC,Falafel Wrap,"['chickpeas', 'spices', 'vegetables']",['middle eastern'],['balanced'],"['lunch', 'dinner']","['protein', 'carb']",350,12.0,0.0,10.0,0.0,True,True,True,True,True
+5CamoZxA,Chicken Biryani,"['chicken', 'spices', 'rice']",['asian'],['balanced'],"['lunch', 'dinner']",['protein'],450,30.0,0.0,10.0,0.0,False,False,False,True,False
+dX19iwJm,Sushi,"['rice', 'seaweed', 'fish']",['asian'],['balanced'],"['lunch', 'dinner']",['side'],200,15.0,0.0,5.0,0.0,False,False,True,True,True
+Drm3CTYz,Pad Thai,"['noodles', 'shrimp', 'tofu']",['asian'],['balanced'],"['lunch', 'dinner']",['protein'],500,20.0,0.0,20.0,0.0,False,False,False,True,True
+Ag6cxBHZ,Dal Tadka,"['lentils', 'spices']",['indian'],['balanced'],"['lunch', 'dinner']",['protein'],250,15.0,0.0,8.0,0.0,True,True,True,True,False
+vR9rKBQT,Nkrakra (Meat Light Soup),"['beef', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],436,32.0,0.0,40.0,0.0,False,False,True,True,False
+SlzYT1MJ,Tilapia Light Soup,"['tilapia', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],280,30.0,0.0,38.0,0.0,False,False,True,True,True
+qU4uOTmZ,Goat Meat Light Soup,"['goat meat', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],350,33.0,0.0,38.0,0.0,False,False,True,True,False
+OzPxKhDj,Tofu Light Soup,"['tofu', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],"['moderate-protein', 'balanced', 'low-fat']","['lunch', 'dinner']",['soup'],262,14.0,0.0,39.0,0.0,True,True,True,True,True
+Tr4B1mJk,Apofoanto Light Soup (Fresh Fish Light Soup),"['fresh fish', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],270,28.0,0.0,38.0,0.0,False,False,True,True,True
+L9igsYKi,Abe Nkwan (Palm Nut Soup),"['red palm nut extract', 'snails', 'smoked fish', 'crabs', 'periwinkle', 'beef', 'fresh tomatoes', 'onions', 'pepper', 'kpakposhito', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],"['high-fat', 'moderate-protein', 'balanced', 'moderate-carbs']","['lunch', 'dinner']",['soup'],600,35.0,0.0,40.0,0.0,False,False,True,True,False
+8ouQAYiA,Chow Mein,"['noodles', 'vegetables', 'soy sauce']",['asian'],['balanced'],"['lunch', 'dinner']",['carb'],450,10.0,0.0,15.0,0.0,True,True,False,True,False
+GIUPX6ub,Fish and Chips,"['fish', 'potatoes']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],700,25.0,0.0,35.0,0.0,False,False,False,True,True
+rVQ54L4L,Egusi Soup,"['melon seeds', 'spinach', 'meat']",['nigerian'],['balanced'],"['lunch', 'dinner']",['soup'],600,35.0,0.0,30.0,0.0,False,False,False,True,False
+T48hYjUg,Pasta Primavera,"['pasta', 'vegetables', 'cream']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],400,12.0,0.0,10.0,0.0,True,False,False,True,False
+XVYnkzLo,Tofu Stir Fry,"['tofu', 'vegetables', 'soy sauce']",['asian'],['balanced'],"['lunch', 'dinner']",['vegetable'],300,15.0,0.0,10.0,0.0,True,True,True,True,False
+CFiXC5Xw,Fried Plantains,"['plantains', 'salt', 'oil']",['west african'],['moderate-carbs'],['breakfast'],['side'],300,2.0,0.0,15.0,0.0,True,True,False,True,False
+CMJqkkvW,Miso Soup,"['seaweed', 'tofu', 'miso paste']",['asian'],['balanced'],"['lunch', 'dinner']",['soup'],100,5.0,0.0,4.0,0.0,True,True,True,True,False
+KuLuHeJM,Beef Stroganoff,"['beef', 'mushrooms', 'cream']",['european'],['balanced'],"['lunch', 'dinner']",['protein'],600,35.0,0.0,30.0,0.0,False,False,False,False,False
+2t9O0zMC,Bulgur Salad,"['bulgur', 'tomatoes', 'parsley']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['salad'],250,6.0,0.0,8.0,0.0,True,True,True,True,True
+lJwJH94u,Samosa,"['flour', 'vegetables', 'spices']","['indian', 'west african']",['balanced'],['snack'],['side'],300,5.0,0.0,15.0,0.0,True,False,False,True,False
+5dY6fEOP,Bibimbap,"['rice', 'vegetables', 'egg']",['asian'],['balanced'],"['lunch', 'dinner']",['carb'],500,20.0,0.0,15.0,0.0,False,False,True,True,False
+VLXa0lrM,Lamb Shawarma,"['lamb', 'spices', 'pita']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['protein'],700,30.0,0.0,30.0,0.0,False,False,False,True,False
+hUpgWKwu,Tom Yum Soup,"['shrimp', 'lemongrass', 'broth']",['asian'],['balanced'],"['lunch', 'dinner']",['soup'],150,10.0,0.0,5.0,0.0,False,False,True,True,True
+1DUSWYxX,Fufu,"['cassava', 'plantains']",['ghanaian'],['balanced'],"['lunch', 'dinner']","['carb', 'side']",500,25.0,0.0,15.0,0.0,False,False,False,True,False
+iYy68JlS,Toad in the Hole,"['sausages', 'flour', 'gravy']",['european'],['balanced'],"['lunch', 'dinner']",['protein'],600,20.0,0.0,30.0,0.0,False,False,False,True,False
+EU5uAhXY,Vegetable Korma,"['vegetables', 'coconut milk', 'spices']",['indian'],['balanced'],"['lunch', 'dinner']",['sauce'],400,8.0,0.0,20.0,0.0,True,True,False,True,False
+ZhvKOhHD,Chicken Tagine,"['chicken', 'apricots', 'spices']",['middle eastern'],['high-protein'],"['lunch', 'dinner']",['sauce'],550,30.0,0.0,20.0,0.0,False,False,True,True,False
+QqMMERpP,Biryani with Vegetables,"['rice', 'vegetables', 'spices']",['asian'],['balanced'],"['lunch', 'dinner']",['carb'],400,8.0,0.0,10.0,0.0,True,True,True,True,False
+yFx8lLO1,Roast Duck,"['duck', 'potatoes', 'vegetables']",['european'],['high-fat'],"['lunch', 'dinner']",['protein'],800,40.0,0.0,50.0,0.0,False,False,True,True,False
+ghe2qrjH,Okonomiyaki,"['flour', 'cabbage', 'eggs', 'pork']",['asian'],['high-fat'],"['lunch', 'dinner']",['protein'],500,15.0,0.0,20.0,0.0,False,False,False,True,False
+q3HRSWjH,Chicken Caesar Salad,"['chicken', 'lettuce', 'parmesan', 'dressing']",['european'],['balanced'],"['lunch', 'dinner']",['salad'],350,25.0,0.0,20.0,0.0,False,False,True,True,False
+RXgy0caD,Quinoa Salad,"['quinoa', 'vegetables', 'olive oil']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['salad'],300,10.0,0.0,10.0,0.0,True,True,True,True,True
+PPifURai,Spring Rolls,"['vegetables', 'rice paper', 'soy sauce']",['asian'],['moderate-carbs'],['snack'],['side'],150,3.0,0.0,5.0,0.0,True,True,True,True,True
+L3YTc77i,Pork Adobo,"['pork', 'soy sauce', 'vinegar']",['asian'],['high-protein'],"['lunch', 'dinner']",['sauce'],600,35.0,0.0,40.0,0.0,False,False,False,False,False
+D84U61jU,Gado Gado,"['vegetables', 'peanut sauce', 'eggs']",['asian'],['balanced'],"['lunch', 'dinner']",['salad'],400,15.0,0.0,20.0,0.0,True,True,True,True,True
+vVuWFF3G,Shepherd's Pie,"['lamb', 'potatoes', 'vegetables']",['european'],['high-protein'],"['lunch', 'dinner']",['protein'],550,30.0,0.0,20.0,0.0,False,False,False,True,False
+zmRPgtZn,Gnocchi with Pesto,"['potatoes', 'basil', 'parmesan']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],400,10.0,0.0,15.0,0.0,True,False,False,True,False
+fHwm0IsO,Chicken Satay,"['chicken', 'peanut sauce', 'rice']",['asian'],['balanced'],"['lunch', 'dinner']",['protein'],500,30.0,0.0,20.0,0.0,False,False,True,True,False
+hGHqXX3q,Mushroom Risotto,"['rice', 'mushrooms', 'parmesan']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],450,10.0,0.0,15.0,0.0,True,False,False,True,True
+mKohpXgb,Red Lentil Curry,"['lentils', 'tomatoes', 'spices']",['indian'],['high-protein'],"['lunch', 'dinner']",['sauce'],300,20.0,0.0,10.0,0.0,True,True,True,True,True
+Y5cv7qmq,Hummus and Veggie Wrap,"['hummus', 'vegetables', 'tortilla']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['main'],350,8.0,0.0,12.0,0.0,True,True,True,True,True
+KDb8MMK4,Chicken Tikka,"['chicken', 'yogurt', 'spices']",['indian'],['high-protein'],"['lunch', 'dinner']",['protein'],600,35.0,0.0,30.0,0.0,False,False,False,True,False
+OLk9MmT7,Ratatouille,"['zucchini', 'tomatoes', 'eggplant']",['european'],"['moderate-carbs', 'balanced']","['lunch', 'dinner']",['vegetable'],150,5.0,0.0,5.0,0.0,True,True,True,True,True
+3ce2Mp0t,Vietnamese Pho,"['rice noodles', 'beef', 'broth']",['asian'],['moderate-carbs'],"['lunch', 'dinner']",['soup'],350,20.0,0.0,8.0,0.0,False,False,False,True,False
+LIoKbXSo,Beef Bulgogi,"['beef', 'soy sauce', 'garlic']",['asian'],['high-protein'],"['lunch', 'dinner']",['protein'],500,35.0,0.0,20.0,0.0,False,False,False,True,False
+qlb6ggzX,Caesar Wrap,"['chicken', 'lettuce', 'parmesan', 'tortilla']",['european'],['balanced'],"['lunch', 'dinner']",['main'],400,25.0,0.0,15.0,0.0,False,False,False,True,False
+mLRAU88s,Grilled Salmon,"['salmon', 'lemon', 'vegetables']",['european'],['high-protein'],"['lunch', 'dinner']",['protein'],450,35.0,0.0,20.0,0.0,False,False,True,True,True
+iZKjqQUD,Chicken Alfredo,"['chicken', 'pasta', 'cream']",['european'],"['high-protein', 'balanced']","['lunch', 'dinner']",['carb'],700,30.0,0.0,25.0,0.0,False,False,False,True,False
+F4kqW5xl,Tilapia Light Soup,"['tilapia', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],280,30.0,0.0,38.0,0.0,False,False,True,True,True
+gHFOnspn,Goat Meat Light Soup,"['goat meat', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],350,33.0,0.0,38.0,0.0,False,False,True,True,False
+z5toR7Is,Apofoanto Light Soup (Fresh Fish Light Soup),"['fresh fish', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],270,28.0,0.0,38.0,0.0,False,False,True,True,True
+dR7prO0G,Abe Nkwan (Palm Nut Soup),"['red palm nut extract', 'snails', 'smoked fish', 'crabs', 'periwinkle', 'beef', 'fresh tomatoes', 'onions', 'pepper', 'kpakposhito', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],"['high-fat', 'moderate-protein', 'balanced', 'moderate-carbs']","['lunch', 'dinner']",['soup'],600,35.0,0.0,40.0,0.0,False,False,True,True,True

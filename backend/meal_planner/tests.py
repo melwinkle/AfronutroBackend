@@ -4,8 +4,12 @@ from rest_framework.test import APIClient
 from rest_framework import status
 from rest_framework.authtoken.models import Token
 from django.contrib.auth import get_user_model
-from .models import Recipe, DietaryAssessment, MealPlan, Ingredient, Rating, Favorite, NutritionalInformation, DietaryPreference,ActivityLevel,HealthGoal
-from .serializers import RecipeSerializer, DietaryAssessmentSerializer, MealPlanSerializer
+from users.models import DietaryAssessment, DietaryPreference,ActivityLevel,HealthGoal
+from recipes.models import Recipe, Rating Favorite, NutritionalInformation, Ingredient
+from meal_planner.models import MealPlan
+from meal_planner.serializers import MealPlanSerializer
+from recipes.serializers import RecipeSerializer
+from users.serializers import DietaryAssessmentSerializer
 from django.core.cache import cache
 from unittest.mock import patch
 from django.db import connection
@@ -27,7 +31,7 @@ class MealPlanViewsTestCase(TestCase):
         self.meal_plans_url='http://localhost:8000/meals/meal-plans/{}/save/'
         self.meal_plans_urls='http://localhost:8000/meals/meal-plans/{}/customize/'
         self.meal_plans_ns='http://localhost:8000/meals/meal-plans/{}/nutritional-summary/'
-        self.rating_url='http://localhost:8000/rating/{}/'
+        self.rating_url='http://localhost:8000/recipes/rating/{}/'
         # User registration data
         self.user_data = {
             "email": "testuser3@example.com",

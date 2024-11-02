@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'users.apps.UsersConfig',
     'meal_planner.apps.MealPlannerConfig',
+    'recipes.apps.RecipesConfig',
 ]
 
 MIDDLEWARE = [

@@ -6,7 +6,8 @@ from rest_framework.authtoken.views import ObtainAuthToken,APIView
 from django.core.cache import cache
 from .models import MealPlan
 from .serializers import MealPlanSerializer
-from users.models import DietaryAssessment,Recipe, DietaryPreference
+from users.models import DietaryAssessment, DietaryPreference
+from recipes.models import Recipe
 from .tasks import fit_recommender_task
 from celery.result import AsyncResult
 from typing import Dict, Any, Union, Optional,List

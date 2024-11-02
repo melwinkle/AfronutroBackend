@@ -1,7 +1,8 @@
 import pandas as pd
 import json
 from django.core.cache import cache
-from users.models import Recipe, Rating, User, DietaryAssessment, Ingredient
+from users.models import User, DietaryAssessment, Ingredient
+from recipes.models import Recipe, Rating
 from .ai_model import HybridRecommender
 
 def safe_json_load(data):

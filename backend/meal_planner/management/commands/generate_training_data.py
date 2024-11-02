@@ -1,7 +1,8 @@
 # meal_planner/management/commands/generate_training_data.py
 from django.core.management.base import BaseCommand
 from django.contrib.auth import get_user_model
-from users.models import DietaryAssessment, Ingredient, Recipe, Rating
+from users.models import DietaryAssessment
+from recipes.models import Recipe, Rating,Ingredient
 import pandas as pd
 import numpy as np
 import json

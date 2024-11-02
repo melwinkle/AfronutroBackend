@@ -1,6 +1,7 @@
 from celery import shared_task
 from django.core.cache import cache
-from users.models import Recipe, Rating, User, DietaryAssessment
+from users.models import  User, DietaryAssessment
+from recipes.models import Recipe, Rating
 from .ai_model import HybridRecommender
 import pandas as pd
 import json

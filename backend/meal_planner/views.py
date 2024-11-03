@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import generics, permissions, status, viewsets
 from rest_framework.authtoken.views import ObtainAuthToken,APIView
 from django.core.cache import cache
+from django.utils import timezone
 from .models import MealPlan
 from .serializers import MealPlanSerializer
 from users.models import DietaryAssessment, DietaryPreference
@@ -157,7 +158,8 @@ class GenerateMealPlanView(APIView):
             'liked_ingredients': liked_ingredients,  # Now using string names instead of objects
             'disliked_ingredients': disliked_ingredients,  # Now using string names instead of objects
             'dietary_preferences': dietary_codes,
-            'health_goals': assessment.health_goals
+            'health_goals': assessment.health_goals,
+            'cuisine_preference':assessment.cuisine_preference
         }
 
     # Also add this validation method to your GenerateMealPlanView class
@@ -314,7 +316,8 @@ class GenerateMealPlanView(APIView):
             dietary_assessment = DietaryAssessment.objects.get(user=user)
             tags = {
                 "health_goals": dietary_assessment.health_goals,
-                "dietary_preferences": dietary_assessment.dietary_preferences
+                "dietary_preferences": dietary_assessment.dietary_preferences,
+                "cuisine_preference":dietary_assessment.cuisine_preference
             }
             
             # Create a dictionary to store meals separated by meal type

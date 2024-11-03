@@ -5,6 +5,7 @@ from django.utils import timezone
 from django.contrib.postgres.fields import ArrayField
 from django.core.validators import MaxLengthValidator,MinLengthValidator
 from recipes.models import Ingredient
+from datetime import date
 import uuid
 import string
 import random

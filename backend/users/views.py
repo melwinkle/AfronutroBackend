@@ -49,21 +49,23 @@ class RegisterView(generics.CreateAPIView):
                 user.save()
                 
                 # Create token
+                
                 token = Token.objects.create(user=user)
                 
                 # Handle email verification
-                email_result = handle_registration(user, request)
+                if user:
+                    email_result = handle_registration(user, request)
                 
-                # Prepare response
-                response_data = {
-                    'message': email_result.get('message'),
-                    'user': UserSerializer(user, context=self.get_serializer_context()).data,
-                    'token': token.key
-                }
+                    # Prepare response
+                    response_data = {
+                        'message': email_result.get('message'),
+                        'user': UserSerializer(user, context=self.get_serializer_context()).data,
+                        'token': token.key
+                    }
                 
-                # Add error detail if email sending failed
-                if 'error_detail' in email_result:
-                    response_data['email_error'] = email_result['error_detail']
+                    # Add error detail if email sending failed
+                    if 'error_detail' in email_result:
+                        response_data['email_error'] = email_result['error_detail']
                 
                 return Response(response_data, status=status.HTTP_201_CREATED)
                 

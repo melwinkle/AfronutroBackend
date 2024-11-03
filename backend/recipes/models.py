@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.contrib.postgres.fields import ArrayField
 from django.core.validators import MaxLengthValidator,MinLengthValidator
 from django.core.exceptions import ObjectDoesNotExist
+from django.utils import timezone
 import uuid
 import string
 import random

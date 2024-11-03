@@ -31,10 +31,14 @@ class UserSerializer(serializers.ModelSerializer):
         return obj.age
 
 class UserProfileSerializer(serializers.ModelSerializer):
+    age = serializers.SerializerMethodField()
     class Meta:
         model = User
         fields = ('id', 'email','username', 'age','date_of_birth','gender','height','weight','activity_levels','tdee','bmi','is_verified')
         read_only_fields = ('id', 'email')
+        
+    def get_age(self, obj):
+        return obj.age
 
 class PasswordResetRequestSerializer(serializers.Serializer):
     email = serializers.EmailField()

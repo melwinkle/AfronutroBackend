@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import generics, permissions, status, viewsets
@@ -475,14 +475,15 @@ class SaveMealPlanView(APIView):
         # Get the draft from cache
         meal_plan = cache.get(f'meal_plan_draft_{meal_plan_id}')
         if not meal_plan:
-            return Response({"error": "Draft meal plan not found."}, status=status.HTTP_404_NOT_FOUND)
+            # If not found in cache, try to get from the database
+            meal_plan = get_object_or_404(MealPlan, meal_plan_id=meal_plan_id)
         
         try:
             # Ensure meals_structure is saved properly
             meal_plan.status = MealPlan.SAVED
             meal_plan.save()  # This will trigger the custom save method
             
-            # Remove from cache
+            # Remove from cache if it was found there
             cache.delete(f'meal_plan_draft_{meal_plan_id}')
             
             serializer = MealPlanSerializer(meal_plan)

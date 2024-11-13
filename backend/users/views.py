@@ -193,17 +193,34 @@ class LogoutView(APIView):
     def post(self, request):
         logging.debug(f"User: {request.user}, Auth: {request.auth}")
         
-        
-        if request.user.is_authenticated:
-            response =Response({"message": "Successfully logged out."}, status=status.HTTP_200_OK)
-            response.delete_cookie('auth_token')
-            request.user.auth_token.delete()
-            
-            
-            return response
-    
-        else:
-            return Response({"error": "User not authenticated"}, status=status.HTTP_401_UNAUTHORIZED)
+        try:
+            if request.user.is_authenticated:
+                # Create response first
+                response = Response(
+                    {"message": "Successfully logged out."}, 
+                    status=status.HTTP_200_OK
+                )
+                
+                # Delete the cookie
+                response.delete_cookie('auth_token')
+                
+                # Delete the auth token if it exists
+                if hasattr(request.user, 'auth_token'):
+                    request.user.auth_token.delete()
+                
+                return response
+            else:
+                return Response(
+                    {"error": "User not authenticated"}, 
+                    status=status.HTTP_401_UNAUTHORIZED
+                )
+                
+        except Exception as e:
+            logging.error(f"Logout error: {str(e)}")
+            return Response(
+                {"error": "Error during logout"}, 
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
 class ChangePasswordView(APIView):
     """

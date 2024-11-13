@@ -26,7 +26,12 @@ SECRET_KEY = 'django-insecure-j7cfld-0&&usff(1t-f1=o1%*ek_1ucukufovunb)u5l6409ur
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django','172.18.0.3','0.0.0.0','10.154.69.223','10.154.68.63','10.154.69.5']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django','172.18.0.3','0.0.0.0','10.154.70.64']
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  # Your React frontend URL
+    # Add any other frontend URLs you need
+]
 
 
 # Application definition
@@ -148,6 +153,7 @@ SITE_ID = 1
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
+        'users.authentication.CookieTokenAuthentication',
     ],
 }
 
@@ -159,9 +165,7 @@ PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
 ]
 
-# Session security settings
-SESSION_COOKIE_SECURE = True  # for HTTPS connections
-SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
 
 
 
@@ -179,7 +183,7 @@ USE_X_FORWARDED_HOST = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CORS_ALLOW_ALL_ORIGINS = True
+
 
 CACHES = {
     'default': {
@@ -227,4 +231,41 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
+
+CORS_ALLOW_CREDENTIALS = True  # Important for cookies!
+
+# Optional: If you need more specific CORS settings
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+# Cookie settings
+SESSION_COOKIE_SAMESITE = 'Lax'  # or 'Strict'
+CSRF_COOKIE_SAMESITE = 'Lax'  # or 'Strict'
+
+# Cookie settings
+SESSION_COOKIE_SECURE = True  # for HTTPS
+CSRF_COOKIE_SECURE = True    # for HTTPS
+SESSION_COOKIE_HTTPONLY = True
+CSRF_COOKIE_HTTPONLY = True
+
+# Session security settings
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 

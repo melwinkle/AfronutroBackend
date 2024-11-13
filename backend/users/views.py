@@ -8,6 +8,7 @@ from django.contrib.auth import authenticate, get_user_model
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
 from django.utils import timezone
+from django.conf import settings
 from datetime import timedelta
 from .models import ActivityLevel, DietaryAssessment, DietaryPreference, HealthGoal, PasswordHistory,EducationalContent
 from recipes.models import Ingredient
@@ -56,18 +57,33 @@ class RegisterView(generics.CreateAPIView):
                 if user:
                     email_result = handle_registration(user, request)
                 
-                    # Prepare response
-                    response_data = {
-                        'message': email_result.get('message'),
-                        'user': UserSerializer(user, context=self.get_serializer_context()).data,
-                        'token': token.key
-                    }
-                
-                    # Add error detail if email sending failed
-                    if 'error_detail' in email_result:
-                        response_data['email_error'] = email_result['error_detail']
-                
-                return Response(response_data, status=status.HTTP_201_CREATED)
+                    # Prepare response data without token
+                response_data = {
+                    'message': email_result.get('message'),
+                    'user': UserSerializer(user, context=self.get_serializer_context()).data,
+                }
+            
+                # Add error detail if email sending failed
+                if 'error_detail' in email_result:
+                    response_data['email_error'] = email_result['error_detail']
+            
+                # Create response object
+                response = Response(
+                    response_data,
+                    status=status.HTTP_201_CREATED
+                )
+
+                # Set HTTP-only cookie with token
+                response.set_cookie(
+                    'auth_token',
+                    token.key,
+                    httponly=True,
+                    secure=settings.DEBUG == False,  # True in production
+                    samesite='Lax',  # or 'Strict'
+                    max_age=24 * 60 * 60  # 24 hours
+                )
+            
+                return response
                 
         except IntegrityError as e:
             logger.warning(f"Registration failed: Email already exists - {request.data.get('email')}")
@@ -140,11 +156,24 @@ class LoginView(ObtainAuthToken):
         user = authenticate(request, email=email, password=password)
         if user:
             token, created = Token.objects.get_or_create(user=user)
-            return Response({
-                'token': token.key,
-                'user_id': user.pk,
-                'email': user.email
+            # Create the response
+            response = Response({
+                'user': {
+                    'user_id': user.pk,
+                    'email': user.email
+                }
             })
+            
+            # Set the token in an HTTP-only cookie
+            response.set_cookie(
+                'auth_token',
+                token.key,
+                httponly=True,
+                secure=settings.DEBUG == False,  # True in production (HTTPS)
+                samesite='Lax',  # or 'Strict'
+                max_age=24 * 60 * 60  # 24 hours in seconds
+            )
+            return response
         return Response({'error': 'Invalid Credentials'}, status=status.HTTP_400_BAD_REQUEST)
 
 class ProfileView(generics.RetrieveUpdateAPIView):
@@ -163,9 +192,16 @@ class LogoutView(APIView):
 
     def post(self, request):
         logging.debug(f"User: {request.user}, Auth: {request.auth}")
+        
+        
         if request.user.is_authenticated:
+            response =Response({"message": "Successfully logged out."}, status=status.HTTP_200_OK)
+            response.delete_cookie('auth_token')
             request.user.auth_token.delete()
-            return Response({"message": "Successfully logged out."}, status=status.HTTP_200_OK)
+            
+            
+            return response
+    
         else:
             return Response({"error": "User not authenticated"}, status=status.HTTP_401_UNAUTHORIZED)
 
@@ -270,7 +306,8 @@ class PasswordResetConfirmAPIView(APIView):
                 return Response({'error': 'User does not exist'}, status=status.HTTP_400_BAD_REQUEST)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-  
+
+
 
 
 class EducationalContentListCreateView(APIView):

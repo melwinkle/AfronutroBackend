@@ -10,11 +10,14 @@ from tensorflow.keras.layers import Dense, Dropout, BatchNormalization, Embeddin
 from django.core.cache import cache
 import json
 from celery import shared_task
-from typing import Dict, List, Any,Tuple
+from typing import Dict, List, Any, Tuple
 from multiprocessing import Pool
 import random
 
 class ImprovedContentBasedRecommender:
+    """
+    A content-based recommender system using TF-IDF vectorization.
+    """
     def __init__(self):
         # Use a more sophisticated TF-IDF vectorizer
         self.tfidf = TfidfVectorizer(
@@ -27,7 +30,12 @@ class ImprovedContentBasedRecommender:
         self.recipes = None
         
     def fit(self, recipes_df):
-        """Enhanced text processing with better type handling"""
+        """
+        Fit the TF-IDF vectorizer to the recipes data.
+        
+        Args:
+            recipes_df (pd.DataFrame): DataFrame containing recipes data.
+        """
         try:
             # Make a copy to avoid modifying the original
             recipes_df = recipes_df.copy()
@@ -60,6 +68,9 @@ class ImprovedContentBasedRecommender:
             raise
 
 class ImprovedDeepLearningRecommender:
+    """
+    A deep learning-based recommender system.
+    """
     def __init__(self, num_recipes, num_users):
         self.num_recipes = num_recipes
         self.num_users = num_users
@@ -69,6 +80,12 @@ class ImprovedDeepLearningRecommender:
         self.history = None
 
     def _build_model(self):
+        """
+        Build the deep learning model.
+        
+        Returns:
+            tf.keras.Model: Compiled deep learning model.
+        """
         # Simplified model architecture for better stability
         user_input = Input(shape=(11,), name='user_features')
         recipe_input = Input(shape=(8,), name='recipe_features')
@@ -108,7 +125,16 @@ class ImprovedDeepLearningRecommender:
 
     def fit(self, user_features, recipe_features, ratings, validation_split=0.2):
         """
-        Fixed fit method with separate scalers for user and recipe features
+        Train the deep learning model.
+        
+        Args:
+            user_features (np.ndarray or pd.DataFrame): User features.
+            recipe_features (np.ndarray or pd.DataFrame): Recipe features.
+            ratings (np.ndarray): Ratings.
+            validation_split (float): Fraction of data to use for validation.
+        
+        Returns:
+            tf.keras.callbacks.History: Training history.
         """
         try:
             # Convert to numpy arrays if they're DataFrames
@@ -167,6 +193,9 @@ class ImprovedDeepLearningRecommender:
             raise
 
 class ImprovedHybridRecommender:
+    """
+    A hybrid recommender system combining content-based and deep learning-based recommenders.
+    """
     def __init__(self, num_recipes, num_users):
         self.content_recommender = ImprovedContentBasedRecommender()
         self.dl_recommender = ImprovedDeepLearningRecommender(num_recipes, num_users)
@@ -174,7 +203,16 @@ class ImprovedHybridRecommender:
         self.is_trained = False
     
     def _apply_rule_based_filtering(self, recipes_df, user_profile):
-        """Apply rule-based filtering based on user preferences"""
+        """
+        Apply rule-based filtering based on user preferences.
+        
+        Args:
+            recipes_df (pd.DataFrame): DataFrame containing recipes data.
+            user_profile (dict): User profile containing preferences.
+        
+        Returns:
+            pd.DataFrame: Filtered recipes DataFrame.
+        """
         filtered_df = recipes_df.copy()
         
         # Initialize preference score
@@ -242,7 +280,13 @@ class ImprovedHybridRecommender:
     
     def _prepare_features(self, df):
         """
-        Prepare features for the model with proper error handling
+        Prepare features for the model with proper error handling.
+        
+        Args:
+            df (pd.DataFrame): DataFrame containing user and recipe data.
+        
+        Returns:
+            Tuple[pd.DataFrame, pd.DataFrame]: User features and recipe features.
         """
         try:
             # Enhanced feature engineering
@@ -288,7 +332,17 @@ class ImprovedHybridRecommender:
             raise
 
     def train(self, recipes_df, merged_data, evaluate_after_training=False):
-        """Train both recommenders with option to skip evaluation"""
+        """
+        Train both recommenders with option to skip evaluation.
+        
+        Args:
+            recipes_df (pd.DataFrame): DataFrame containing recipes data.
+            merged_data (pd.DataFrame): DataFrame containing merged user and recipe data.
+            evaluate_after_training (bool): Whether to evaluate the model after training.
+        
+        Returns:
+            dict: Evaluation metrics if evaluate_after_training is True, else None.
+        """
         try:
             print("Training content-based recommender...")
             self.content_recommender.fit(recipes_df)
@@ -318,7 +372,15 @@ class ImprovedHybridRecommender:
             raise
 
     def _extract_first_value(self, array_string):
-        """Extract first value from array-like string"""
+        """
+        Extract first value from array-like string.
+        
+        Args:
+            array_string (str): Array-like string.
+        
+        Returns:
+            str: First value in the array-like string.
+        """
         try:
             # Remove brackets and split
             cleaned = array_string.strip('[]').replace('"', '').replace("'", "").split(',')[0].strip()
@@ -328,8 +390,15 @@ class ImprovedHybridRecommender:
     
     def create_meal_plans(self, recommendations, user_profile, n_recommendations=3):
         """
-        Create meal plans from recommended recipes that match user's TDEE
-        Returns a dictionary with meal types and their recommended recipes
+        Create meal plans from recommended recipes that match user's TDEE.
+        
+        Args:
+            recommendations (pd.DataFrame): DataFrame containing recommended recipes.
+            user_profile (dict): User profile containing TDEE and other preferences.
+            n_recommendations (int): Number of recommendations per meal type.
+        
+        Returns:
+            dict: Meal plans with nutritional summaries.
         """
         try:
             meal_plans = {
@@ -473,7 +542,16 @@ class ImprovedHybridRecommender:
             return None
 
     def get_recommendations(self, user_profile, n_recommendations=12):
-        """Get personalized recipe recommendations for a user"""
+        """
+        Get personalized recipe recommendations for a user.
+        
+        Args:
+            user_profile (dict): User profile containing preferences.
+            n_recommendations (int): Number of recommendations to return.
+        
+        Returns:
+            pd.DataFrame: DataFrame containing recommended recipes.
+        """
         if not self.is_trained:
             print("Error: Model not trained. Please call train() first.")
             return pd.DataFrame()
@@ -571,25 +649,65 @@ class ImprovedHybridRecommender:
             return pd.DataFrame()
 
     def precision_at_k(self,recommendations, relevant_items, k):
-        """Calculates Precision@k."""
+        """
+        Calculates Precision@k.
+        
+        Args:
+            recommendations (list): List of recommended items.
+            relevant_items (list): List of relevant items.
+            k (int): Number of top recommendations to consider.
+        
+        Returns:
+            float: Precision@k.
+        """
         recommendations = recommendations[:k]
         num_relevant_recommendations = len(set(recommendations) & set(relevant_items))
         return num_relevant_recommendations / k if k else 0
 
     def recall_at_k(self,recommendations, relevant_items, k):
-        """Calculates Recall@k."""
+        """
+        Calculates Recall@k.
+        
+        Args:
+            recommendations (list): List of recommended items.
+            relevant_items (list): List of relevant items.
+            k (int): Number of top recommendations to consider.
+        
+        Returns:
+            float: Recall@k.
+        """
         recommendations = recommendations[:k]
         num_relevant_recommendations = len(set(recommendations) & set(relevant_items))
         return num_relevant_recommendations / len(relevant_items) if relevant_items else 0
 
     def f1_score_at_k(self,recommendations, relevant_items, k):
-        """Calculates F1-score@k."""
+        """
+        Calculates F1-score@k.
+        
+        Args:
+            recommendations (list): List of recommended items.
+            relevant_items (list): List of relevant items.
+            k (int): Number of top recommendations to consider.
+        
+        Returns:
+            float: F1-score@k.
+        """
         precision = self.precision_at_k(recommendations, relevant_items, k)
         recall = self.recall_at_k(recommendations, relevant_items, k)
         return 2 * (precision * recall) / (precision + recall) if (precision + recall) else 0
 
     def dcg_at_k(self,recommendations, relevant_items, k):
-        """Calculates Discounted Cumulative Gain (DCG)@k."""
+        """
+        Calculates Discounted Cumulative Gain (DCG)@k.
+        
+        Args:
+            recommendations (list): List of recommended items.
+            relevant_items (list): List of relevant items.
+            k (int): Number of top recommendations to consider.
+        
+        Returns:
+            float: DCG@k.
+        """
         recommendations = recommendations[:k]
         dcg = 0
         for i, rec_id in enumerate(recommendations):
@@ -598,13 +716,33 @@ class ImprovedHybridRecommender:
         return dcg
 
     def ndcg_at_k(self,recommendations, relevant_items, k):
-        """Calculates Normalized Discounted Cumulative Gain (NDCG)@k."""
+        """
+        Calculates Normalized Discounted Cumulative Gain (NDCG)@k.
+        
+        Args:
+            recommendations (list): List of recommended items.
+            relevant_items (list): List of relevant items.
+            k (int): Number of top recommendations to consider.
+        
+        Returns:
+            float: NDCG@k.
+        """
         dcg = self.dcg_at_k(recommendations, relevant_items, k)
         idcg = self.dcg_at_k(relevant_items, relevant_items, k)  # Ideal DCG
         return dcg / idcg if idcg else 0   
 
     def evaluate(self, merged_data, users_df, k=10):
-        """Evaluates the recommender using the given metrics."""
+        """
+        Evaluates the recommender using the given metrics.
+        
+        Args:
+            merged_data (pd.DataFrame): DataFrame containing merged user and recipe data.
+            users_df (pd.DataFrame): DataFrame containing user data.
+            k (int): Number of top recommendations to consider.
+        
+        Returns:
+            dict: Evaluation metrics.
+        """
         try:
             user_features, recipe_features = self._prepare_features(merged_data)
             ratings = merged_data['rating'].values
@@ -679,7 +817,17 @@ class ImprovedHybridRecommender:
             raise
 
     def evaluate_async(self, merged_data, users_df, max_users=100):
-        """Batch evaluation without multiprocessing"""
+        """
+        Batch evaluation without multiprocessing.
+        
+        Args:
+            merged_data (pd.DataFrame): DataFrame containing merged user and recipe data.
+            users_df (pd.DataFrame): DataFrame containing user data.
+            max_users (int): Maximum number of users to evaluate.
+        
+        Returns:
+            dict: Evaluation metrics.
+        """
         try:
             # Sample users if needed
             unique_users = merged_data['user_id'].unique()
@@ -713,7 +861,18 @@ class ImprovedHybridRecommender:
             return {'precision': 0, 'recall': 0, 'f1': 0, 'ndcg': 0}
 
     def _evaluate_batch(self, user_ids, merged_data, users_df, k=10):
-        """Evaluate a batch of users"""
+        """
+        Evaluate a batch of users.
+        
+        Args:
+            user_ids (list): List of user IDs to evaluate.
+            merged_data (pd.DataFrame): DataFrame containing merged user and recipe data.
+            users_df (pd.DataFrame): DataFrame containing user data.
+            k (int): Number of top recommendations to consider.
+        
+        Returns:
+            list: List of evaluation metrics for each user.
+        """
         batch_metrics = []
         
         for user_id in user_ids:

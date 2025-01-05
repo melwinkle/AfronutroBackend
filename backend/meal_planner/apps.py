@@ -6,6 +6,13 @@ class MealPlannerConfig(AppConfig):
     name = 'meal_planner'
     
     def ready(self):
-        if not cache.get('recommender_fitted'):
+        # Force clear cache when application starts
+        cache.delete('hybrid_recommender')
+        cache.delete('recommender_fitted')
+        cache.delete('evaluation_metrics')
+        cache.delete('last_training_time')
+        
+        # Force retrain
+        if True:  # Change this to True to force retraining
             from .tasks import fit_recommender_task
             fit_recommender_task.delay()

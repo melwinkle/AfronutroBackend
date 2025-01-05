@@ -299,91 +299,81 @@ class GenerateMealPlanView(APIView):
                 
         return True
 
-    def _create_meal_plan(self, user, recommendations: Dict[str, list]) -> MealPlan:
-        """
-        Create meal plan from recommendations with validation.
-        
-        Returns:
-            A dictionary of meal types with recipes as lists.
-        
-        Raises:
-            ValidationError: If meal plan creation fails.
-            Recipe.DoesNotExist: If recipes not found.
-        """
+    def _create_meal_plan(self, user, meal_plans: Dict) -> MealPlan:
+        """Create meal plan from recommendations with validation."""
         try:
-            # Create a draft meal plan
-            # Create tags from dietary assessment
             dietary_assessment = DietaryAssessment.objects.get(user=user)
             tags = {
                 "health_goals": dietary_assessment.health_goals,
                 "dietary_preferences": dietary_assessment.dietary_preferences,
-                "cuisine_preference":dietary_assessment.cuisine_preference
-            }
-            
-            # Create a dictionary to store meals separated by meal type
-            meals_structure = {
-                'breakfast': [],
-                'lunch': [],
-                'dinner': [],
-                'snack': []
+                "cuisine_preference": dietary_assessment.cuisine_preference
             }
 
+            # Initialize meal plan with empty structure
             meal_plan = MealPlan.objects.create(
                 user=user,
                 name=self._generate_meal_plan_name(dietary_assessment.dietary_preferences),
                 tags=tags,
-                meals_structure=meals_structure,
+                meals_structure={
+                    'breakfast': [],
+                    'lunch': [],
+                    'dinner': [],
+                    'snack': []
+                },
                 description="Automatically generated based on your dietary assessment.",
                 status=MealPlan.DRAFT
             )
+
+            total_calories = 0
+            
+            # Process each meal type from the recommendations
+            for meal_type in ['breakfast', 'lunch', 'dinner', 'snack']:
+                if meal_type in meal_plans and isinstance(meal_plans[meal_type], list):
+                    for recipe_data in meal_plans[meal_type]:
+                        try:
+                            recipe = Recipe.objects.get(recipe_id=recipe_data['recipe_id'])
+                            meal_plan.meals.add(recipe)
+                            
+                            # Convert all values to native Python types
+                            recipe_info = {
+                                'recipe_id': str(recipe.recipe_id),
+                                'name': str(recipe.name),
+                                'calories': int(recipe_data.get('calories', 0)),
+                                'protein': int(recipe_data.get('protein', 0)),
+                                'carbs': int(recipe_data.get('carbs', 0)),
+                                'fat': int(recipe_data.get('fat', 0)),
+                                'final_score': float(recipe_data.get('final_score', 0))  # Include recommendation score
+                            }
+                            
+                            # Add recipe details to meals_structure
+                            meal_plan.meals_structure[meal_type].append(recipe_info)
+                            total_calories += recipe_info['calories']
+                            
+                        except Recipe.DoesNotExist:
+                            logger.warning(f"Recipe not found: {recipe_data['recipe_id']}")
+                            continue
+
+            # Add the summary from recommendations if it exists
+            if 'summary' in meal_plans:
+                meal_plan.meals_structure['summary'] = meal_plans['summary']
+            else:
+                # Create summary if not provided
+                meal_plan.meals_structure['summary'] = {
+                    'total_calories': total_calories,
+                    'tdee': dietary_assessment.tdee,
+                    'remaining_calories': dietary_assessment.tdee - total_calories
+                }
+
+            # Save and cache the meal plan
+            meal_plan.save()
+            self._clear_user_draft_caches(user)
+            cache.set(f'meal_plan_draft_{meal_plan.meal_plan_id}', meal_plan, 60*60*24)
+
+            return meal_plan
+
         except Exception as e:
+            logger.error(f"Error creating meal plan: {str(e)}")
             raise ValidationError(f"Failed to create meal plan: {str(e)}")
-
-        added_recipes = 0
-        used_recipes = set()  # Keep track of recipes already assigned to a meal type
-
-
-        # Iterate through each meal type and add recipes
-        for meal_type, recipes in recommendations.items():
-            for recipe_name in recipes:
-                # Skip the recipe if it has already been assigned to a different meal type
-                if recipe_name in used_recipes:
-                    continue
-
-                try:
-                    recipe = Recipe.objects.get(name=recipe_name)
-                    meal_plan.meals.add(recipe)
-
-                    # Only add the recipe if it hasn't been used yet
-                    if recipe_name not in used_recipes:
-                        # Add recipe to the correct meal type in the dictionary
-                        meal_plan.meals_structure[meal_type].append(recipe.name)
-                        added_recipes += 1
-                        used_recipes.add(recipe_name)  # Mark recipe as used for this meal plan
-
-                except Recipe.DoesNotExist:
-                    logger.warning(f"Recipe not found: {recipe_name}")
-                    continue
-
-        if added_recipes == 0:
-            # If no valid recipes were added, delete the empty meal plan
-            meal_plan.delete()
-            raise ValidationError("No valid recipes found for meal plan")
-
-        # Save the updated meals_structure
-        meal_plan.save()
-         # Clear any existing draft caches for this user before setting new one
-        self._clear_user_draft_caches(user)
-    
-        # Cache the draft meal plan
-        cache_key = f'meal_plan_draft_{meal_plan.meal_plan_id}'
-        try:
-            cache.set(cache_key, meal_plan, 60*60*24)
-        except Exception as e:
-            logger.warning(f"Failed to cache meal plan: {str(e)}")
-
-        # Return the structured meals by type
-        return meal_plan
 
     def _generate_meal_plan_name(self, dietary_preferences: List[str]) -> str:
         """
@@ -403,7 +393,7 @@ class GenerateMealPlanView(APIView):
     
     def get(self, request, meal_plan_id=None):
         # Case 1: Get specific meal plan by ID
-        if meal_plan_id:
+        if (meal_plan_id):
             try:
                 # First try to get from database
                 meal_plan = MealPlan.objects.get(meal_plan_id=meal_plan_id, user=request.user)

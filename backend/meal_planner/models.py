@@ -65,10 +65,7 @@ class MealPlan(models.Model):
         super().save(*args, **kwargs)
 
     def calculate_nutritional_composition(self):
-        """
-        Calculate the nutritional composition of meals grouped by meal type (breakfast, lunch, dinner, snack).
-        """
-        # Initialize a dictionary to store nutritional info for each meal type
+        """Calculate the nutritional composition of meals grouped by meal type."""
         nutritional_summary = {
             'breakfast': {"calories": 0, "protein": 0, "carbs": 0, "fat": 0},
             'lunch': {"calories": 0, "protein": 0, "carbs": 0, "fat": 0},
@@ -76,21 +73,24 @@ class MealPlan(models.Model):
             'snack': {"calories": 0, "protein": 0, "carbs": 0, "fat": 0}
         }
 
-        # Loop through each meal type in the meal plan and aggregate nutrition data
-        for meal_type, meals in self.meals_structure.items():  # Assuming meals_structure stores meals by type
-            for meal in meals:
-                logger.info(f"Trying to fetch recipe with name: {meal}")  # Log the meal being processed
-                try:
-                    recipe = Recipe.objects.get(name=meal)  # Fetch the actual recipe object by name
+        try:
+            # Loop through the meals_structure which contains the actual meal plan data
+            for meal_type, recipes in self.meals_structure.items():
+                if meal_type == 'summary':  # Skip the summary section
+                    continue
                     
-                    if recipe.nutrition:  # Check if the recipe has associated nutrition data
-                        nutritional_summary[meal_type]["calories"] += recipe.nutrition.calories
-                        nutritional_summary[meal_type]["protein"] += recipe.nutrition.protein
-                        nutritional_summary[meal_type]["carbs"] += recipe.nutrition.carbs
-                        nutritional_summary[meal_type]["fat"] += recipe.nutrition.fat
-                except ObjectDoesNotExist:
-                    logger.error(f"Recipe with name '{meal}' does not exist.")  # Log an error if the recipe is not found
-                except Exception as e:
-                    logger.error(f"Error fetching recipe '{meal}': {str(e)}")  # Log any other errors
+                # Each recipe in meals_structure now contains the nutritional info
+                for recipe_data in recipes:
+                    if isinstance(recipe_data, dict):
+                        nutritional_summary[meal_type]["calories"] += int(recipe_data.get('calories', 0))
+                        nutritional_summary[meal_type]["protein"] += int(recipe_data.get('protein', 0))
+                        nutritional_summary[meal_type]["carbs"] += int(recipe_data.get('carbs', 0))
+                        nutritional_summary[meal_type]["fat"] += int(recipe_data.get('fat', 0))
 
-        return nutritional_summary
+            logger.info(f"Calculated nutritional summary: {nutritional_summary}")
+            return nutritional_summary
+            
+        except Exception as e:
+            logger.error(f"Error calculating nutritional composition: {str(e)}")
+            logger.error(f"meals_structure content: {self.meals_structure}")
+            return nutritional_summary

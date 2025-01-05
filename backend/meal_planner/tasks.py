@@ -1,12 +1,13 @@
 from celery import shared_task
 from django.core.cache import cache
-from users.models import  User, DietaryAssessment
+from users.models import User, DietaryAssessment
 from recipes.models import Recipe, Rating
-from .ai_model import HybridRecommender
+from .model_ai import ImprovedHybridRecommender  # Changed from ai_model import HybridRecommender
 import pandas as pd
 import json
 from typing import Dict, Any
 import logging
+from io import StringIO
 
 logger = logging.getLogger(__name__)
 
@@ -32,46 +33,74 @@ def fit_recommender_task(self) -> bool:
         
         # Debug prints
         print("Recipes DataFrame shape:", recipes_df.shape)
-        print("Recipes columns:", recipes_df.columns.tolist())
         print("Users DataFrame shape:", users_df.shape)
-        print("Users columns:", users_df.columns.tolist())
         print("Ratings DataFrame shape:", ratings_df.shape)
-        print("Ratings columns:", ratings_df.columns.tolist())
         
         # Merge data carefully with proper column handling
         merged_data = (ratings_df
             .merge(recipes_df, on='recipe_id', how='left', validate='m:1')
             .merge(users_df, on='user_id', how='left', validate='m:1'))
         
-        # Ensure all required columns are present
-        required_columns = [
-            'recipe_id', 'name', 'ingredients', 'cuisine', 'tags',
-            'meal_type', 'dish_type', 'calories', 'fat', 'protein',
-            'carbs', 'fiber', 'gluten_free', 'halal', 'pescatarian',
-            'rating', 'user_id'
-        ]
+        # Handle missing values before training
+        merged_data = merged_data.fillna({
+            'rating': 0,
+            'calories': 0,
+            'protein': 0,
+            'carbs': 0,
+            'fat': 0,
+            'fiber': 0
+        })
         
-        # Debug print merged data
-        print("Merged data shape:", merged_data.shape)
-        print("Merged data columns:", merged_data.columns.tolist())
-        print("Missing columns:", [col for col in required_columns if col not in merged_data.columns])
+        # Get the total number of recipes and users for the recommender
+        num_recipes = len(recipes_df)
+        num_users = len(users_df)
         
-        # Initialize and fit recommender
-        recommender = HybridRecommender()
-        recommender.fit(merged_data)
-        recommender.evaluate(merged_data)
-
-        
-        # Cache the fitted recommender
-        cache.set('hybrid_recommender', recommender, timeout=60*60*24)  # 24 hours
-        cache.set('recommender_fitted', True)
-        cache.set('last_training_time', pd.Timestamp.now())
-        
-        return True
-        
+        try:
+            # Initialize recommender with the correct parameters
+            recommender = ImprovedHybridRecommender(num_recipes=num_recipes, num_users=num_users)
+            
+            # Train without immediate evaluation
+            print("Starting model training...")
+            recommender.train(recipes_df, merged_data, evaluate_after_training=False)
+            print("Model training completed successfully!")
+            
+            # Cache the fitted recommender
+            cache.set('hybrid_recommender', recommender, timeout=60*60*24)
+            cache.set('recommender_fitted', True)
+            cache.set('last_training_time', pd.Timestamp.now())
+            
+            # Instead of passing DataFrames directly, pass their JSON serialized versions
+            evaluate_recommender.delay(
+                merged_data.to_json(),
+                users_df.to_json()
+            )
+            
+            return True
+            
+        except Exception as train_exc:
+            print(f"Error during model training: {str(train_exc)}")
+            raise train_exc
+            
     except Exception as exc:
         logger.error(f"Error fitting recommender: {exc}", exc_info=True)
         raise self.retry(exc=exc, countdown=300)  # Retry after 5 minutes
+
+@shared_task
+def evaluate_recommender(merged_data_json, users_df_json):
+    """Separate task for evaluation with proper DataFrame handling"""
+    try:
+        # Deserialize the DataFrames using StringIO
+        merged_data = pd.read_json(StringIO(merged_data_json))
+        users_df = pd.read_json(StringIO(users_df_json))
+        
+        recommender = cache.get('hybrid_recommender')
+        if recommender:
+            metrics = recommender.evaluate_async(merged_data, users_df, max_users=100)
+            cache.set('evaluation_metrics', metrics)
+            return metrics
+    except Exception as e:
+        logger.error(f"Error in evaluation: {e}")
+        return None
 
 def _fetch_recipes_data() -> pd.DataFrame:
     """Efficiently fetch and prepare recipe data"""

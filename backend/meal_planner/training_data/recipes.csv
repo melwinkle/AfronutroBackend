@@ -1,62 +1,1001 @@
-recipe_id,name,ingredients,cuisine,tags,meal_type,dish_type,calories,protein,carbs,fat,fiber,vegetarian,vegan,gluten_free,halal,pescatarian
-k1bgscdt,Chicken Light Soup,"['chicken', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['high-protein'],"['lunch', 'dinner']","['soup', 'one-pot']",320,35.0,0.0,38.0,8.0,False,False,True,True,False
-tUC3N6uG,Jollof Rice,"['rice', 'tomatoes', 'onions', 'peppers']",['west african'],['moderate-carbs'],"['lunch', 'dinner']",['carb'],350,5.0,0.0,5.0,0.0,True,True,True,True,True
-uRy0QtoP,Grilled Chicken Suya,"['chicken', 'peanuts', 'spices']","['west african', 'nigerian']",['high-protein'],"['lunch', 'dinner']",['protein'],250,30.0,0.0,15.0,0.0,False,False,True,True,False
-jdB21FN1,Sautéed Spinach,"['spinach', 'garlic', 'olive oil']","['west african', 'european']",['organic'],"['lunch', 'dinner']",['vegetable'],50,3.0,0.0,3.0,0.0,True,True,True,True,True
-uH7iQL4u,Moi Moi,"['beans', 'peppers', 'onions', 'spices']","['west african', 'nigerian']","['balanced', 'high-protein']","['lunch', 'dinner']",['side'],200,10.0,0.0,5.0,0.0,True,True,True,True,True
-jzhVpOhI,Bangers and Mash,"['sausages', 'potatoes', 'gravy']",['european'],"['balanced', 'moderate-protein', 'moderate-carbs']","['lunch', 'dinner']",['carb'],500,20.0,0.0,20.0,0.0,False,False,False,True,False
-Qmdy9htZ,Spaghetti Carbonara,"['spaghetti', 'eggs', 'bacon', 'cheese']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],600,25.0,0.0,25.0,0.0,False,False,False,False,False
-0j71MKTb,Paella,"['rice', 'seafood', 'saffron']",['european'],['balanced'],"['lunch', 'dinner']",['protein'],400,25.0,0.0,15.0,0.0,False,False,True,True,True
-qJbCl7VC,Falafel Wrap,"['chickpeas', 'spices', 'vegetables']",['middle eastern'],['balanced'],"['lunch', 'dinner']","['protein', 'carb']",350,12.0,0.0,10.0,0.0,True,True,True,True,True
-5CamoZxA,Chicken Biryani,"['chicken', 'spices', 'rice']",['asian'],['balanced'],"['lunch', 'dinner']",['protein'],450,30.0,0.0,10.0,0.0,False,False,False,True,False
-dX19iwJm,Sushi,"['rice', 'seaweed', 'fish']",['asian'],['balanced'],"['lunch', 'dinner']",['side'],200,15.0,0.0,5.0,0.0,False,False,True,True,True
-Drm3CTYz,Pad Thai,"['noodles', 'shrimp', 'tofu']",['asian'],['balanced'],"['lunch', 'dinner']",['protein'],500,20.0,0.0,20.0,0.0,False,False,False,True,True
-Ag6cxBHZ,Dal Tadka,"['lentils', 'spices']",['indian'],['balanced'],"['lunch', 'dinner']",['protein'],250,15.0,0.0,8.0,0.0,True,True,True,True,False
-vR9rKBQT,Nkrakra (Meat Light Soup),"['beef', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],436,32.0,0.0,40.0,0.0,False,False,True,True,False
-SlzYT1MJ,Tilapia Light Soup,"['tilapia', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],280,30.0,0.0,38.0,0.0,False,False,True,True,True
-qU4uOTmZ,Goat Meat Light Soup,"['goat meat', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],350,33.0,0.0,38.0,0.0,False,False,True,True,False
-OzPxKhDj,Tofu Light Soup,"['tofu', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],"['moderate-protein', 'balanced', 'low-fat']","['lunch', 'dinner']",['soup'],262,14.0,0.0,39.0,0.0,True,True,True,True,True
-Tr4B1mJk,Apofoanto Light Soup (Fresh Fish Light Soup),"['fresh fish', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],270,28.0,0.0,38.0,0.0,False,False,True,True,True
-L9igsYKi,Abe Nkwan (Palm Nut Soup),"['red palm nut extract', 'snails', 'smoked fish', 'crabs', 'periwinkle', 'beef', 'fresh tomatoes', 'onions', 'pepper', 'kpakposhito', 'garlic', 'ginger', 'onions', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],"['high-fat', 'moderate-protein', 'balanced', 'moderate-carbs']","['lunch', 'dinner']",['soup'],600,35.0,0.0,40.0,0.0,False,False,True,True,False
-8ouQAYiA,Chow Mein,"['noodles', 'vegetables', 'soy sauce']",['asian'],['balanced'],"['lunch', 'dinner']",['carb'],450,10.0,0.0,15.0,0.0,True,True,False,True,False
-GIUPX6ub,Fish and Chips,"['fish', 'potatoes']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],700,25.0,0.0,35.0,0.0,False,False,False,True,True
-rVQ54L4L,Egusi Soup,"['melon seeds', 'spinach', 'meat']",['nigerian'],['balanced'],"['lunch', 'dinner']",['soup'],600,35.0,0.0,30.0,0.0,False,False,False,True,False
-T48hYjUg,Pasta Primavera,"['pasta', 'vegetables', 'cream']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],400,12.0,0.0,10.0,0.0,True,False,False,True,False
-XVYnkzLo,Tofu Stir Fry,"['tofu', 'vegetables', 'soy sauce']",['asian'],['balanced'],"['lunch', 'dinner']",['vegetable'],300,15.0,0.0,10.0,0.0,True,True,True,True,False
-CFiXC5Xw,Fried Plantains,"['plantains', 'salt', 'oil']",['west african'],['moderate-carbs'],['breakfast'],['side'],300,2.0,0.0,15.0,0.0,True,True,False,True,False
-CMJqkkvW,Miso Soup,"['seaweed', 'tofu', 'miso paste']",['asian'],['balanced'],"['lunch', 'dinner']",['soup'],100,5.0,0.0,4.0,0.0,True,True,True,True,False
-KuLuHeJM,Beef Stroganoff,"['beef', 'mushrooms', 'cream']",['european'],['balanced'],"['lunch', 'dinner']",['protein'],600,35.0,0.0,30.0,0.0,False,False,False,False,False
-2t9O0zMC,Bulgur Salad,"['bulgur', 'tomatoes', 'parsley']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['salad'],250,6.0,0.0,8.0,0.0,True,True,True,True,True
-lJwJH94u,Samosa,"['flour', 'vegetables', 'spices']","['indian', 'west african']",['balanced'],['snack'],['side'],300,5.0,0.0,15.0,0.0,True,False,False,True,False
-5dY6fEOP,Bibimbap,"['rice', 'vegetables', 'egg']",['asian'],['balanced'],"['lunch', 'dinner']",['carb'],500,20.0,0.0,15.0,0.0,False,False,True,True,False
-VLXa0lrM,Lamb Shawarma,"['lamb', 'spices', 'pita']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['protein'],700,30.0,0.0,30.0,0.0,False,False,False,True,False
-hUpgWKwu,Tom Yum Soup,"['shrimp', 'lemongrass', 'broth']",['asian'],['balanced'],"['lunch', 'dinner']",['soup'],150,10.0,0.0,5.0,0.0,False,False,True,True,True
-1DUSWYxX,Fufu,"['cassava', 'plantains']",['ghanaian'],['balanced'],"['lunch', 'dinner']","['carb', 'side']",500,25.0,0.0,15.0,0.0,False,False,False,True,False
-iYy68JlS,Toad in the Hole,"['sausages', 'flour', 'gravy']",['european'],['balanced'],"['lunch', 'dinner']",['protein'],600,20.0,0.0,30.0,0.0,False,False,False,True,False
-EU5uAhXY,Vegetable Korma,"['vegetables', 'coconut milk', 'spices']",['indian'],['balanced'],"['lunch', 'dinner']",['sauce'],400,8.0,0.0,20.0,0.0,True,True,False,True,False
-ZhvKOhHD,Chicken Tagine,"['chicken', 'apricots', 'spices']",['middle eastern'],['high-protein'],"['lunch', 'dinner']",['sauce'],550,30.0,0.0,20.0,0.0,False,False,True,True,False
-QqMMERpP,Biryani with Vegetables,"['rice', 'vegetables', 'spices']",['asian'],['balanced'],"['lunch', 'dinner']",['carb'],400,8.0,0.0,10.0,0.0,True,True,True,True,False
-yFx8lLO1,Roast Duck,"['duck', 'potatoes', 'vegetables']",['european'],['high-fat'],"['lunch', 'dinner']",['protein'],800,40.0,0.0,50.0,0.0,False,False,True,True,False
-ghe2qrjH,Okonomiyaki,"['flour', 'cabbage', 'eggs', 'pork']",['asian'],['high-fat'],"['lunch', 'dinner']",['protein'],500,15.0,0.0,20.0,0.0,False,False,False,True,False
-q3HRSWjH,Chicken Caesar Salad,"['chicken', 'lettuce', 'parmesan', 'dressing']",['european'],['balanced'],"['lunch', 'dinner']",['salad'],350,25.0,0.0,20.0,0.0,False,False,True,True,False
-RXgy0caD,Quinoa Salad,"['quinoa', 'vegetables', 'olive oil']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['salad'],300,10.0,0.0,10.0,0.0,True,True,True,True,True
-PPifURai,Spring Rolls,"['vegetables', 'rice paper', 'soy sauce']",['asian'],['moderate-carbs'],['snack'],['side'],150,3.0,0.0,5.0,0.0,True,True,True,True,True
-L3YTc77i,Pork Adobo,"['pork', 'soy sauce', 'vinegar']",['asian'],['high-protein'],"['lunch', 'dinner']",['sauce'],600,35.0,0.0,40.0,0.0,False,False,False,False,False
-D84U61jU,Gado Gado,"['vegetables', 'peanut sauce', 'eggs']",['asian'],['balanced'],"['lunch', 'dinner']",['salad'],400,15.0,0.0,20.0,0.0,True,True,True,True,True
-vVuWFF3G,Shepherd's Pie,"['lamb', 'potatoes', 'vegetables']",['european'],['high-protein'],"['lunch', 'dinner']",['protein'],550,30.0,0.0,20.0,0.0,False,False,False,True,False
-zmRPgtZn,Gnocchi with Pesto,"['potatoes', 'basil', 'parmesan']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],400,10.0,0.0,15.0,0.0,True,False,False,True,False
-fHwm0IsO,Chicken Satay,"['chicken', 'peanut sauce', 'rice']",['asian'],['balanced'],"['lunch', 'dinner']",['protein'],500,30.0,0.0,20.0,0.0,False,False,True,True,False
-hGHqXX3q,Mushroom Risotto,"['rice', 'mushrooms', 'parmesan']",['european'],['balanced'],"['lunch', 'dinner']",['carb'],450,10.0,0.0,15.0,0.0,True,False,False,True,True
-mKohpXgb,Red Lentil Curry,"['lentils', 'tomatoes', 'spices']",['indian'],['high-protein'],"['lunch', 'dinner']",['sauce'],300,20.0,0.0,10.0,0.0,True,True,True,True,True
-Y5cv7qmq,Hummus and Veggie Wrap,"['hummus', 'vegetables', 'tortilla']",['middle eastern'],['balanced'],"['lunch', 'dinner']",['main'],350,8.0,0.0,12.0,0.0,True,True,True,True,True
-KDb8MMK4,Chicken Tikka,"['chicken', 'yogurt', 'spices']",['indian'],['high-protein'],"['lunch', 'dinner']",['protein'],600,35.0,0.0,30.0,0.0,False,False,False,True,False
-OLk9MmT7,Ratatouille,"['zucchini', 'tomatoes', 'eggplant']",['european'],"['moderate-carbs', 'balanced']","['lunch', 'dinner']",['vegetable'],150,5.0,0.0,5.0,0.0,True,True,True,True,True
-3ce2Mp0t,Vietnamese Pho,"['rice noodles', 'beef', 'broth']",['asian'],['moderate-carbs'],"['lunch', 'dinner']",['soup'],350,20.0,0.0,8.0,0.0,False,False,False,True,False
-LIoKbXSo,Beef Bulgogi,"['beef', 'soy sauce', 'garlic']",['asian'],['high-protein'],"['lunch', 'dinner']",['protein'],500,35.0,0.0,20.0,0.0,False,False,False,True,False
-qlb6ggzX,Caesar Wrap,"['chicken', 'lettuce', 'parmesan', 'tortilla']",['european'],['balanced'],"['lunch', 'dinner']",['main'],400,25.0,0.0,15.0,0.0,False,False,False,True,False
-mLRAU88s,Grilled Salmon,"['salmon', 'lemon', 'vegetables']",['european'],['high-protein'],"['lunch', 'dinner']",['protein'],450,35.0,0.0,20.0,0.0,False,False,True,True,True
-iZKjqQUD,Chicken Alfredo,"['chicken', 'pasta', 'cream']",['european'],"['high-protein', 'balanced']","['lunch', 'dinner']",['carb'],700,30.0,0.0,25.0,0.0,False,False,False,True,False
-F4kqW5xl,Tilapia Light Soup,"['tilapia', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],280,30.0,0.0,38.0,0.0,False,False,True,True,True
-gHFOnspn,Goat Meat Light Soup,"['goat meat', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],350,33.0,0.0,38.0,0.0,False,False,True,True,False
-z5toR7Is,Apofoanto Light Soup (Fresh Fish Light Soup),"['fresh fish', 'tomatoes', 'onions', 'pepper', 'garden eggs', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],['balanced'],"['lunch', 'dinner']",['soup'],270,28.0,0.0,38.0,0.0,False,False,True,True,True
-dR7prO0G,Abe Nkwan (Palm Nut Soup),"['red palm nut extract', 'snails', 'smoked fish', 'crabs', 'periwinkle', 'beef', 'fresh tomatoes', 'onions', 'pepper', 'kpakposhito', 'garlic', 'ginger', 'kpakposhito paste', 'dry spices', 'salt', 'stock cube']",['ghanaian'],"['high-fat', 'moderate-protein', 'balanced', 'moderate-carbs']","['lunch', 'dinner']",['soup'],600,35.0,0.0,40.0,0.0,False,False,True,True,True
+﻿recipe_id,name,ingredients,cuisine,recipe_info,vegan,vegetarian,gluten_free,pescatarian,halal,meal_type,dish_type,tags,nutrition_info_id,calories,protein,carbs,fat,fiber
+k1bgscdt,Chicken Light Soup,"['chicken','tomatoes','onions','pepper','garden eggs','garlic','ginger','onions','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],High in protein and balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']","['soup','one-pot']",['high-protein'],zqyXD7p6,320,35,0,38,8
+tUC3N6uG,Jollof Rice,"['rice','tomatoes','onions','peppers']",['west african'],high carb,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],FO3c0g0Q,350,5,0,5,0
+uRy0QtoP,Grilled Chicken Suya,"['chicken','peanuts','spices']","['west african','nigerian']",high protein,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],1c7kOigs,250,30,0,15,0
+jdB21FN1,Sautéed Spinach,"['spinach','garlic','olive oil']","['west african','european']",low calorie,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['vegetable'],['organic'],djyzqKqL,50,3,0,3,0
+uH7iQL4u,Moi Moi,"['beans','peppers','onions','spices']","['west african','nigerian']",balanced,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['side'],"['balanced','high-protein']",jInr3hBn,200,10,0,5,0
+jzhVpOhI,Bangers and Mash,"['sausages','potatoes','gravy']",['european'],high carb,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['carb'],"['balanced','moderate-protein','moderate-carbs']",cmcGjKtL,500,20,0,20,0
+Qmdy9htZ,Spaghetti Carbonara,"['spaghetti','eggs','bacon','cheese']",['european'],high protein,FALSE,FALSE,FALSE,FALSE,FALSE,"['lunch','dinner']",['carb'],['balanced'],xsK7jvNy,600,25,0,25,0
+0j71MKTb,Paella,"['rice','seafood','saffron']",['european'],balanced,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['balanced'],Cuj4g2LI,400,25,0,15,0
+qJbCl7VC,Falafel Wrap,"['chickpeas','spices','vegetables']",['middle eastern'],balanced,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']","['protein','carb']",['balanced'],1abOSvke,350,12,0,10,0
+5CamoZxA,Chicken Biryani,"['chicken','spices','rice']",['asian'],high protein,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['protein'],['balanced'],HG0wo1HR,450,30,0,10,0
+dX19iwJm,Sushi,"['rice','seaweed','fish']",['asian'],low calorie,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['side'],['balanced'],dqVjb1KA,200,15,0,5,0
+Drm3CTYz,Pad Thai,"['noodles','shrimp','tofu']",['asian'],balanced,FALSE,FALSE,FALSE,TRUE,TRUE,"['lunch','dinner']",['protein'],['balanced'],sZ0k9oGB,500,20,0,20,0
+Ag6cxBHZ,Dal Tadka,"['lentils','spices']",['indian'],high protein,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['protein'],['balanced'],hsswzR2C,250,15,0,8,0
+vR9rKBQT,Nkrakra (Meat Light Soup),"['beef','tomatoes','onions','pepper','garden eggs','garlic','ginger','onions','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['balanced'],ScsgCvaK,436,32,0,40,0
+SlzYT1MJ,Tilapia Light Soup,"['tilapia','tomatoes','onions','pepper','garden eggs','garlic','ginger','onions','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],['balanced'],S4WNRFtQ,280,30,0,38,0
+qU4uOTmZ,Goat Meat Light Soup,"['goat meat','tomatoes','onions','pepper','garden eggs','garlic','ginger','onions','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['balanced'],xMw86Hrt,350,33,0,38,0
+OzPxKhDj,Tofu Light Soup,"['tofu','tomatoes','onions','pepper','garden eggs','garlic','ginger','onions','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],"['moderate-protein','balanced','low-fat']",hZKI7ZvO,262,14,0,39,0
+Tr4B1mJk,Apofoanto Light Soup (Fresh Fish Light Soup),"['fresh fish','tomatoes','onions','pepper','garden eggs','garlic','ginger','onions','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],['balanced'],3Hl9xgBh,270,28,0,38,0
+L9igsYKi,Abe Nkwan (Palm Nut Soup),"['red palm nut extract','snails','smoked fish','crabs','periwinkle','beef','fresh tomatoes','onions','pepper','kpakposhito','garlic','ginger','onions','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],"['high-fat','moderate-protein','balanced','moderate-carbs']",rOMGklmk,600,35,0,40,0
+8ouQAYiA,Chow Mein,"['noodles','vegetables','soy sauce']",['asian'],high carb,TRUE,TRUE,FALSE,FALSE,TRUE,"['lunch','dinner']",['carb'],['balanced'],kN8TgBNn,450,10,0,15,0
+GIUPX6ub,Fish and Chips,"['fish','potatoes']",['european'],high fat,FALSE,FALSE,FALSE,TRUE,TRUE,"['lunch','dinner']",['carb'],['balanced'],Ja3hogil,700,25,0,35,0
+rVQ54L4L,Egusi Soup,"['melon seeds','spinach','meat']",['nigerian'],high protein,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['soup'],['balanced'],ourl6ySJ,600,35,0,30,0
+T48hYjUg,Pasta Primavera,"['pasta','vegetables','cream']",['european'],balanced,FALSE,TRUE,FALSE,FALSE,TRUE,"['lunch','dinner']",['carb'],['balanced'],I89z2bA2,400,12,0,10,0
+XVYnkzLo,Tofu Stir Fry,"['tofu','vegetables','soy sauce']",['asian'],low calorie,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['vegetable'],['balanced'],cPC9Wiq5,300,15,0,10,0
+CFiXC5Xw,Fried Plantains,"['plantains','salt','oil']",['west african'],high carb,TRUE,TRUE,FALSE,FALSE,TRUE,['breakfast'],['side'],['moderate-carbs'],G7mN7iQ0,300,2,0,15,0
+CMJqkkvW,Miso Soup,"['seaweed','tofu','miso paste']",['asian'],low calorie,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['balanced'],Fy7VTqmp,100,5,0,4,0
+KuLuHeJM,Beef Stroganoff,"['beef','mushrooms','cream']",['european'],high protein,FALSE,FALSE,FALSE,FALSE,FALSE,"['lunch','dinner']",['protein'],['balanced'],pLUyoCn8,600,35,0,30,0
+2t9O0zMC,Bulgur Salad,"['bulgur','tomatoes','parsley']",['middle eastern'],balanced,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['salad'],['balanced'],0tjhih0N,250,6,0,8,0
+lJwJH94u,Samosa,"['flour','vegetables','spices']","['indian','west african']",high carb,FALSE,TRUE,FALSE,FALSE,TRUE,['snack'],['side'],['balanced'],u73oTU0O,300,5,0,15,0
+5dY6fEOP,Bibimbap,"['rice','vegetables','egg']",['asian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['balanced'],J97eQTg3,500,20,0,15,0
+VLXa0lrM,Lamb Shawarma,"['lamb','spices','pita']",['middle eastern'],high protein,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['protein'],['balanced'],jYMpEcf9,700,30,0,30,0
+hUpgWKwu,Tom Yum Soup,"['shrimp','lemongrass','broth']",['asian'],low calorie,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],['balanced'],fSlgVGM0,150,10,0,5,0
+1DUSWYxX,Fufu,"['cassava','plantains']",['ghanaian'],balanced,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']","['carb','side']",['balanced'],sDvnuIHH,500,25,0,15,0
+iYy68JlS,Toad in the Hole,"['sausages','flour','gravy']",['european'],high fat,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['protein'],['balanced'],Zf15jr7D,600,20,0,30,0
+EU5uAhXY,Vegetable Korma,"['vegetables','coconut milk','spices']",['indian'],balanced,TRUE,TRUE,FALSE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],D79Duwdo,400,8,0,20,0
+ZhvKOhHD,Chicken Tagine,"['chicken','apricots','spices']",['middle eastern'],high protein,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['high-protein'],l23oFH9j,550,30,0,20,0
+QqMMERpP,Biryani with Vegetables,"['rice','vegetables','spices']",['asian'],balanced,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['balanced'],QrHdstEv,400,8,0,10,0
+yFx8lLO1,Roast Duck,"['duck','potatoes','vegetables']",['european'],high fat,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-fat'],TmisMxDc,800,40,0,50,0
+ghe2qrjH,Okonomiyaki,"['flour','cabbage','eggs','pork']",['asian'],high fat,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-fat'],6CO2Yhpa,500,15,0,20,0
+q3HRSWjH,Chicken Caesar Salad,"['chicken','lettuce','parmesan','dressing']",['european'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['salad'],['balanced'],aUwP0Pmh,350,25,0,20,0
+RXgy0caD,Quinoa Salad,"['quinoa','vegetables','olive oil']",['middle eastern'],balanced,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['salad'],['balanced'],gtGAZIzf,300,10,0,10,0
+PPifURai,Spring Rolls,"['vegetables','rice paper','soy sauce']",['asian'],low calorie,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['side'],['moderate-carbs'],7tSOZefH,150,3,0,5,0
+L3YTc77i,Pork Adobo,"['pork','soy sauce','vinegar']",['asian'],high protein,FALSE,FALSE,FALSE,FALSE,FALSE,"['lunch','dinner']",['sauce'],['high-protein'],mfrHhh8j,600,35,0,40,0
+D84U61jU,Gado Gado,"['vegetables','peanut sauce','eggs']",['asian'],balanced,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['salad'],['balanced'],ObJUF7oJ,400,15,0,20,0
+vVuWFF3G,Shepherd's Pie,"['lamb','potatoes','vegetables']",['european'],high protein,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],hgWMiO0a,550,30,0,20,0
+zmRPgtZn,Gnocchi with Pesto,"['potatoes','basil','parmesan']",['european'],balanced,FALSE,TRUE,FALSE,FALSE,TRUE,"['lunch','dinner']",['carb'],['balanced'],rU6mfgA4,400,10,0,15,0
+fHwm0IsO,Chicken Satay,"['chicken','peanut sauce','rice']",['asian'],high protein,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['protein'],['balanced'],W1cEZTIb,500,30,0,20,0
+hGHqXX3q,Mushroom Risotto,"['rice','mushrooms','parmesan']",['european'],balanced,FALSE,TRUE,FALSE,TRUE,TRUE,"['lunch','dinner']",['carb'],['balanced'],jX5tw5FJ,450,10,0,15,0
+mKohpXgb,Red Lentil Curry,"['lentils','tomatoes','spices']",['indian'],high protein,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['high-protein'],EqjHFOaB,300,20,0,10,0
+Y5cv7qmq,Hummus and Veggie Wrap,"['hummus','vegetables','tortilla']",['middle eastern'],balanced,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['main'],['balanced'],lqH0AArc,350,8,0,12,0
+KDb8MMK4,Chicken Tikka,"['chicken','yogurt','spices']",['indian'],high protein,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],UFZRbRCw,600,35,0,30,0
+OLk9MmT7,Ratatouille,"['zucchini','tomatoes','eggplant']",['european'],low calorie,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['vegetable'],"['moderate-carbs','balanced']",MKVDfdyl,150,5,0,5,0
+3ce2Mp0t,Vietnamese Pho,"['rice noodles','beef','broth']",['asian'],low calorie,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['soup'],['moderate-carbs'],73A8q9Mz,350,20,0,8,0
+LIoKbXSo,Beef Bulgogi,"['beef','soy sauce','garlic']",['asian'],high protein,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],oOwLtERq,500,35,0,20,0
+qlb6ggzX,Caesar Wrap,"['chicken','lettuce','parmesan','tortilla']",['european'],balanced,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['main'],['balanced'],wu90dXmF,400,25,0,15,0
+mLRAU88s,Grilled Salmon,"['salmon','lemon','vegetables']",['european'],high protein,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],GGLI4JQw,450,35,0,20,0
+iZKjqQUD,Chicken Alfredo,"['chicken','pasta','cream']",['european'],high protein,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['carb'],"['high-protein','balanced']",thfsEEbV,700,30,0,25,0
+F4kqW5xl,Tilapia Light Soup,"['tilapia','tomatoes','onions','pepper','garden eggs','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],['balanced'],TZtFPzxX,280,30,0,38,0
+gHFOnspn,Goat Meat Light Soup,"['goat meat','tomatoes','onions','pepper','garden eggs','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['balanced'],3Zmvcchi,350,33,0,38,0
+z5toR7Is,Apofoanto Light Soup (Fresh Fish Light Soup),"['fresh fish','tomatoes','onions','pepper','garden eggs','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],['balanced'],uflQeRc4,270,28,0,38,0
+dR7prO0G,Abe Nkwan (Palm Nut Soup),"['red palm nut extract','snails','smoked fish','crabs','periwinkle','beef','fresh tomatoes','onions','pepper','kpakposhito','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],"['high-fat','moderate-protein','balanced','moderate-carbs']",TJM9EYXj,600,35,0,40,0
+g5jbQXPV,Nkatse Nkwan (Beef Groundnut Soup),"['groundnut paste','smoked fish','beef','fresh tomatoes','onions','pepper','kpakposhito','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['high-protein'],SBlV3BuP,475,30,10,30,0
+mF4l5xwN,Nkatse Nkwan (Tofu Groundnut Soup),"['groundnut paste','tofu','fresh tomatoes','onions','pepper','kpakposhito','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['high-protein'],miccpkcx,375,30,8,18,0
+vFnUV0ng,Nkatse Nkwan (Chicken Groundnut Soup),"['groundnut paste','smoked fish','chicken','fresh tomatoes','onions','pepper','kpakposhito','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['high-protein'],Zj1nWYx8,450,25,10,28,0
+g6q1PEmI,Wrewre Nkwan (Muskmelon Seed Soup),"['wrewere seeds','smoked fish','beef','fresh tomatoes','onions','pepper','kpakposhito','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['high-protein'],hpn2wOJ1,430,28,12,25,0
+hp6wa50B,Ebunuebunu (Kontomire Soup),"['kontomire leaves','green scotch bonnet','smoked fish','beef','fresh tomatoes','onions','pepper','kpakposhito','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube','snails']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['high-protein'],sotyy9kj,375,28,8,20,0
+CEIcTjW5,"Abenkatikonto (Kontomire, Groundnut, and Palm Nut Soup)","['kontomire leaves','fresh groundnuts','palm nut extract','vegetable oil','wet spices','dry smoked river fish','beef','dry salted fish','fresh tomatoes','onions','pepper','kpakposhito','garlic','ginger','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['balanced'],aQYt4N0F,530,30,15,35,0
+zOQx4rT2,Ayoyo/Ademe Detsi (Saluyot Leaves Soup),"['ademe leaves','saltpere','momoni (salted fish)','beef','tomato sauce','koobi','palm oil','shrimp powder','dawadawa','onions','pepper','kpakposhito','garlic','ginger','dry spices','salt','stock cube','smoked fish','snails','crabs']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['high-protein'],CFU0iEV5,475,35,12,25,0
+A0zBnKBF,Fetri Detsi (Beef Okro Soup),"['okro','saltpere','beef','tomatoes','palm oil','shrimp powder','onions','pepper','kpakposhito paste','garlic','ginger','dry spices','salt','stock cube','smoked fish']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['high-protein'],Gt2UbFaL,435,28,8,25,0
+kkNNjiLR,Kuuka (Baobab Leaves Soup),"['kuuka (baobab leaves) powder','beef','tomatoes','shrimp powder','onions','pepper','kpakposhito paste','garlic','ginger','dry spices','salt','stock cube','smoked fish','dawadawa','cayenne pepper']",['ghanaian'],balanced,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['high-protein'],PTlEufM6,400,25,25,20,0
+3W7Gbwhj,Tomato Sauce,"['tomatoes','onions','sweet bell peppers','ginger','garlic','salt','stock cube']",['ghanaian'],For use in the preparation of other dishes,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],VeR28jfz,196,6.9,35,3,0
+ViaSoPQR,Tomato and Onion Gravy,"['Tomatoes','onions','kpakposhitor','garlic','vegetable oil','salt','stock cube']",['ghanaian'],Gravy can be blended or diced,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],cJpQLfEz,234,4.5,30,9,0
+oihXjBB0,Kpakpo Shito (Green Pepper Sauce),"['kpakposhito','green bell pepper','onion','garlic','pea garden eggs','vegetable oil','stock cube','salt']",['ghanaian'],"A hot sauce that is served with a number of dishes such as rice, banku, kenkey, fried yam, grills etc.",TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],ejsJNOuM,300,5,18,24,0
+KB3dzqoP,Fresh Pepper Sauce,"['tomatoes','onion','fresh pepper','salt']",['ghanaian'],"A simple and popular sauce eaten with accompaniments such as Ga Kenkey, etsew, banku, smoked and fried fish",TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],cEmbdDHU,115,3,22,2,0
+FH1zEzzE,Shito (Black Pepper Sauce),"['smoked dried fish','smoked dried shrimps','tomato paste','pepper','garlic paste','ginger paste','onions','dry spices','vegetable oil','stock cube','salt']",['ghanaian'],A favorite Ghanaian hot sauce which is a perfect accompaniment to any dish of your choice.,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],42R5ls5E,450,20,15,35,0
+uzHZBGXu,Abom (Kontomire Stew),"['kontomire leaves','green chili peppers','onions','koobi','smoked fish','boiled eggs','momoni','palm oil','stock cube','salt']",['ghanaian'],Abom is a simple nutritious stew that is popular among indigenes from the middle belt of the country,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],KJuTWGfy,520,18,12,44,0
+V718O4rB,Abom (Vegan Kontomire Stew),"['kontomire leaves','green chili peppers','onions','tofu','palm oil','stock cube','salt']",['ghanaian'],Abom is a simple nutritious stew that is popular among indigenes from the middle belt of the country,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],qsgIo6z9,400,10,12,35,0
+nOa0gpCP,Agushie (White Seed Stew),"['agushie','beef','shrimp powder','palm oil','tomato puree','onion','pepper','garlic','kpakposhito paste','dry spices','momoni','salt','stock cube']",['ghanaian'],Agushie Stew is a red oil stew made from ground seeds of a type of melon or squash,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],bIqp014W,620,25,16,48,0
+DDXpd8Hg,Agushie (Vegan White Seed Stew),"['agushie','palm oil','tomato puree','onion','pepper','garlic','kpakposhito paste','dry spices','tofu','salt','stock cube']",['ghanaian'],Agushie Stew is a red oil stew made from ground seeds of a type of melon or squash,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],xXPoEijU,580,20,15,46,0
+Lp6CBJoq,Palava Sauce (Kontomire with White Seed Stew),"['agushie','kontomire','beef','shrimp powder','palm oil','fresh tomato puree','onion','pepper','garlic','kpakposhito paste','dry spices','momoni','salt','stock cube']",['ghanaian'],"Aside Kontomire leaves, other green leafy vegetables can be used.",FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],Ymd2b86D,630,27,18,50,0
+BqykdKlS,Palava Sauce (Kontomire with White Seed Stew),"['agushie','kontomire','palm oil','fresh tomato puree','onion','pepper','garlic','kpakposhito paste','dry spices','tofu','salt','stock cube']",['ghanaian'],"Aside Kontomire leaves, other green leafy vegetables can be used.",FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],ZLtI3v8A,560,22,17,48,0
+syFqECLq,Gari,['cassava'],['ghanaian'],Gari is fried cassava granules,TRUE,TRUE,TRUE,FALSE,TRUE,"['breakfast','dinner']",['carb'],['moderate-carbs'],Qn9JV312,120,1,28,0,0
+zC9Ldwg0,Nkruma Frowee (Okro Stew),"['okro','beef','shrimp powder','palm oil','tomatoes','onion','pepper','garlic','kpakposhito paste','dry spices','saltpere','momoni','salt','stock cube']",['ghanaian'],This is a variant of Okro soup,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],eJe6eva4,590,24,14,48,0
+7U4GuVm4,Nkruma Frowee (Okro Stew),"['okro','palm oil','tomatoes','onion','pepper','garlic','kpakposhito paste','dry spices','saltpere','salt','tofu','stock cube']",['ghanaian'],This is a variant of Okro soup,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],Czd53tdY,520,20,13,46,0
+PPJXKi5E,Nkruma Frowee (Okro Stew),"['okro','palm oil','tomatoes','onion','pepper','garlic','kpakposhito paste','dry spices','saltpere','salt','shrimp powder','stock cube','smoked fish']",['ghanaian'],This is a variant of Okro soup,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],JYtpnNx0,580,22,14,48,0
+7AglWrZk,Ntroba Frowee (Garden Eggs Stew),"['garden eggs','beef','shrimp powder','palm oil','tomatoes','onions','koobi','pepper','garlic','kpakposhito paste','dry spices','salt','momoni','stock cube']",['ghanaian'],"There are many varieties of this stew and they are the ""abom"" version, boiled and dissected version, and the diced and stewed version.",FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],MeYJ52EW,610,25,15,50,0
+BTfVrxIy,Ntroba Frowee (Garden Eggs Stew),"['garden eggs','tofu','palm oil','tomatoes','onions','koobi','pepper','garlic','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],"There are many varieties of this stew and they are the ""abom"" version, boiled and dissected version, and the diced and stewed version.",TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],0M9GXCMc,520,20,14,46,0
+bGvHg5kM,Ntroba Frowee (Garden Eggs Stew),"['garden eggs','smoked fish','shrimp powder','palm oil','tomatoes','onions','koobi','pepper','garlic','kpakposhito paste','dry spices','salt','momoni','stock cube']",['ghanaian'],"There are many varieties of this stew and they are the ""abom"" version, boiled and dissected version, and the diced and stewed version.",FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],Mulrtwhh,600,23,15,49,0
+yis4jqtE,Nkruma Na Ntroba Frowee (Okro and Garden Eggs Stew),"['garden eggs','okro','beef','shrimp powder','palm oil','tomatoes','onions','pepper','garlic','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],This stew combines okro and garden eggs into a colourful and well-balanced nutritious vegetable stew,FALSE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],yBfkUkAo,620,27,16,50,0
+ec4SaY5W,Nkruma Na Ntroba Frowee (Okro and Garden Eggs Stew),"['garden eggs','okro','tofu','shrimp powder','palm oil','tomatoes','onions','pepper','garlic','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],This stew combines okro and garden eggs into a colourful and well-balanced nutritious vegetable stew,TRUE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],9sTDrUj2,530,21,15,47,0
+lzKohVXE,Nkruma Na Ntroba Frowee (Okro and Garden Eggs Stew),"['garden eggs','okro','smoked fish','shrimp powder','palm oil','tomatoes','onions','pepper','garlic','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],This stew combines okro and garden eggs into a colourful and well-balanced nutritious vegetable stew,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],6OimKR3f,610,24,16,49,0
+tjd017z1,Bokoboko Frowee (Waterleaf Stew),"['bokoboko leaves','beef','shrimp powder','palm oil','tomatoes','onion','pepper','garlic','kpakposhito paste','dry spices','momoni','salt','stock cube']",['ghanaian'],Bokoboko is an overlooked plant in Ghanaian cuisine.,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],pljEdPB4,610,26,17,50,0
+RQiewVaI,Bokoboko Frowee (Waterleaf Stew),"['bokoboko leaves','tofu','shrimp powder','palm oil','tomatoes','onion','pepper','garlic','kpakposhito paste','dry spices','salt','stock cube']",['ghanaian'],Bokoboko is an overlooked plant in Ghanaian cuisine.,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],HgvPp9X0,520,20,16,47,0
+BuTBYfyo,Bokoboko Frowee (Waterleaf Stew),"['bokoboko leaves','smoked fish','shrimp powder','palm oil','tomatoes','onion','pepper','garlic','kpakposhito paste','dry spices','momoni','salt','stock cube']",['ghanaian'],Bokoboko is an overlooked plant in Ghanaian cuisine.,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],G4hIqG8Q,600,23,17,49,0
+VQGKbuGM,Beans Stew,"['black beans','shrimp powder','palm oil','tomatoes','onion','pepper','garlic','kpakposhito paste','salt','stock cube']",['ghanaian'],"Beans stew is an economical, healthy protein rich stew that can also serve as a nutritious vegetarian dish when prepared without animal protein",TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],pGmolNu9,490,20,45,20,0
+gDmArKNv,Mfantsimfantsi (Fresh Fish Stew),"['fresh fish','shrimp powder','palm oil','tomatoes','onion','pepper','garlic','kpakposhito paste','momoni','salt','stock cube']",['ghanaian'],"Fresh Fish Stew is a refreshing, light and healthy stew that can be made with both white and oily fish.",FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],si255fMP,550,30,12,40,0
+EEwRZKHQ,Abobi Taadi (Dried Anchovies Sauce),"['dried anchovies','tomatoes','onions','pepper','ginger','salt']",['ghanaian'],Abobi taadi is a simple but delicious sauce that originates from the Volta region of Ghana,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],Fg88BJvm,430,35,10,25,0
+64FmYrd3,Tubani Tomato Stew,"['vegetable oil','smoked fish','water','tomato puree','onion','salt','pepper','dawadawa']",['ghanaian'],Tubani Stew is a smoked fish or beef stew and can be eaten with any carbohydrate,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],xQOLyVPb,410,18,15,35,0
+9LXmnono,Meat Stew,"['meat','tomatoes','onion','garlic','kpakposhito sauce','dry spices','vegetable oil','salt','pepper','stock cube']",['ghanaian'],All types of meat can be used for this,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],6Y0HIUEi,490,25,12,36,0
+D91HXJNb,Curry Meat Stew,"['meat','tomatoes','onion','garlic','kpakposhito sauce','dry spices','vegetable oil','salt','pepper','stock cube','curry powder']",['ghanaian'],A variant of meat stew,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],GtqXxyY0,500,26,12,37,0
+VnOGFsb2,Meat Stew with Vegetables,"['meat','tomatoes','onion','garlic','kpakposhito sauce','dry spices','vegetable oil','salt','pepper','stock cube','carrots','bell pepper','cauliflower','zucchini']",['ghanaian'],A variant of meat stew with vegetables,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],h25LgFAi,540,28,18,38,0
+kxuGWMzb,Curry Meat Stew with Vegetables,"['meat','tomatoes','onion','garlic','kpakposhito sauce','dry spices','vegetable oil','salt','pepper','stock cube','curry powder','carrots','bell pepper','cauliflower','zucchini']",['ghanaian'],A variant of curry meat stew with vegetables,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],W3bxzZc0,550,28,18,39,0
+ZXWWER3x,Beef Khebabs,"['beef','garlic','kpakposhito paste','khebab powder','onions','bell peppers']","['ghanaian','nigerian','middle eastern']",Khebabs are party grills for most Ghanaians,FALSE,FALSE,TRUE,FALSE,TRUE,['snack'],['protein'],"['high-protein','balanced']",Eurj0lCm,250,20,5,18,0
+ZXDTAIlY,Chicken Khebabs,"['chicken','garlic','kpakposhito paste','khebab powder','onions','bell peppers']","['ghanaian','nigerian','middle eastern']",Khebabs are party grills for most Ghanaians,FALSE,FALSE,TRUE,FALSE,TRUE,['snack'],['protein'],"['high-protein','balanced']",jLu32Wto,220,25,5,12,0
+AjzeIPmI,Sausage Khebabs,"['sausage','garlic','kpakposhito paste','khebab powder','onions','bell peppers']","['ghanaian','nigerian','middle eastern']",Khebabs are party grills for most Ghanaians,FALSE,FALSE,TRUE,FALSE,TRUE,['snack'],['protein'],"['high-protein','balanced']",6qx5AwzP,300,15,5,25,0
+gFFwbR2h,Gizzard Khebabs,"['gizzard','garlic','kpakposhito paste','khebab powder','onions','bell peppers']","['ghanaian','nigerian','middle eastern']",Khebabs are party grills for most Ghanaians,FALSE,FALSE,TRUE,FALSE,TRUE,['snack'],['protein'],"['high-protein','balanced']",K0AlYRZf,230,22,4,15,0
+hNgftamS,Charcoal Grilled Fish,"['tilapia','kpakposhito paste','dry spices','butter','stock cube','salt','ginger','garlic']",['ghanaian'],Charcoal Grilled Fish can be eaten with almost anything,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],7WnfWZb4,200,22,0,10,0
+YCIj5GRD,Charcoal Grilled Chicken,"['chicken','garlic','kpakposhito paste','ginger','butter','onions','salt']",['ghanaian'],Charcoal Grilled chicken can be eaten with almost anything,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],OWlsoTHg,250,30,5,15,0
+bN8DAOr3,Fried Fish,"['fish','garlic','onion','ginger','kpakposhito paste','dry spices','flour','vegetable oil','stock cube','salt']",['ghanaian'],Fried fish can be eaten with any accompaniment,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],mEE9DJQa,350,20,10,25,0
+CWZCZ6XW,Fried Chicken,"['chicken','garlic','onion','ginger','kpakposhito paste','dry spices','flour','vegetable oil','stock cube','salt']",['ghanaian'],Fried chicken can be eaten with any accompaniment,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],ib8DU8gB,400,30,10,30,0
+bHi2swHL,Fried Squid,"['squid','garlic','onion','ginger','kpakposhito paste','dry spices','flour','vegetable oil','stock cube','salt']",['ghanaian'],Fried squid can be eaten with any accompaniment,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],hyYkuJQx,280,20,10,20,0
+mpG2RvTS,Aponkey Nam Jollof,"['rice','goat meat','tomato puree','tomato paste','onion','kpakposhito paste','dry spices','vegetable oil','salt','pepper','stock cube','boiling water']",['ghanaian'],Jollof is a party dish that is present in almost all functions,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],f1Y8uIKg,550,30,65,20,0
+8M2XeGby,Atosodze Jollof,"['rice','tomato puree','tomato paste','onion','kpakposhito paste','dry spices','vegetable oil','salt','pepper','stock cube','boiling water','carrots','bell peppers','garden peas']",['ghanaian'],This is rice in tomato sauce with vegetables,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],LqPIPKMz,500,15,70,15,0
+8Bwvp9xE,Mpotompoto,"['cocoyam','smoked fish','shrimp powder','palm oil','tomato puree','onion','pepper','kpakposhito paste','salt','momoni','stock cube']",['ghanaian'],Mpotompoto also knows an cocoyam potage can also be made with yam,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],ZYjw5g0q,400,25,60,15,0
+NCKl79nK,Akaare,"['roasted corn flour','beef','kpakposhito paste','ginger','garlic','stock cube','pepper']",['ghanaian'],Akaare is roasted corn flour cooked in meat stock,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],CwL5LPDU,300,20,40,12,0
+xhFbyFOs,Aprapransa,"['roasted corn flour','crabs','kpakposhito paste','ginger','garlic','stock cube','pepper','red beans','tomato puree','momoni']",['ghanaian'],Aprapransa is roasted corn flour cooked in palm nut soup,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],b1Sw1ttR,450,25,55,18,0
+5j1UMji8,Gari Foto with Beef,"['gari','water','beef','carrots','green pepper','vegetable oil','tomato puree','tomato ketchup','onion','ginger','garlic','kpakposhito paste','pepper','salt','stock cube']",['ghanaian'],Gari Foto is gari mixed in tomato sauce with vegetables and protein,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],DDVO1xFJ,500,25,65,18,0
+rchxeoQZ,Gari Foto with Tofu,"['gari','water','tofu','carrots','green pepper','vegetable oil','tomato puree','tomato ketchup','onion','ginger','garlic','kpakposhito paste','pepper','salt','stock cube']",['ghanaian'],Gari Foto is gari mixed in tomato sauce with vegetables and protein,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],jsDDBSQR,400,18,60,15,0
+wVJO2kLs,Gari Foto with Smoked Fish,"['gari','water','smoked fish','carrots','green pepper','vegetable oil','tomato puree','tomato ketchup','onion','ginger','garlic','kpakposhito paste','pepper','salt','stock cube']",['ghanaian'],Gari Foto is gari mixed in tomato sauce with vegetables and protein,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],FEueR5zR,450,22,60,20,0
+OJ7P60xH,Bayere Eto,"['yam','eggs','avocado','groundnut paste','roasted groundnuts','palm oil','onions','shrimp powder','momoni','pepper','salt']",['ghanaian'],Yam eto is a traditional festive dish and it is mashed yam in palm oil sauce,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],AXeiPK5f,600,20,50,35,0
+qN35BSYM,Brode eto,"['plantains','eggs','avocado','groundnut paste','roasted groundnuts','palm oil','onions','shrimp powder','momoni','pepper','salt']",['ghanaian'],Plantain eto is a variant of yam eto and semi-ripe plantain is used in the palm oil sauce,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],AqUIQiNH,550,18,45,30,0
+5gKEh16k,Ogor,"['cocoyam','eggs','avocado','groundnut paste','roasted groundnuts','palm oil','onions','shrimp powder','momoni','pepper','salt']",['ghanaian'],Cocoyam eto is another variant of the yam and plantain eto,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],igSEG9lH,550,20,50,30,0
+ibhWZfkU,Kyekyiredekye,"['plantains','eggs','avocado','groundnut paste','roasted groundnuts','palm oil','onions','shrimp powder','momoni','pepper','salt','smoked herrings','black beans']",['ghanaian'],Mashes ripe plantain with beans,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],XYJAVghH,650,25,60,40,0
+SbhWcMfm,Banku,"['corn dough','cassava dough','cold water','hot water','salt']",['ghanaian'],Banku is a popular carbohydrate dish,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],l3w1Tjmv,350,5,70,4,0
+2hseVhQ8,Etsiw,"['corn dough','cold water','hot water','salt']",['ghanaian'],Etsiw is cooked corn dough,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],iyaZecrb,300,5,65,3,0
+OdZ6uZJg,Akple,"['dried cornmeal','cold water','hot water','salt']",['ghanaian'],Akple is a delicacy enjoyed by people in Volta and Oto Regions,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],yrUMoHub,250,4,55,3,0
+lgY7RXe4,Fufu,"['cassava','plantains']",['ghanaian'],Fufu is a popular carbohydrate dish,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],vaa77QgN,400,4,80,2,0
+KyVGqnbb,Konkonte,"['cassava flour','water']",['ghanaian'],Konkonte is made from dry cassave flour,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],iepCKjVL,350,2,70,1,0
+tq2B4k2X,Yam Ampesi,"['yam','water','salt']",['ghanaian'],Ampesi is boiled starchy root tubers served with any stew or soup,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],XyrNbz7Z,200,3,45,0,0
+74UGCUKe,Plantain Ampesi,"['plantain','water','salt']",['ghanaian'],Ampesi is boiled starchy root tubers served with any stew or soup,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],zTBuwjkx,250,2,60,1,0
+8cu7hK6N,Cocoyam Ampesi,"['plantain','water','salt']",['ghanaian'],Ampesi is boiled starchy root tubers served with any stew or soup,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],4yAvBASS,200,3,50,1,0
+78QKCJel,Plain Rice,"['rice','boiling water','salt']",['ghanaian'],Plain rice is a simple carbohydraate dish,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],7uG7g97Q,200,4,45,0,0
+xGCQV1vp,Brown Onion Rice,"['rice','boiling water','onions','salt','butter']",['ghanaian'],Brown onion rice is a variation of plain rice,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],agDOCxCl,250,5,50,5,0
+5PNe2Lza,Brown Onion Rice with Vermicelli,"['rice','boiling water','onions','salt','butter','vermicelli','oil']",['ghanaian'],A modern varation to brown onion rice,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],O3RHnsGf,300,6,55,8,0
+nrKrSiDZ,Emo Tuo,"['rice','boiling water','salt']",['ghanaian'],Rice balls is plain boiled rice that has been prcessed into a smooth paste,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],jw18bClU,220,4,45,0,0
+gWe0Ymnm,Tuo Zaafi,"['dried corn flour','cassava flour','cold water','hot water','salt']",['ghanaian'],Tuo Zaafi is a staple dish eaten with soups and stews,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],N7keRSLw,280,4,60,3,0
+lcxGrFLf,Ga kenkey,"['corn dough','water','salt','corn husk']",['ghanaian'],Ga kenkey is local dish eaten by the Ga's,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],4HZwxB6B,300,6,60,3,0
+d4i8xlPb,Fante Kenkey,"['corn dough','water','salt','plantain leaves']",['ghanaian'],Fante kenket is a local dish eaten primarily by Fantes,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],y3Lzkj9Z,300,6,60,3,0
+MLvWsCxm,Kpekple/Kpoikpoi,"['dry cornmeal','okro','water','onion','galric','ginger','onions','kpakpshito paste','palm oil','smoked shrimp powder','pepper','saltpere','salt']",['ghanaian'],Kpekple or Kpoikpoi is steamed cornmeal in palm oil sauce,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],tlBZad4c,400,15,50,18,0
+82P5dQ6J,Tatale,"['plantains','flour','ginger','onion','salt','oil']",['ghanaian'],Tatale is ripe plantain fritters,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','snack']",['carb'],['moderate-carbs'],oWHMGPep,350,3,60,12,0
+dWakMkDx,Kaaklo,"['plantains','roasted corn flour','ginger','onion','salt','oil']",['ghanaian'],Kaaklo is plantain fritters with roasted corn flour,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','snack']",['carb'],['moderate-carbs'],UP8mX01S,350,3,60,12,0
+lEMYAERh,Yakeyake,"['cassava','corn flour','salt','water']",['ghanaian'],Yakeyake is steamed gritted cassava,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],qn8vcpUI,350,3,70,8,0
+IyfrT76c,Waakye,"['rice','black beans','sorghum leaves','saltpere','water','salt']",['ghanaian'],Waakye is boiled rice and beans in sorghum leaves extract,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']","['one-pot','carb']","['balanced','moderate-carbs']",R9Iu01n9,350,12,60,3,0
+Xw3AkXwv,Wasawasa,"['yam flour','water','onion','salt','pepper','shea butter oil']",['ghanaian'],Wasawasa is cooked yam flour,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],6f0tFuTg,400,5,60,12,0
+f2X23jNS,Tubani,"['beans flour','cassave flour','saltpere','salt','pepper','plantain leaves']",['ghanaian'],Tubani is steamed beans flour,TRUE,TRUE,TRUE,FALSE,TRUE,"['lunch','dinner']",['carb'],['moderate-carbs'],NBNhSn83,350,8,50,7,0
+ntvGiOrm,Peppered Pork Trotters,"['trotters','onions','tomatoes','garlic','ginger','cayenne pepper','water']",['ghanaian'],Also known as Nane Shitor,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],3sl6cLXb,550,45,15,35,0
+B3IIid5g,Brown Gravy,"['tomatoes','onions','kpakposhito','garlic','vegetable oil','salt','stock cube','flour','white pepper','water']",['ghanaian'],Brown gravy is used as a base for cooking meat or fish,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],f64usIsB,120,1,25,6,0
+R6a2iFmL,Spicy Tomato Ketchup,"['tomatoes','onions','brown sugar','lime','lime rind','ginger','salt','cornstarch','vinegar','pepper','cinnamon']","['ghanaian','european','asian','middle eastern']",Spicy Tomato Ketchup can be used with any suitable staple,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],vKQnqjIe,150,2,35,0,0
+UB35Q9Dr,Fresh Fish Soup,"['fish','tomatoes','peppers','shallots','salt','water']",['ghanaian'],Fresh Fish soup is served hot with a suitable staple,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],['balanced'],5qc26UTu,180,20,10,8,0
+gFahUd73,Golden Fried Fish,"['fish','oil','flour','white pepper','powdered pepper']",['ghanaian'],Golden Fried fish can be served with a staple,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],Pk37axVY,300,18,20,18,0
+fgNHntNd,Stuffed Baked Fish,"['fish','kpakposhito paste','white pepper','salt','lime','salt','vinaigrette dressing','green peppers','cucumbers','onions','breadcrumbs']",['ghanaian'],Stuffed Baked fish is served hot,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],v8JEC8dP,350,25,30,18,0
+kID2Aeqh,Deviled Herrings,"['sardine herrings','salt','black pepper','powdered red pepper','oil']",['ghanaian'],Deviled herrigns is served hot,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],ohN8VevR,220,25,0,12,0
+dCq4PsN2,Baked Devilled Herrings,"['herrings','green pepper','black pepper','salt','breadcrumbs','vinegar','shallot','ginger']",['ghanaian'],Baked deviled herrigns is served hot,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],MMb1SpES,250,22,5,14,0
+a9aO1YpX,Stewed Fish Balls,"['smoked tuna','lime rind','onion','mashed yam','salt','red pepper','white pepper','water','egg','oil','flour','gravy']",['ghanaian'],Stewed fish balls is served with a suitabel staple,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],Wbe65Ayi,400,30,20,15,0
+xn8u2kno,Stewed Salted Tilapia,"['tilapia','eggs','vegetable oil','water','shallots','tomatoes','kpakposhito','tomatoe puree','white pepper']",['ghanaian'],Stewed salted tilapia also known as didei can be served hot,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],mLopeT8m,350,28,10,22,0
+fTGyWNVS,Stewed Molluscs,"['molluscs','shallots','kpakposhito','gracy','salt','white pepper']",['ghanaian'],"Stewed molluscs also called adodeflor can be eaten with gari, mashed yam or rice",FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],oF0mQRbW,200,25,5,10,0
+QcDvMo0D,Devilled Crab,"['crabs','tomatoes','green peppers','oil','salt','pepper','onions']",['ghanaian'],Devilled crab also known as akoto-nkyi,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],HbhRn92I,280,22,10,15,0
+A5nYET4n,Conversation Crab,"['crabs','salt','worcestershire sauce','gravy','tomatoes','shallots']",['ghanaian'],Conversation crab is called such due to its noisy nature of eating it,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],ew1cz2PI,250,20,5,15,0
+umFpzXI7,Brown Meat Stew,"['beef','onions','tomatoes','salt','white pepper','red pepper','vegetable oil','flour','water','stock cube']",['ghanaian'],Brown meat stew can be used with rice or mashed yam,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],Jk2I5Tlf,450,35,15,30,0
+tCZqcvFy,Corned Beef Stew,"['corned beef','water','stock cube','green pepper','onions','tomatoes','eggs','kpakposhito paste']",['ghanaian'],Corned beef stew can be used with any staple,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],po6flG8I,500,40,20,30,0
+evQEnhQV,Barbecued Chops,"['pork','salt','lime','water','ginger','white pepper','onions','tomatoes']","['ghanaian','european']","Barbecued chops can be served with rice, yam, plantain or any staple",FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],uyqmS83p,600,40,5,45,0
+bh8uvZI6,Meatball Stew,"['minced meat','corned beef','bacon','breadcrumbs','onions','tomatoes','salt','pepper','dry spices','egg','flour']","['ghanaian','european','middle eastern']",Meatball stew is great with many staples,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],ZhF0kh0T,550,45,25,30,0
+XUqsYwQA,Blood Meal Stew,"['mutton entrails','mutton breast','onions','animal blood','gravy','salt','peppers','clove','ginger','basil']",['ghanaian'],"Blood meal stew can be served with kenkey, rice , abolo , or ampesi",FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],V5r0KfQY,650,50,10,40,0
+ZAPgiI7g,Entrail Sausage,"['sausage entrails','onions','animal blood','gravy','salt','peppers','clove','ginger','basil','cornmeal']",['ghanaian'],Entrail sausage is also called bolo,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],OM87AgPy,600,45,15,35,0
+Ll6JndcA,Baked Pork (Domedo),"['suckling pig','slat','cinnamon','red pepper','cloves','ginger','garlic','lemon juice']",['ghanaian'],Domedo is delicacy and a popualr street food,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['protein'],['high-protein'],BIaLTP4Y,700,50,10,50,0
+rVzZHH9x,Jellied Trotters,"['trotters','water','red pepper','green peppers','shallots']",['ghanaian'],Also knows as Nshong Nane,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],RmKtYKcu,450,35,20,25,0
+rQsot4eq,Beans and Pork,"['black beans','water','salt','red peppers','shallots','trotters']",['ghanaian'],"Served with rice, gari or fried plantains",FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']","['sauce','protein']",['high-protein'],jZe88LN0,400,30,50,10,0
+y4nTJye7,Accra Omelette,"['eggs','corned beef','oil','pepper','salt','white pepper']",['ghanaian'],A delicacy served with any staple,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],oahG4nqB,350,20,5,30,0
+wKpTSgPH,Egg Pancake,"['eggs','pepper','salt','gravy','white pepper','oil']",['ghanaian'],A delicacy served with any staple,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],OCBYODln,300,15,5,25,0
+cG6mbHpx,Egg and Gravy,"['eggs','tomatoes','onions','water','kpakposhito paste','salt','pepper','stock cube']",['ghanaian'],A delicacy served with any staple,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],02l7Hf5U,280,18,5,20,0
+qC2UGAWf,Nkatie Kake,"['groundnuts','sugar','water','butter']",['ghanaian'],Nkatiekake also known as groundnut candy,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['protein'],['high-protein'],Iqaer3ap,450,15,20,35,0
+Fc1DFCyy,Groundnut Stew,"['groundnut paste','meat','tomatoes','tomatoe puree','water','onions','garden eggs','okro','red pepper','salt','white pepper']",['ghanaian'],"Groundnut stew cam be served with rice, fufu, or any suitable staple",FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['soup'],['balanced'],PNPuCjky,600,30,20,40,0
+pjASMn8q,Groundnut Stew,"['groundnut paste','fish','tomatoes','tomatoe puree','water','onions','garden eggs','okro','red pepper','salt','white pepper']",['ghanaian'],"Groundnut stew cam be served with rice, fufu, or any suitable staple",FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],['balanced'],QWgpwvrU,550,28,20,35,0
+TPAJnuEz,Groundnut Stew,"['groundnut paste','tofu','tomatoes','tomatoe puree','water','onions','garden eggs','okro','red pepper','salt','white pepper']",['ghanaian'],"Groundnut stew cam be served with rice, fufu, or any suitable staple",TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],['balanced'],blo21YLo,500,25,25,30,0
+CRYF1MWk,Fried Bean Cakes,"['white beans','shallots','pepper','salt','oil']",['ghanaian'],Also known as Akla,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['balanced'],FGHUca3m,400,20,30,20,0
+A2qWQSUn,Steamed Bean Cakes,"['beans flour','shallots','green pepper','red peppers','water','fish','salt']",['ghanaian'],Also known as Aleele,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['balanced'],uiXUyTJN,350,25,20,10,0
+zcA8qIbe,Stewed Bambara Beans,"['bambara beans','water','tomatoes','shallots','tomotoe puree','red peppers','salt','white pepper']",['ghanaian'],Also known as Aboboe,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['protein'],['balanced'],wTeZqeIc,320,15,40,10,0
+OsvhZ4u8,Snapperhead Soup,"['smoked snapper','tomatoes','tomatoes puree','red peppers','white pepper','shallots','garden eggs','okro','water','bay leaf']",['ghanaian'],Snapperhead soup is called Nkrakra ke tsile yitso,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['soup'],['balanced'],pRXmjRfL,250,22,10,8,0
+WVWYIrU3,Nmeda,"['cornmeal','sugar','water','brown sugar','salt']",['ghanaian'],Nmeda is a refreshing corn drink,TRUE,TRUE,TRUE,TRUE,TRUE,"['breakfast','snack']",['drink'],['moderate-carbs'],wTRmyeoq,300,5,60,5,0
+SNzINpT0,Yolo,"['cornmeal','sugar','water','brown sugar','salt']",['ghanaian'],Yolo is a healthy corn drink,TRUE,TRUE,TRUE,TRUE,TRUE,"['breakfast','snack']",['drink'],['moderate-carbs'],hG0bToEE,300,5,60,5,0
+N4f2qEgO,Millet Pancakes (Masa),"['millet flour','water','salt','oil','sugar']",['ghanaian'],Masa is a tradtional twist on pancakes,TRUE,TRUE,FALSE,TRUE,TRUE,['snack'],"['dessert','appetizer']",['moderate-carbs'],8JdhRoSA,350,8,55,10,0
+XAfe9RcO,Millet Flour Dumpling (Fula),"['millet flour','water','salt','ginger','cloves','peppercorns']",['ghanaian'],Fula is a popualr breakfast cereal,TRUE,TRUE,FALSE,TRUE,TRUE,"['breakfast','snack']","['drink','main']",['moderate-carbs'],VpNxnNXU,320,10,50,5,0
+oWtdxYSa,Oblayoo,"['corn','cornmeal','water','salt']",['ghanaian'],Oblayoo is corn porridge and is a popular Ga breakfast meal,TRUE,TRUE,TRUE,TRUE,TRUE,['breakfast'],"['drink','main']",['moderate-carbs'],sTWNabjD,250,6,45,2,0
+Ss4fKJdr,Abele ke Nkatie,"['corn','groundnuts','salt','water','sugar']",['ghanaian'],Abele ke Nkatie is boiled corn and groundnuts,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['appetizer'],['moderate-carbs'],CrkJFtii,350,12,40,12,0
+fBgtIYSx,Ekuegbemi (Cornmeal Porridge),"['corn dough','salt','water']",['ghanaian'],Ekuegbemi is also known as grits.,TRUE,TRUE,TRUE,TRUE,TRUE,['breakfast'],['main'],['moderate-carbs'],Yuq9h988,200,3,40,2,0
+f0ZBBHR5,Tom Brown,"['cornmeal','salt','water']",['ghanaian'],Tom Brown is a brown cornmeal porridge,TRUE,TRUE,TRUE,TRUE,TRUE,['breakfast'],['main'],['moderate-carbs'],5cEbfMRl,220,5,45,3,0
+ZKLCW3Ox,Koko/Akasa,"['cornmeal','salt','water']",['ghanaian'],Koko is corn dough porridge,TRUE,TRUE,TRUE,TRUE,TRUE,['breakfast'],['main'],['moderate-carbs'],dtzXC3iQ,200,4,40,2,0
+PkMRs4I3,Jungle Fruit Salad,"['oranges','bananas','mangoes','sugar','oranges','pawpaw','pineapple','apple','grapes']","['ghanaian','nigerian','european','middle eastern']",A fruity salad,TRUE,TRUE,TRUE,TRUE,TRUE,"['snack','dinner']",['dessert'],['balanced'],49sL9WYN,150,2,35,0,0
+QGCvlFal,Tropical Fruit Canoe,"['pawpaw','oranges','banana','pineapple','cocktail cherries']","['ghanaian','nigerian','european','middle eastern']",A fruity salad,TRUE,TRUE,TRUE,TRUE,TRUE,"['snack','dinner']",['dessert'],['balanced'],c3MBdFCU,200,2,45,1,0
+tko8hLMI,Pineapple Boat,"['pineapple','bananas','oranges','liquer','pawpaw','water','sugar']","['ghanaian','nigerian','european','middle eastern']",A fruity salad,TRUE,TRUE,TRUE,TRUE,TRUE,"['snack','dinner']",['dessert'],['balanced'],yn9cOIDq,250,2,50,2,0
+xJ2hSHQu,Crusty Flaming Banana,"['bananas','brown sugar','cinnamon','rum','nutmeg','lime','water']","['ghanaian','european']",Best eaten hot,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],thPMtAQk,300,2,65,2,0
+fmxmkH9l,Coconut Cream Dessert,"['coconut water','evaporated milk','vanilla essence','gelatin']","['ghanaian','european']",A dessert delicacy,FALSE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],DvSJtE62,220,6,25,10,0
+DMP6vUli,Tigernut Cream,"['tigernuts','water','rice','sugar','vanilla','salt']",['ghanaian'],A popular dessert,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],oHPrEDR1,350,5,50,10,0
+YhxKG885,Tigernut Mould,"['tigernuts','water','rice','sugar','vanilla']",['ghanaian'],A popular dessert,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],xKp669Cy,340,5,50,8,0
+LZOAZi3d,Olor,"['plantain','salt','pepper','corndough']",['ghanaian'],Olor is plantain and corn dough porridge,TRUE,TRUE,TRUE,TRUE,TRUE,"['breakfast','snack']","['carb','main']",['moderate-carbs'],MfxtGghh,250,4,50,5,0
+VHu5rWVb,Ablongo,"['plantains','cornmeal','palm oil','water','red peppers','onions','ginger','salt']",['ghanaian'],Plantain and cornmeal loaf,TRUE,TRUE,FALSE,TRUE,TRUE,['snack'],"['carb','dessert']",['moderate-carbs'],Jn27SPAC,300,4,45,10,0
+d5DGyYyU,Ashanku Plantain loaf,"['plantains','ginger','salt','pepper','cloves','plantain flour']",['ghanaian'],A delicacy served with stew or as a snack,TRUE,TRUE,FALSE,TRUE,TRUE,"['snack','lunch']","['carb','side']",['moderate-carbs'],x0TAd9c9,320,5,50,8,0
+87OxTibs,Chicken and Cornmeal Dumpling,"['chicken','onions','tomatoes','basil','red pepper','salt','cornmeal','water']",['ghanaian'],This is also called Fotoli,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],1xHJEj0O,400,25,30,15,0
+Ny6cfPb3,Stuffed Sweet Potato,"['sweet potatoes','smoked fish','tomatoes','onions','salt','water','basil']",['ghanaian'],This is a whole meal,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],r4wY3wJ9,350,15,50,10,0
+mSllwWgW,Stuffed Sweet Potato,"['sweet potatoes','meat','tomatoes','onions','salt','water','basil']",['ghanaian'],This is a whole meal,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],9FLksbDi,400,20,50,12,0
+RlaI4okA,Stuffed Sweet Potato,"['sweet potatoes','tofu','tomatoes','onions','salt','water','basil']",['ghanaian'],This is a whole meal,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],vYSe7Xcl,350,15,50,10,0
+6w1Ze2xV,Akple,"['ablemamu','palm nut soup','water','beans','dry herrings','salt','pepper']",['ghanaian'],A delicacy,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],v92hprMF,450,20,40,20,0
+GCjCdmzF,Banana Chutney,"['bananas','tomatoes','onions','red peppers','raisins','sugar','vinegar','salt']","['ghanaian','nigerian']",A sauce,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],YSZFy9j3,250,2,60,1,0
+JT11PLkz,Mango Chutney,"['mangoes','mixed dry fruit','onion','ginger','red peppers','vinegar','brown sugar','salt']","['ghanaian','nigerian']",A sauce,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],YxUkLSaT,300,3,70,1,0
+NLgUSWoV,Nkatie Ekuegbemi,"['cornmeal','salt','water','groundnut paste']",['ghanaian'],Nkatie Ekuegbemi is cornmeal and groundnut porridge,TRUE,TRUE,TRUE,TRUE,TRUE,['breakfast'],['main'],['moderate-carbs'],Nh2Wq7SM,350,10,45,15,0
+EsXbC5ko,Agidi/Teo,"['corn dough','salt','water']",['ghanaian'],Agidi is corn dough dumpling,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']","['carb','side']",['moderate-carbs'],P1CYhvfR,200,3,40,1,0
+gIAiClM6,Aboloo,"['corn dough','flour','water','sweet potato','salt','sugar']",['ghanaian'],Aboloo is popualr staple,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']","['carb','side']",['moderate-carbs'],TObcETTg,320,6,55,5,0
+L6QZQreZ,Coconut Rice,"['rice','coconut water','salt']","['ghanaian','european','nigerian']",Cococnut rice can be used with any stew or soup,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']","['carb','side']",['moderate-carbs'],tYgPQKFu,250,4,50,5,0
+xZuUUee7,Cassava Puffs,"['cassava','egg','shallots','milk','salt','white pepper','butter']",['ghanaian'],Cassave puffs can be served with any protein,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']","['carb','side']",['moderate-carbs'],jQeV5XEy,400,10,30,20,0
+Ik7NQK5u,Coconut Crunch,"['coconut','granulated sugar','ginger','water']",['ghanaian'],A sweet dessert,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],nw0I7OwE,230,2.5,30,8,0
+z2Z1ku0f,Duade Kpotomkpoto,"['cassava','onion','shrimps','oil','watetr','salt','red pepper']",['ghanaian'],This is also cassava hot pot,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['one-pot'],['balanced'],ZMGnLZk9,350,12,35,15,0
+bYvULLmh,Eba,"['garri','salt','boiling water']","['ghanaian','nigerian']",Eba is a popular staple that is basically gari in hot water,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']","['carb','side']",['moderate-carbs'],plmfM8BN,300,3,60,2,0
+xRoDUN1y,Yam Cakes,"['yam','salt','egg','flour','shallots','pepper']",['ghanaian'],Yam cakes can be served hot with any protein dish,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']","['carb','side']",['moderate-carbs'],FcWnN9M6,350,8,45,10,0
+zn4G69O2,Ebeomo,['plantains'],['ghanaian'],Ebeomo is ripe plantain that is baked in its skin,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']","['carb','side']",['moderate-carbs'],p7whlaRj,180,1,40,0,0
+5gXSVVwy,Charcoal Grilled Plantains,['plantains'],['ghanaian'],This is a popualr street food in Ghana.,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],"['carb','side']",['moderate-carbs'],rgOCZYAO,180,1,40,0,0
+xmhlbhf1,Green Plantain crisps,"['plantains','salts']",['ghanaian'],This is also popular street snack,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],"['carb','side']",['moderate-carbs'],PUbQOkaM,200,1,48,2,0
+9vLupaep,Sour Sop Cream,"['sour sop','milk','sugar','cornflour','vanilla']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],DhTNap1c,220,4.5,45,3,0
+vBJ6fQSh,Sour Sop Mould,"['sour sop','milk','sugar','gelatin','vanilla','water']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],f5O1XBhh,200,4,40,2.5,0
+rx6u8hLR,Mango Whip,"['mangoes','sugar','evaporated milk','vanilla essence']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],QVY1Ayje,180,3,35,2.5,0
+Apr2pkBN,Mango Cream,"['mangoes','evaporated milk','sugar','milk','custard powder','vanilla']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],bDEaTGV5,250,5,40,6,0
+ii4YX7CB,Mango Ice Cream,"['mango puree','lime','sugar','evaporated milk','gelatin','water','eggs','vanilla essence','chocolate chips']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,FALSE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],KFwtukWC,300,7,50,8,0
+j1Eh5T1D,Mango Mousse,"['mangoes','sugar','evaporated milk','vanilla essence','gelatin','water']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],ADVC4P3Y,220,4.5,40,3.5,0
+P0KPwedU,Banana Ice Cream,"['creamed bananas','lime','sugar','evaporated milk','gelatin','water','eggs','vanilla essence','chocolate chips']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,FALSE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],3PsG0HiW,310,7,55,8,0
+3cN26Gl8,Banana Bread,"['mashed bananas','sugar','evaporated milk','vanilla essence','lemon']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,TRUE,FALSE,TRUE,TRUE,['snack'],['dessert'],['balanced'],JQfjMXog,250,5,45,5,0
+glP6lvyn,Banana Pancake,"['bananas','flour','sugar','salt','nutmeg','milk','oil']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,TRUE,FALSE,TRUE,TRUE,['snack'],['dessert'],['balanced'],kshzxu0g,220,6,40,6,0
+UrsE1si4,Banana Bread,"['bananas','flour','sugar','eggs','margarine','milk','vanilla','salt','nutmeg','cinnamon','baking soda','cream of tartar','baking powder']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,FALSE,FALSE,TRUE,TRUE,['snack'],['dessert'],['balanced'],PuMmQMfy,300,6,50,10,0
+xB25JzOP,Orange Delight,"['oranges','evaporated milk','eater','sugar','eggs','gelatin','cinnamon','lemon peel']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,FALSE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],2aevXk3R,210,5,35,3,0
+txix6zsH,Lime Foam,"['lime','sugar','gelatin','water','egg whites']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,FALSE,FALSE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],L0pgVULI,120,3,25,0.5,0
+ZCFJiafg,Orange and Tangerine Jelly,"['oranges','tangerines','lime','sugar']","['ghanaian','european','middle eastern','canadian','american']",A sweet dessert,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],8SYilosL,150,2,35,0,0
+fz9NnQy4,Coconut Biscuits,"['grated coconut','flour','margarine','sugar','egg','baking soda','cream of tartar','nutmeg','salt','milk']",['ghanaian'],A sweet dessert,FALSE,FALSE,FALSE,TRUE,TRUE,['snack'],['dessert'],['balanced'],u5HFkqNj,320,5,40,15,0
+XigwXkMz,Candied Coconut,"['coconut','ginger','suagr','water']",['ghanaian'],A sweet dessert,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],re8oE3oi,250,2,40,8,0
+tCBWnLnR,Coconut Moments,"['grated coconut','sugar','water','ginger']",['ghanaian'],A sweet dessert,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],zRDJPKNm,240,2.5,35,7,0
+UxXQhhL0,Coconut Buns,"['flour','margarine','sugar','coconut','milk','eggs','baking powder','salt','vanilla']",['ghanaian'],A sweet dessert,FALSE,FALSE,FALSE,TRUE,TRUE,['snack'],['dessert'],['balanced'],V1TyrbQP,300,7,45,10,0
+6zr4SXZH,Sugared Coconut,"['coconut','sugar','water','ginger']",['ghanaian'],A sweet dessert,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['dessert'],['balanced'],OF0iXEvh,220,2,40,7,0
+besq7cUt,Lemonade,"['lemons','granulated sugar','sugar','water']","['american','european','middle eastern','ghanaian']",A sweet dessert,TRUE,TRUE,TRUE,TRUE,TRUE,['snack'],['drink'],['balanced'],FViMLDUq,100,0.5,25,0,0
+NQVlEWMI,Dipped Banana Fritters,"['banana','flour','sugar','egg','salt','milk','nutmeg','vanilla','lime','oil']",['ghanaian'],A sweet dessert,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']",['dessert'],['balanced'],jrw9028v,280,5,40,12,0
+uAm4SXC7,Crepes,"['flour','milk','sugar','egg','oil','salt','cinnamon','nutmeg','lemon']","['ghanaian','european','american']",A sweet dessert,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']",['dessert'],['balanced'],uXrp9ZM3,250,6,35,8,0
+1ItK4n7Q,Ghanaian Salad,"['lettuce','cucumber','green peppers','onions','tomatoes','salt','pepper','mayonnaise','baked beans','peas','boiled eggs','tuna','salad oil','vinegar']",['ghanaian'],A popular salad style,FALSE,FALSE,TRUE,TRUE,TRUE,"['breakfast','lunch']",['salad'],['balanced'],ywnIwjct,350,15,20,25,0
+JruZvXbe,Avocado Salad,"['avocados','cucumber','tomatoes','salad dressing','salt','pepper']","['ghanaian','european']",A popular salad,TRUE,TRUE,TRUE,TRUE,TRUE,"['breakfast','lunch']",['salad'],['balanced'],YfXnZJ1Z,300,5,15,28,0
+e3uX3uBG,Stuffed Avocado,"['avocados','fish','rice','cucumber','grapefruit','salt','pepper','salad cream']",['ghanaian'],A popular salad,FALSE,FALSE,TRUE,TRUE,TRUE,"['breakfast','lunch']",['salad'],['balanced'],K7cGgYfx,400,20,35,25,0
+zf8cqt8v,Greek Style Garden-Eggs,"['aubergines-egg plant','minced meat','onion','rice','onion','clove garlic','maggi sauce','meat stock','hard cheese','salad oil','red pepper','egg','sherry','flour']",['ghanaian'],A popular salad,FALSE,FALSE,FALSE,FALSE,TRUE,"['breakfast','lunch']",['salad'],['balanced'],Nuv15bPC,450,25,30,20,0
+Os0lTu8L,Stuffed Avocado,"['avocados','beef','rice','cucumber','grapefruit','salt','pepper','salad cream']",['ghanaian'],A popular salad,FALSE,FALSE,TRUE,FALSE,TRUE,"['breakfast','lunch']",['salad'],['balanced'],2QEmAzRD,420,30,35,25,0
+abYU9Xu3,Stuffed Avocado,"['avocados','tofu','rice','cucumber','grapefruit','salt','pepper','salad cream']",['ghanaian'],A popular salad,TRUE,TRUE,TRUE,TRUE,TRUE,"['breakfast','lunch']",['salad'],['balanced'],izRXihSb,400,20,35,20,0
+vzT5l8x4,Indian Curry,"['chicken','tomatoes','onions','green mango','grated coconut','coconut water','basil','flour','oil','water','garlic','curry powder','mustard','black pepper','white pepper','green pepper']",['indian'],A popular infian sauce,FALSE,FALSE,FALSE,FALSE,TRUE,"['lunch','dinner']",['sauce'],['balanced'],6ywEj1SQ,500,30,40,25,0
+v0qqGlxh,Shrimp Fried Rice,"['rice','shrimp','shallots','green peppers','margarine','egg','salt','pepper','soya sauce']","['european','japanese','korean','ghanaian']",A popular rice dish,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']",['main'],['balanced'],ywC2YgFW,450,20,50,15,0
+a5xGQmvV,Beef Fried Rice,"['rice','beef','shallots','green peppers','margarine','egg','salt','pepper','soya sauce']","['european','japanese','korean','ghanaian']",A popular rice dish,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['main'],['balanced'],csUb5JVz,500,25,50,20,0
+5BCEt8l1,Chinese Beef and Peppers,"['green peppers','beef','black pepper','cornflour','soya sauce','oil','water']",['chinese'],A popular Chinese delicacy in Ghana,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']","['main','protein']",['balanced'],5Y17FdZg,350,20,15,20,0
+DnQUf3tR,South Sea Island Sweet and Sour Pork,"['green peppers','beef','black pepper','cornflour','soya sauce','oil','water']",['chinese'],A popular Chinese delicacy in Ghana,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']","['main','protein']",['balanced'],34wl1141,500,25,45,20,0
+DpCbKAKx,Chicken Fried Rice,"['rice','chicken','shallots','green peppers','margarine','egg','salt','pepper','soya sauce']","['european','japanese','korean','ghanaian']",A popualr delicacy,FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['main'],['balanced'],ov4T9Cby,450,25,50,15,0
+mIXky2B9,Assorted Fried Rice,"['rice','beef','chicken','shallots','green peppers','margarine','egg','salt','pepper','soya sauce']","['european','japanese','korean','ghanaian']","A mix of beef, chicken",FALSE,FALSE,TRUE,FALSE,TRUE,"['lunch','dinner']",['main'],['balanced'],KYgCogNF,500,30,50,20,0
+AcuRjWBF,Tofu Fried Rice,"['rice','tofu','shallots','green peppers','margarine','egg','salt','pepper','soya sauce']","['european','japanese','korean','ghanaian']",A vegan fried rice,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']",['main'],['balanced'],JZxud2Az,400,20,50,15,0
+OXklnxph,Coleslaw,"['white cabbage','carrots','lettuce','black pepper','French dressing','skimmed milk','water','salt']","['ghanaian','american']",American salad,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']","['side','salad']",['balanced'],0gZX8tex,250,5,15,20,0
+dGGtVJPI,English Salad,"['lettuce','tomatoes','cucumber','spring onions','green pepper','radishes','boiled eggs','salt','pepper','vinaigrette']",['british'],British salad,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']","['side','salad']",['balanced'],TNWjZFG6,200,10,10,15,0
+qKWZDro1,French Salad,"['tomatoes','salad oil','vinegar','lemons','salt','pepper','garlic']",['european'],French salad,TRUE,TRUE,TRUE,TRUE,TRUE,"['lunch','dinner']","['side','salad']",['balanced'],lswM1wLF,150,2,10,12,0
+X5N2zcFc,Russian Salad,"['rice','green peppers','chilli','salad cream','carrots','stewed beans','flaked fish','black pepper','salt']",['european'],Russian Salad,FALSE,FALSE,TRUE,TRUE,TRUE,"['lunch','dinner']","['side','salad']",['balanced'],cRrGBmVC,300,15,40,10,0
+JsmsDlzF,Ginger Bread,"['flour','brown sugar','margarine','molasses','syrup','baking soda','cream of tartar','eggs','ginger','cinnamon','nuts','milk']","['american','british','ghanaian']",A popualr cake,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],c8gBxHM5,350,6,55,12,0
+xwkjyQla,Pineapple Cake,"['flour','sugar','margarine','eggs','salt','baking powder','vanilla','pineapple juice','pineapple','water']","['american','british','ghanaian']",A popualr cake,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],4JQnRirV,400,6,60,12,0
+NUZPjjGX,Pawpaw and Coconut Pie,"['pawpaw','coconut','sugar','lime','margarine','flour','salt','water']","['american','british','ghanaian']",A sweet pie,FALSE,TRUE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],c7aNvPh2,300,4,40,15,0
+JKQqna6n,Groudnut Loaf,"['flour','groundnut butter','margarine','sugar','cinnamon','egg','milk','bicarbonate of soda','cream of tartar','vanilla','salt']","['american','british','ghanaian']",A sweet loaf,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],ZN9EeCbY,450,10,30,30,0
+qZ4ppN69,Spiced Groudnut Nibble,"['groundnut paste','brown cornmeal','sugar','ginger','nutmeg','cinnamon','cayenne pepper','cloves']",['ghanaian'],A sweet and spicy dessert,TRUE,TRUE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],YN2cjrRI,350,8,25,22,0
+LdJfD2yG,Gari Biscuits,"['flour','gari','margarine','sugar','milk','vanilla','bicarbonate of soda','cream of tartar','salt']",['ghanaian'],A delicacy,FALSE,TRUE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],9fUawyf0,400,6,50,15,0
+nxPqjOIq,Atsomo,"['flour','margarine','sugar','egg','salt','nutmeg','cinnamon','water']",['ghanaian'],A sweet pastry,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],SU1QLKOv,350,5,40,15,0
+D7yIj9ql,Fried Rocky Buns,"['flour','margarine','sugar','egg','milk','nutmeg','lemon rind','salt','baking powder','oil']",['ghanaian'],A sweet pastry,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],NMDgvtCH,400,6,50,18,0
+3T1jVMv9,Breakfast Pancakes,"['flour','eggs','sugar','milk','baking soda','cream of tartar','salt','baking powder']",['ghanaian'],Ghanaian twist on pancakes,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],ROe1HXth,300,6,45,10,0
+xCdQiPbA,Oven Scones,"['flour','margarine','sugar','milk','salt','baking soda','cream of tartar']","['british','ghanaian']",British biscuits,FALSE,TRUE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],WV1j8EvB,350,6,40,12,0
+AXKq3oNz,Togbei (Batter Doughnuts),"['flour','caster sugar','salt','oil','milk','water','yeast','margarine','egg','nutmeg']",['ghanaian'],A ghanaian twist on doughnuts,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],F3B1q89D,400,6,50,15,0
+KAY1tttr,Araba's Sweetbread,"['flour','yeast','salt','sugar','eggs','margarine','milk','baking powder','vanilla','nutmeg']",['ghanaian'],A sweet bread,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],iIAruoSG,350,8,55,10,0
+4aQw65m7,Feather Light Bread Rolls,"['flour','yeast','salt','sugar','eggs','margarine','milk','water','vanilla','nutmeg']",['ghanaian'],A sweet bread,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],eT7aX99L,300,8,50,8,0
+C3VKzugT,Black Beauty Cake,"['margarine','brown sugar','eggs','chocolate','cocoa powder','water','vanilla','flour','salt','baking powder','cream of tartar','baking soda','milk']",['ghanaian'],A sweet chocolatey cake,FALSE,FALSE,FALSE,TRUE,TRUE,"['breakfast','snack']","['side','dessert']",['balanced'],J9k3lxbJ,450,6,60,20,0
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,

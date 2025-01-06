@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-j7cfld-0&&usff(1t-f1=o1%*ek_1ucukufovunb)u5l6409ur
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django','172.18.0.3','0.0.0.0','10.154.70.64','afronutro-frontend.vercel.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django','172.18.0.3','0.0.0.0','10.154.70.64','afronutro-frontend.vercel.app','*','95.214.231.50','192.168.1.23']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Your React frontend URL

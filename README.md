@@ -87,6 +87,23 @@ To stop the services, use the following command:
 docker-compose down
 ```
 
+## Running Data Generation and Loading Scripts
+
+### Generate Recipe Data
+
+To generate recipe data from CSV files, use the `generate_recipe_data.py` script:
+
+```bash
+python manage.py generate_recipe_data meal_planner/training_data/recipes.csv meal_planner/training_data/ingredients.csv
+```
+
+### Load Training Data
+
+To load training data, use the `load_training_data.py` script:
+
+```bash
+python manage.py load_training_data meal_planner/training_data/training_data.csv
+```
 ## Why These Technologies?
 
 ### Django

@@ -1,137 +1,220 @@
 name,calories,carbs,protein,fat,minerals,vitamins,substitutes
-Seitan,370,14,75,2,"['Iron', 'Selenium']","['B1', 'B3']",[]
-Tempeh,192,9,20,11,"['Iron', 'Magnesium', 'Phosphorus']","['B12', 'B6']",['Seitan']
-Tofu,76,2,8,4,"['Calcium', 'Iron', 'Magnesium', 'Phosphorus']",['B Vitamins'],"['Seitan', 'Tempeh']"
-Chicken,165,0,31,3.6,"['Phosphorus', 'Selenium']","['B3', 'B6']",['Tofu']
-Turkey,189,0,29,7,"['Phosphorus', 'Selenium', 'Zinc']","['B3', 'B6', 'B12']","['Tofu', 'Chicken']"
-Bacon,42,0.1,3,3.3,"['Selenium', 'Phosphorus']","['B1', 'B2']",['Tempeh']
-Turkey bacon,108,0.3,13,6,"['Sodium', 'Selenium']","['B3', 'B12']","['Tempeh', 'Bacon']"
-Beef,250,0,26,17,"['Iron', 'Zinc', 'Phosphorus']","['B12', 'B6']","['Seitan', 'Tofu', 'Chicken']"
-Haddock,90,0,20,0.9,"['Selenium', 'Phosphorus']","['B12', 'B6']",[]
-Cod,82,0,18,0.7,"['Selenium', 'Phosphorus']","['B12', 'B6']",['Haddock']
-Tilapia,128,0,26,2.7,"['Selenium', 'Phosphorus']",['B12'],['Cod']
-Catfish,105,0,18,3.3,"['Selenium', 'Phosphorus']","['B12', 'D']","['Cod', 'Tilapia']"
-Lentils,116,20.1,9,0.4,"['Iron', 'Phosphorus']",['B9'],[]
-Chickpeas,164,27.4,8.9,2.6,"['Iron', 'Phosphorus']","['B9', 'C']",['Lentils']
-Black beans,132,23.7,8.9,0.5,"['Iron', 'Magnesium']","['B9', 'B1']","['Lentils', 'Chickpeas']"
-Peas,81,14.5,5.4,0.4,"['Iron', 'Magnesium']","['A', 'C', 'K']",['Lentils']
-Shallots,72,16.8,2.5,0,"['Potassium', 'Iron']","['A', 'B6', 'C']",[]
-Leeks,61,14.4,1.5,0.3,"['Iron', 'Manganese']","['K', 'A', 'C']",['Shallots']
-Onions,44,10,1,0,"['Potassium', 'Chromium']","['Vitamin C', 'Folate']","['Shallots', 'Leeks']"
-Garlic,9,2,0.4,0,"['Manganese', 'Selenium']","['Vitamin C', 'Vitamin B6']",['Shallots']
-Garlic powder,331,72.7,16.8,0.7,"['Calcium', 'Iron']","['C', 'B6']","['Shallots', 'Garlic']"
-Turmeric,312,67.1,9.7,3.3,"['Iron', 'Manganese']","['C', 'B6']",[]
-Ginger,5,1,0.2,0,"['Magnesium', 'Potassium', 'Manganese']",['Vitamin C'],['Turmeric']
-Ground ginger,335,71.6,8.9,4.2,"['Magnesium', 'Potassium']",['B6'],"['Turmeric', 'Ginger']"
+Seitan,370,14,75,2,"['Iron',' Selenium']","['B1',' B3']",[]
+Tempeh,192,9,20,11,"['Iron',' Magnesium',' Phosphorus']","['B12',' B6']",['Seitan']
+Tofu,76,2,8,4,"['Calcium',' Iron',' Magnesium',' Phosphorus']",['B Vitamins'],"['Seitan','Tempeh']"
+Chicken,165,0,31,3.6,"['Phosphorus',' Selenium']","['B3',' B6']",['Tofu']
+Turkey,189,0,29,7,"['Phosphorus',' Selenium',' Zinc']","['B3',' B6',' B12']","['Tofu','Chicken']"
+Bacon,42,0.1,3,3.3,"['Selenium',' Phosphorus']","['B1',' B2']",['Tempeh']
+Turkey bacon,108,0.3,13,6,"['Sodium',' Selenium']","['B3',' B12']","['Tempeh','Bacon']"
+Beef,250,0,26,17,"['Iron',' Zinc',' Phosphorus']","['B12',' B6']","['Seitan','Tofu','Chicken']"
+Haddock,90,0,20,0.9,"['Selenium',' Phosphorus']","['B12',' B6']",[]
+Cod,82,0,18,0.7,"['Selenium',' Phosphorus']","['B12',' B6']",['Haddock']
+Tilapia,128,0,26,2.7,"['Selenium',' Phosphorus']",['B12'],['Cod']
+Catfish,105,0,18,3.3,"['Selenium',' Phosphorus']","['B12',' D']","['Cod','Tilapia']"
+Lentils,116,20.1,9,0.4,"['Iron',' Phosphorus']",['B9'],[]
+Chickpeas,164,27.4,8.9,2.6,"['Iron',' Phosphorus']","['B9',' C']",['Lentils']
+Black beans,132,23.7,8.9,0.5,"['Iron',' Magnesium']","['B9',' B1']","['Lentils','Chickpeas']"
+Peas,81,14.5,5.4,0.4,"['Iron',' Magnesium']","['A',' C',' K']",['Lentils']
+Shallots,72,16.8,2.5,0,"['Potassium',' Iron']","['A',' B6',' C']",[]
+Leeks,61,14.4,1.5,0.3,"['Iron',' Manganese']","['K',' A',' C']",['Shallots']
+Onions,44,10,1,0,"['Potassium',' Chromium']","['Vitamin C',' Folate']","['Shallots','Leeks']"
+Garlic,9,2,0.4,0,"['Manganese',' Selenium']","['Vitamin C',' Vitamin B6']",['Shallots']
+Garlic powder,331,72.7,16.8,0.7,"['Calcium',' Iron']","['C',' B6']","['Shallots','Garlic']"
+Turmeric,312,67.1,9.7,3.3,"['Iron',' Manganese']","['C',' B6']",[]
+Ginger,5,1,0.2,0,"['Magnesium',' Potassium',' Manganese']",['Vitamin C'],['Turmeric']
+Ground ginger,335,71.6,8.9,4.2,"['Magnesium',' Potassium']",['B6'],"['Turmeric','Ginger']"
 Hot sauce,0,0,0,0,['Potassium'],['C'],[]
-Chili paste,32,7.1,1.4,0.3,['Potassium'],"['C', 'A']",['Hot sauce']
-Kpakposhito paste,15,3,0.5,1,[],"['Vitamin C', 'Vitamin A']","['Hot sauce', 'Chili paste']"
-Bell peppers,31,6,1,0.3,['Potassium'],"['C', 'A']",[]
-Chili flakes,282,34,12,14,['Iron'],"['A', 'C']",['Hot sauce']
-Pepper,18,4,0.5,0,['Potassium'],"['Vitamin C', 'Vitamin A', 'Capsaicin']","['Bell peppers', 'Chili flakes']"
-Garden eggs,36,8,1.5,0.5,"['Potassium', 'Fiber']",['Vitamin B1'],[]
-Eggplant,25,6,1,0.2,"['Potassium', 'Manganese']","['B1', 'B6', 'K']",['Garden eggs']
+Chili paste,32,7.1,1.4,0.3,['Potassium'],"['C',' A']",['Hot sauce']
+Kpakposhito paste,15,3,0.5,1,[],"['Vitamin C',' Vitamin A']","['Hot sauce','Chili paste']"
+Bell peppers,31,6,1,0.3,['Potassium'],"['C',' A']",[]
+Chili flakes,282,34,12,14,['Iron'],"['A',' C']",['Hot sauce']
+Pepper,18,4,0.5,0,['Potassium'],"['Vitamin C',' Vitamin A',' Capsaicin']","['Bell peppers','Chili flakes']"
+Garden eggs,36,8,1.5,0.5,"['Potassium',' Fiber']",['Vitamin B1'],[]
+Eggplant,25,6,1,0.2,"['Potassium',' Manganese']","['B1',' B6',' K']",['Garden eggs']
 Coconut oil,862,0,0,100,[],['E'],[]
-Red palm nut extract,400,4,2,45,"['Potassium', 'Magnesium']","['Vitamin E', 'Vitamin A']",['Coconut oil']
-Clams,148,5.1,26,2.3,"['Iron', 'Selenium']",['B12'],[]
-Mussels,172,7,24,4.5,"['Iron', 'Selenium']",['B12'],['Clams']
-Periwinkle,79,4,14,1,"['Calcium', 'Iron', 'Magnesium']",['B Vitamins'],"['Clams', 'Mussels']"
-Lobster,89,0,19,0.9,"['Zinc', 'Selenium']",['B12'],[]
-Shrimp,85,0.2,20.3,0.3,"['Selenium', 'Iodine']","['B12', 'D']","['Tofu', 'Chicken']"
-Crabs,97,0,19,1.5,"['Iron', 'Zinc', 'Phosphorus', 'Selenium']","['B Vitamins', 'Vitamin A']","['Lobster', 'Shrimp']"
-Mackerel,205,0,19,14,"['Selenium', 'Omega-3']","['D', 'B12']",[]
-Fresh fish,206,0,22,12,"['Selenium', 'Omega-3']","['D', 'B12']",['Tilapia']
-Smoked fish,150,0,25,5,"['Calcium', 'Phosphorus', 'Potassium', 'Selenium']","['B Vitamins', 'Vitamin D']","['Mackerel', 'Fresh fish']"
-Quinoa,120,21.3,4.4,1.9,"['Magnesium', 'Iron']","['B1', 'B6']",[]
-Bulgur,83,18.6,3.1,0.2,"['Iron', 'Magnesium']","['B1', 'B6']",['Quinoa']
-Rice,130,28.2,2.7,0.3,"['Manganese', 'Magnesium']","['B1', 'B3']","['Quinoa', 'Bulgur']"
-Jalape√±os,29,6.6,0.9,0.4,['Potassium'],"['C', 'A']",[]
-Banana peppers,27,5.4,1.1,0.3,['Potassium'],"['C', 'A']",['Jalape√±os']
-Peppers,20,4.7,0.9,0.2,"['Potassium', 'Folate']","['C', 'A']","['Jalape√±os', 'Banana peppers']"
-Almonds,579,21.7,21.2,49.9,"['Magnesium', 'Phosphorus']","['E', 'B2']",[]
-Cashews,553,30.2,18.2,43.8,"['Magnesium', 'Phosphorus']","['E', 'K']",['Almonds']
-Peanuts,567,16.1,25.8,49.2,"['Magnesium', 'Phosphorus']","['E', 'B3']","['Almonds', 'Cashews']"
-Kale,49,8.8,4.3,0.9,"['Calcium', 'Iron']","['K', 'C', 'A']",[]
-Swiss chard,19,3.7,1.8,0.2,"['Magnesium', 'Iron']","['K', 'A', 'C']",['Kale']
-Spinach,23,3.6,2.9,0.4,"['Iron', 'Calcium']","['A', 'C', 'K']","['Kale', 'Swiss chard']"
+Red palm nut extract,400,4,2,45,"['Potassium',' Magnesium']","['Vitamin E',' Vitamin A']",['Coconut oil']
+Clams,148,5.1,26,2.3,"['Iron',' Selenium']",['B12'],[]
+Mussels,172,7,24,4.5,"['Iron',' Selenium']",['B12'],['Clams']
+Periwinkle,79,4,14,1,"['Calcium',' Iron',' Magnesium']",['B Vitamins'],"['Clams','Mussels']"
+Lobster,89,0,19,0.9,"['Zinc',' Selenium']",['B12'],[]
+Shrimp,85,0.2,20.3,0.3,"['Selenium',' Iodine']","['B12',' D']","['Tofu','Chicken']"
+Crabs,97,0,19,1.5,"['Iron',' Zinc',' Phosphorus',' Selenium']","['B Vitamins',' Vitamin A']","['Lobster','Shrimp']"
+Mackerel,205,0,19,14,"['Selenium',' Omega-3']","['D',' B12']",[]
+Fresh fish,206,0,22,12,"['Selenium',' Omega-3']","['D',' B12']",['Tilapia']
+Smoked fish,150,0,25,5,"['Calcium',' Phosphorus',' Potassium',' Selenium']","['B Vitamins',' Vitamin D']","['Mackerel','Fresh fish']"
+Quinoa,120,21.3,4.4,1.9,"['Magnesium',' Iron']","['B1',' B6']",[]
+Bulgur,83,18.6,3.1,0.2,"['Iron',' Magnesium']","['B1',' B6']",['Quinoa']
+Rice,130,28.2,2.7,0.3,"['Manganese',' Magnesium']","['B1',' B3']","['Quinoa','Bulgur']"
+Jalapeños,29,6.6,0.9,0.4,['Potassium'],"['C',' A']",[]
+Banana peppers,27,5.4,1.1,0.3,['Potassium'],"['C',' A']",['Jalapeños']
+Peppers,20,4.7,0.9,0.2,"['Potassium',' Folate']","['C',' A']","['Jalapeños','Banana peppers']"
+Almonds,579,21.7,21.2,49.9,"['Magnesium',' Phosphorus']","['E',' B2']",[]
+Cashews,553,30.2,18.2,43.8,"['Magnesium',' Phosphorus']","['E',' K']",['Almonds']
+Peanuts,567,16.1,25.8,49.2,"['Magnesium',' Phosphorus']","['E',' B3']","['Almonds','Cashews']"
+Kale,49,8.8,4.3,0.9,"['Calcium',' Iron']","['K',' C',' A']",[]
+Swiss chard,19,3.7,1.8,0.2,"['Magnesium',' Iron']","['K',' A',' C']",['Kale']
+Spinach,23,3.6,2.9,0.4,"['Iron',' Calcium']","['A',' C',' K']","['Kale','Swiss chard']"
 Avocado oil,884,0,0,100,['Vitamin K'],['E'],[]
-Canola oil,884,0,0,100,[],"['E', 'K']",['Avocado oil']
-Olive oil,884,0,0,100,['Vitamin K'],['E'],"['Avocado oil', 'Canola oil']"
-Sweet potatoes,86,20.1,1.6,0.1,"['Potassium', 'Manganese']","['A', 'C']",[]
-Yams,118,27.9,1.5,0.2,"['Potassium', 'Manganese']","['C', 'B6']",['Sweet potatoes']
-Potatoes,77,17.6,2,0.1,"['Potassium', 'Magnesium']","['C', 'B6']","['Sweet potatoes', 'Yams']"
-Broth,15,2,1,0.5,"['Sodium', 'Potassium']",['Various'],[]
+Canola oil,884,0,0,100,[],"['E',' K']",['Avocado oil']
+Olive oil,884,0,0,100,['Vitamin K'],['E'],"['Avocado oil','Canola oil']"
+Sweet potatoes,86,20.1,1.6,0.1,"['Potassium',' Manganese']","['A',' C']",[]
+Yams,118,27.9,1.5,0.2,"['Potassium',' Manganese']","['C',' B6']",['Sweet potatoes']
+Potatoes,77,17.6,2,0.1,"['Potassium',' Magnesium']","['C',' B6']","['Sweet potatoes','Yams']"
+Broth,15,2,1,0.5,"['Sodium',' Potassium']",['Various'],[]
 Sauce,45,6,0.6,2,['Sodium'],['Various'],['Broth']
-Gravy,58,8.1,0.5,2.3,['Varies'],['Varies'],"['Broth', 'Sauce']"
-Veggie sausage,160,6,17,8,"['Iron', 'Zinc']","['B12', 'B6']",[]
-Chicken sausage,140,1,14,8,"['Iron', 'Zinc']","['B12', 'B6']",['Veggie sausage']
-Sausages,300,1.4,12,26,"['Iron', 'Phosphorus']",['B12'],"['Veggie sausage', 'Chicken sausage']"
-Parsley,36,6.3,3,0.8,"['Iron', 'Calcium']","['K', 'C']",[]
-Cilantro,23,3.7,2.1,0.5,"['Iron', 'Calcium']","['A', 'K']",['Parsley']
-Dry spices,5,1,0,0,"['Calcium', 'Iron']",[],"['Parsley', 'Cilantro']"
-Bananas,89,22.8,1.1,0.3,"['Potassium', 'Magnesium']","['B6', 'C']",['Sweet potatoes']
-Plantains,122,31.9,1.3,0.3,"['Potassium', 'Magnesium']","['A', 'C']","['Sweet potatoes', 'Bananas']"
-Almond milk,39,3.5,1,2.5,['Calcium'],"['D', 'E']",[]
-Cashew milk,25,1,1,2,['Calcium'],"['D', 'E']",['Almond milk']
-Coconut milk,230,6.5,2.3,24,"['Manganese', 'Copper']","['C', 'E']","['Almond milk', 'Cashew milk']"
-Yellow squash,19,3.8,1.2,0.2,"['Manganese', 'Potassium']","['C', 'A']",[]
-Cucumbers,8,1.9,0.5,0.1,"['Potassium', 'Magnesium']","['K', 'C']",['Yellow squash']
-Zucchini,17,3.1,1.2,0.3,"['Potassium', 'Manganese']","['A', 'C']","['Yellow squash', 'Cucumbers']"
-Collard greens,32,5.7,3,0.5,"['Calcium', 'Iron', 'Magnesium']","['A', 'C', 'K', 'B6']",[]
-Kontomire Leaves,35,6.5,4,0.7,"['Iron', 'Calcium', 'Potassium', 'Magnesium']","['A', 'C', 'B6', 'K', 'E']","['Spinach', 'Collard greens']"
-Vegetable oil,884,0,0,100,[],"['E', 'K']","['Coconut oil', 'Olive oil']"
-Sesame seeds,573,23,17,49,"['Calcium', 'Iron', 'Magnesium']","['E', 'B1', 'B6']",[]
-Wrewre seeds,567,17,25,47,"['Iron', 'Magnesium', 'Zinc']","['E', 'B1', 'B6']",['Sesame seeds']
-Dry smoked river fish,290,0,62,4,"['Selenium', 'Phosphorus', 'Iron']","['B12', 'D', 'B6']",[]
-Smoked mackerel,305,0,31,20,"['Selenium', 'Phosphorus', 'Iron']","['B12', 'D', 'B6']",[]
-Lamb,294,0,25,21,"['Iron', 'Zinc']",['B12'],['Beef']
-Goat meat,143,0,25,3.8,"['Iron', 'Phosphorus']",['B12'],"['Beef', 'Lamb']"
-Duck,337,0,25,27,"['Iron', 'Selenium']",['B12'],"['Chicken', 'Turkey']"
-Mutton,294,0,25,21,"['Iron', 'Zinc', 'Selenium']","['B12', 'B6', 'B3']",['Goat meat']
-Anchovies,210,0,29,11,"['Selenium', 'Calcium', 'Iron']","['B12', 'D', 'B3']",[]
-dry_salted_fish,240,0,54,3,"['Sodium', 'Iodine', 'Iron']","['B12', 'D']",['Anchovies']
-Habanero,36,8.8,1.9,0.4,"['Potassium', 'Magnesium']","['C', 'A', 'B6']",[]
-Green scotch bonnet,40,9,2,0.2,"['Potassium', 'Magnesium']","['C', 'A', 'B6']",['Habanero']
-Mushroom broth,7,1.5,0.3,0,"['Potassium', 'Sodium']","['B3', 'B5']",[]
-Vegetable broth,10,2,0.5,0,"['Potassium', 'Sodium']","['A', 'C', 'K']",['Mushroom broth']
-Carrots,41,10,0.9,0.2,"['Potassium', 'Calcium', 'Iron']","['A', 'C', 'K']",['Sweet potatoes']
-Mushrooms,22,3.3,3.1,0.3,"['Selenium', 'Copper', 'Potassium']","['D', 'B3', 'B5']",['Eggplant']
-Chilli powder,282,54,13,14,"['Iron', 'Magnesium', 'Potassium']","['A', 'C', 'E']",[]
-Cayenne pepper,318,57,12,17,"['Iron', 'Magnesium', 'Potassium']","['A', 'C', 'B6']",['Chilli powder']
-Moringa leaves,318,57,12,17,"['Iron', 'Magnesium', 'Potassium']","['A', 'C', 'B6']",['Chilli powder']
-Ademe leaves,30,5.2,3.5,0.6,"['Iron', 'Magnesium', 'Calcium']","['A', 'C', 'K']",['Moringa leaves']
-Saltpere,0,0,0,0,"['Nitrogen', 'Potassium']",[],[]
+Gravy,58,8.1,0.5,2.3,['Varies'],['Varies'],"['Broth','Sauce']"
+Veggie sausage,160,6,17,8,"['Iron',' Zinc']","['B12',' B6']",[]
+Chicken sausage,140,1,14,8,"['Iron',' Zinc']","['B12',' B6']",['Veggie sausage']
+Sausages,300,1.4,12,26,"['Iron',' Phosphorus']",['B12'],"['Veggie sausage','Chicken sausage']"
+Parsley,36,6.3,3,0.8,"['Iron',' Calcium']","['K',' C']",[]
+Cilantro,23,3.7,2.1,0.5,"['Iron',' Calcium']","['A',' K']",['Parsley']
+Dry spices,5,1,0,0,"['Calcium',' Iron']",[],"['Parsley','Cilantro']"
+Bananas,89,22.8,1.1,0.3,"['Potassium',' Magnesium']","['B6',' C']",['Sweet potatoes']
+Plantains,122,31.9,1.3,0.3,"['Potassium',' Magnesium']","['A',' C']","['Sweet potatoes','Bananas']"
+Almond milk,39,3.5,1,2.5,['Calcium'],"['D',' E']",[]
+Cashew milk,25,1,1,2,['Calcium'],"['D',' E']",['Almond milk']
+Coconut milk,230,6.5,2.3,24,"['Manganese',' Copper']","['C',' E']","['Almond milk','Cashew milk']"
+Yellow squash,19,3.8,1.2,0.2,"['Manganese',' Potassium']","['C',' A']",[]
+Cucumbers,8,1.9,0.5,0.1,"['Potassium',' Magnesium']","['K',' C']",['Yellow squash']
+Zucchini,17,3.1,1.2,0.3,"['Potassium',' Manganese']","['A',' C']","['Yellow squash','Cucumbers']"
+Collard greens,32,5.7,3,0.5,"['Calcium',' Iron',' Magnesium']","['A',' C',' K',' B6']",[]
+Kontomire Leaves,35,6.5,4,0.7,"['Iron',' Calcium',' Potassium',' Magnesium']","['A',' C',' B6',' K',' E']","['Spinach','Collard greens']"
+Vegetable oil,884,0,0,100,[],"['E',' K']","['Coconut oil','Olive oil']"
+Sesame seeds,573,23,17,49,"['Calcium',' Iron',' Magnesium']","['E',' B1',' B6']",[]
+Wrewre seeds,567,17,25,47,"['Iron',' Magnesium',' Zinc']","['E',' B1',' B6']",['Sesame seeds']
+Dry smoked river fish,290,0,62,4,"['Selenium',' Phosphorus',' Iron']","['B12',' D',' B6']",[]
+Smoked mackerel,305,0,31,20,"['Selenium',' Phosphorus',' Iron']","['B12',' D',' B6']",[]
+Lamb,294,0,25,21,"['Iron',' Zinc']",['B12'],['Beef']
+Goat meat,143,0,25,3.8,"['Iron',' Phosphorus']",['B12'],"['Beef','Lamb']"
+Duck,337,0,25,27,"['Iron',' Selenium']",['B12'],"['Chicken','Turkey']"
+Mutton,294,0,25,21,"['Iron',' Zinc',' Selenium']","['B12',' B6',' B3']",['Goat meat']
+Anchovies,210,0,29,11,"['Selenium',' Calcium',' Iron']","['B12',' D',' B3']",[]
+dry_salted_fish,240,0,54,3,"['Sodium',' Iodine',' Iron']","['B12',' D']",['Anchovies']
+Habanero,36,8.8,1.9,0.4,"['Potassium',' Magnesium']","['C',' A',' B6']",[]
+Green scotch bonnet,40,9,2,0.2,"['Potassium',' Magnesium']","['C',' A',' B6']",['Habanero']
+Mushroom broth,7,1.5,0.3,0,"['Potassium',' Sodium']","['B3',' B5']",[]
+Vegetable broth,10,2,0.5,0,"['Potassium',' Sodium']","['A',' C',' K']",['Mushroom broth']
+Carrots,41,10,0.9,0.2,"['Potassium',' Calcium',' Iron']","['A',' C',' K']",['Sweet potatoes']
+Mushrooms,22,3.3,3.1,0.3,"['Selenium',' Copper',' Potassium']","['D',' B3',' B5']",['Eggplant']
+Chilli powder,282,54,13,14,"['Iron',' Magnesium',' Potassium']","['A',' C',' E']",[]
+Cayenne pepper,318,57,12,17,"['Iron',' Magnesium',' Potassium']","['A',' C',' B6']",['Chilli powder']
+Moringa leaves,318,57,12,17,"['Iron',' Magnesium',' Potassium']","['A',' C',' B6']",['Chilli powder']
+Ademe leaves,30,5.2,3.5,0.6,"['Iron',' Magnesium',' Calcium']","['A',' C',' K']",['Moringa leaves']
+Saltpere,0,0,0,0,"['Nitrogen',' Potassium']",[],[]
 Celery salt,0,0,0,0,['Soidium'],[],[]
-Moringa powder,205,38,27,2,"['Iron', 'Calcium', 'Potassium']","['A', 'C', 'E']",[]
-Dried cod,290,0,63,2.5,"['Sodium', 'Selenium', 'Phosphorus']","['B12', 'D']",[]
-Momoni,240,0,54,3,"['Sodium', 'Iodine', 'Iron']","['B12', 'D']",['Dried cod']
-Chicken liver,119,0,17,5,"['Iron', 'Zinc', 'Copper']","['B12', 'A', 'B6']",[]
-Offal,135,0,21,5,"['Iron', 'Zinc', 'Copper']","['B12', 'A', 'B6']",['Chicken liver']
-Koobi,250,0,56,4,"['Sodium', 'Iron', 'Calcium']","['B12', 'D']",['Dried cod']
-Kuuka powder,280,60,13,3,"['Calcium', 'Iron', 'Potassium']","['C', 'B1', 'B2']",['Moringa powder']
-Red palm oil,884,0,0,100,[],"['E', 'A']",[]
-Miso paste,198,25,12,6,"['Sodium', 'Manganese', 'Zinc']","['B12', 'B2', 'B3']",[]
-Green beans,31,7,1.8,0.2,"['Calcium', 'Iron', 'Potassium']","['C', 'A', 'K']",[]
-Gboma leaves,28,4.8,3.2,0.4,"['Iron', 'Calcium', 'Potassium']","['A', 'C', 'K']",['Kale']
-Palm oil,884,0,0,100,[],"['E', 'A']",['Red palm oil']
-Dawadawa,385,16,36,29,"['Iron', 'Calcium', 'Zinc']","['B1', 'B2', 'B3']",['Miso paste']
-Okro,33,7,1.9,0.2,"['Magnesium', 'Calcium', 'Potassium']","['C', 'K', 'B6']",['Green beans']
-Greek yoghurt,100,6,10,4,"['Calcium', 'Phosphorus']","['B12', 'B2']",[]
-Almond yoghurt,60,5,1,4,['Calcium'],"['E', 'B2']",[]
-Yogurt,61,4.7,3.5,3.3,"['Calcium', 'Phosphorus']","['B12', 'D']","['Greek yoghurt', 'Almond yoghurt']"
-Seaweed,45,10,5,1,"['Iodine', 'Calcium', 'Iron']","['C', 'A', 'K']",['Spinach']
-Coconut cream,330,6,3,36,"['Iron', 'Magnesium']","['C', 'E']",[]
-Cream,345,3,2.1,36.3,"['Calcium', 'Phosphorus']","['A', 'D']","['Greek yoghurt', 'Coconut cream']"
-Pasta,131,25.3,5,1.1,"['Iron', 'Phosphorus']",['B1'],[]
-Whole wheat pasta,174,37,7.5,0.8,"['Iron', 'Magnesium']","['B1', 'B3', 'B6']",['Pasta']
+Moringa powder,205,38,27,2,"['Iron',' Calcium',' Potassium']","['A',' C',' E']",[]
+Dried cod,290,0,63,2.5,"['Sodium',' Selenium',' Phosphorus']","['B12',' D']",[]
+Momoni,240,0,54,3,"['Sodium',' Iodine',' Iron']","['B12',' D']",['Dried cod']
+Chicken liver,119,0,17,5,"['Iron',' Zinc',' Copper']","['B12',' A',' B6']",[]
+Offal,135,0,21,5,"['Iron',' Zinc',' Copper']","['B12',' A',' B6']",['Chicken liver']
+Koobi,250,0,56,4,"['Sodium',' Iron',' Calcium']","['B12',' D']",['Dried cod']
+Kuuka powder,280,60,13,3,"['Calcium',' Iron',' Potassium']","['C',' B1',' B2']",['Moringa powder']
+Red palm oil,884,0,0,100,[],"['E',' A']",[]
+Miso paste,198,25,12,6,"['Sodium',' Manganese',' Zinc']","['B12',' B2',' B3']",[]
+Green beans,31,7,1.8,0.2,"['Calcium',' Iron',' Potassium']","['C',' A',' K']",[]
+Gboma leaves,28,4.8,3.2,0.4,"['Iron',' Calcium',' Potassium']","['A',' C',' K']",['Kale']
+Palm oil,884,0,0,100,[],"['E',' A']",['Red palm oil']
+Dawadawa,385,16,36,29,"['Iron',' Calcium',' Zinc']","['B1',' B2',' B3']",['Miso paste']
+Okro,33,7,1.9,0.2,"['Magnesium',' Calcium',' Potassium']","['C',' K',' B6']",['Green beans']
+Greek yoghurt,100,6,10,4,"['Calcium',' Phosphorus']","['B12',' B2']",[]
+Almond yoghurt,60,5,1,4,['Calcium'],"['E',' B2']",[]
+Yogurt,61,4.7,3.5,3.3,"['Calcium',' Phosphorus']","['B12',' D']","['Greek yoghurt','Almond yoghurt']"
+Seaweed,45,10,5,1,"['Iodine',' Calcium',' Iron']","['C',' A',' K']",['Spinach']
+Coconut cream,330,6,3,36,"['Iron',' Magnesium']","['C',' E']",[]
+Cream,345,3,2.1,36.3,"['Calcium',' Phosphorus']","['A',' D']","['Greek yoghurt','Coconut cream']"
+Green chili peppers,30,7,1,0,"['Potassium','Magnesium']","['Vitamin C','Vitamin A']","['Jalapeños','Cayenne pepper']"
+Agushi,445,55,25,36,"['Iron','Zinc','Magnesium']","['Vitamin B','Vitamin E']",[]
+Bok choy,28,4,3,0,"['Calcium','Potassium']","['Vitamin A','Vitamin C']","['Spinach','Collard greens']"
+Dried anchovies,210,0,44,4,"['Calcium','Iron','Sodium']","['Vitamin D','B Vitamins']",[]
+Tomato puree,80,19,3,0.5,['Potassium'],"['Vitamin C','Vitamin A']",['Tomatoes']
+Squid,92,3,15,2,"['Selenium','Copper']","['Vitamin B12','Vitamin E']",['Shrimp']
+Khebab powder,15,2,1,0.5,['Iron'],[],[]
+Garden peas,62,11,4,0.4,"['Phosphorus','Zinc']","['Vitamin K','Vitamin C']",['Chickpeas']
+Dry cornmeal,370,79,7,1.5,"['Iron','Magnesium']",[],[]
+Roasted corn flour,350,73,7,3,"['Iron','Magnesium']",[],[]
+Red beans,127,23,9,0.5,"['Iron','Magnesium']","['Folate','Vitamin B6']",['Black beans']
+Tomato ketchup,20,4,0.2,0,['Potassium'],['Vitamin C'],[]
+Gari,330,78,1,0.5,"['Calcium','Potassium']",[],[]
+Avocado,160,9,2,15,"['Potassium','Magnesium']","['Vitamin E','Vitamin C']",['Coconut cream']
+Roasted groundnuts,567,16,25,49,"['Iron','Magnesium']","['Vitamin B6','Vitamin E']","['Almonds','Cashews']"
+Smoked herrings,230,0,26,15,"['Calcium','Sodium']","['Vitamin D','Omega-3']",[]
+Cassava dough,112,27,1,0.3,"['Calcium','Phosphorus']",[],[]
+Cassava,112,27,1,0.3,"['Calcium','Phosphorus']",[],"['Yams','Plantains']"
+Corn dough,96,22,2,0.5,"['Iron','Magnesium']",[],[]
+Yam flour,355,80,3,1,"['Potassium','Iron']",[],[]
+Shea butter oil,884,0,0,100,"['Iron','Zinc']",['Vitamin E'],"['Coconut oil','Palm oil']"
+Beans flour,340,60,20,1,"['Calcium','Potassium']",[],[]
+White pepper,6,1.3,0.2,0,['Manganese'],[],[]
+Cream of tartar,3,1,0,0,"['Potassium','Calcium']",[],['Lemon juice']
+Baking powder,2,1,0,0,"['Sodium','Phosphorus']",[],[]
+Baking soda,0,0,0,0,['Sodium'],[],[]
+Tangerines,53,13,0.3,0.8,"['Potassium','Calcium']",['Vitamin C'],['Oranges']
+Grated coconut,354,15,3.3,33,"['Potassium','Magnesium']",['Vitamin E'],[]
+Margarine,717,0,0.2,81,['Sodium'],['Vitamin D'],[]
+Granulated sugar,387,100,0,0,[''],[],[]
+Baked beans,155,27,5,0.4,"['Iron','Potassium']",['Vitamin C'],[]
+Mayonnaise,680,1,1,75,['Sodium'],[],['Greek yoghurt']
+Avocados,160,9,2,15,"['Potassium','Magnesium']","['Vitamin K','Vitamin E']",[]
+Grapefruit,42,11,0.8,0.1,"['Potassium','Magnesium']",['Vitamin C'],['Oranges']
+Sherry,75,20,0,0,['Potassium'],[],[]
+Aubergines (eggplant),25,6,1,0.2,"['Potassium','Magnesium']","['Vitamin C','Vitamin K']","['Zucchini','Mushrooms']"
+Hard cheese,402,1,32,25,"['Calcium','Phosphorus']","['Vitamin A','Vitamin D']",[]
+Chocolate,546,66,14.9,31,"['Magnesium','Iron']",[],[]
+Cocoa powder,228,5,8,19.6,"['Iron','Magnesium']",['Vitamin E'],[]
+Chili,40,9,2,0.4,"['Potassium','Iron']","['Vitamin C','Vitamin A']",['Cayenne pepper']
+Salad cream,340,9,0.6,35,['Sodium'],[],[]
+Molasses,290,75,0,0,"['Iron','Calcium']",[],[]
+Vinegar,3,0.1,0,0,"['Potassium','Magnesium']",[],[]
+Lime,20,7,0.5,0,['Potassium'],['Vitamin C'],[]
+Lime rind,4,1,0,0,['Potassium'],['Vitamin C'],[]
+Cinnamon,6,2,0.1,0,"['Manganese','Calcium']",[],[]
+Nutmeg,5,2,0.1,0,"['Manganese','Calcium']",[],[]
+Cornstarch,38,19,1,0.3,[''],[],[]
+Brown sugar,174,45,0,0,['Potassium'],[],[]
+Vinaigrette dressing,60,2,0,6,"['Sodium','Potassium']",['Vitamin E'],['Olive oil']
+Breadcrumbs,120,22,4,2,"['Iron','Sodium']",[],[]
+Smoked tuna,120,0,25,2,"['Selenium','Potassium']","['Omega-3','Vitamin D']",[]
+Molluscs,79,4,13,1.5,"['Iron','Zinc']",['Vitamin B12'],['Squid']
+Worcestershire sauce,13,3,0.1,0,"['Potassium','Sodium']",[],[]
+Mutton entrails,230,0,20,16,"['Iron','Zinc']",[],[]
+Mutton breasts,300,0,20,25,"['Iron','Phosphorus']",[],['Lamb']
+Basil,22,4,3,0.5,"['Calcium','Iron']","['Vitamin K','Vitamin A']",['Parsley']
+Sausage entrails,315,2,21,28,"['Iron','Sodium']",[],[]
+Suckling pig,350,0,20,30,"['Iron','Zinc']",[],[]
+Cloves,6,1,0.1,0.3,"['Manganese','Calcium']",[],[]
+Lemon juice,6,2,0.1,0,['Potassium'],['Vitamin C'],[]
+Trotters,204,0,22,13,"['Calcium','Collagen']",[],[]
+Corned beef,250,0,25,17,"['Iron','Sodium']",[],[]
+Groundnut paste,588,20,25,50,"['Iron','Magnesium']","['Vitamin B6','Vitamin E']",[]
+White beans,140,26,9,0.5,"['Iron','Phosphorus']","['Folate','Vitamin B6']",[]
+Millet flour,120,23,3,1,"['Magnesium','Phosphorus']",[],[]
+Sugar,164,40,0,0,[''],[],[]
+Plantain flour,365,88,3.9,1.2,"['Potassium','Magnesium']",[],['Yam flour']
+Raisins,299,79,3.1,0.5,"['Iron','Potassium']",[],[]
+Oranges,62,15,1.2,0.2,"['Calcium','Potassium']",['Vitamin C'],[]
+Pineapple,50,13,0.5,0.1,"['Manganese','Potassium']",['Vitamin C'],[]
+Mangoes,60,15,0.8,0.4,"['Potassium','Magnesium']","['Vitamin C','Vitamin A']",[]
+Apples,52,14,0.3,0.2,"['Potassium','Calcium']",['Vitamin C'],['Bananas']
+Grapes,69,18,0.6,0.2,['Potassium'],"['Vitamin C','Vitamin K']",[]
+Cherries,50,12,1,0.3,"['Potassium','Magnesium']",['Vitamin C'],[]
+Cocktail cherries,16,4,0,0,"['Potassium','Sodium']",[],[]
+Pasta,131,25.3,5,1.1,"['Iron',' Phosphorus']",['B1'],[]
+Whole wheat pasta,174,37,7.5,0.8,"['Iron',' Magnesium']","['B1',' B3',' B6']",['Pasta']
 Rice noodles,192,44,2,0.5,['Manganese'],['B'],['Whole wheat pasta']
 Vegan cheese,100,5,4,7,['Calcium'],['B12'],['Tofu']
-Quinoa pasta,220,43,8,3,"['Iron', 'Magnesium']","['B', 'E']","['Whole wheat pasta', 'Rice noodles']"
-Noodles,138,28.8,5.2,0.9,"['Iron', 'Phosphorus']","['B1', 'B3']","['Whole wheat pasta', 'Rice noodles']"
-Saffron,310,65.4,11.4,5.4,"['Potassium', 'Magnesium']","['A', 'B6']",['Turmeric']
-Seafood,125,6,22,3,"['Iodine', 'Selenium']","['B12', 'D']","['Tofu', 'Chicken']"
-Cheese,402,1.3,25,33,"['Calcium', 'Phosphorus']","['A', 'B12']",['Vegan cheese']
-Spaghetti,158,31.4,5.8,0.9,"['Iron', 'Magnesium']","['B1', 'B2']","['Whole wheat pasta', 'Rice noodles']"
-Eggs,155,1.1,12.6,10.6,"['Selenium', 'Phosphorus']","['B12', 'D']",['Tofu']
-Tomatoes,44,10,2,0,"['Potassium', 'Folate']","['Vitamin C', 'Vitamin A', 'Lycopene']","['Bell peppers', 'Carrots']"
-Snails,90,2,16,1,"['Iron', 'Magnesium']",['B Vitamins'],"['Clams', 'Mushrooms']"
+Quinoa pasta,220,43,8,3,"['Iron',' Magnesium']","['B',' E']","['Whole wheat pasta','Rice noodles']"
+Noodles,138,28.8,5.2,0.9,"['Iron',' Phosphorus']","['B1',' B3']","['Whole wheat pasta','Rice noodles']"
+Saffron,310,65.4,11.4,5.4,"['Potassium',' Magnesium']","['A',' B6']",['Turmeric']
+Seafood,125,6,22,3,"['Iodine',' Selenium']","['B12',' D']","['Tofu','Chicken']"
+Cheese,402,1.3,25,33,"['Calcium',' Phosphorus']","['A',' B12']",['Vegan cheese']
+Spaghetti,158,31.4,5.8,0.9,"['Iron',' Magnesium']","['B1',' B2']","['Whole wheat pasta','Rice noodles']"
+Eggs,155,1.1,12.6,10.6,"['Selenium',' Phosphorus']","['B12',' D']",['Tofu']
+Tomatoes,44,10,2,0,"['Potassium',' Folate']","['Vitamin C',' Vitamin A',' Lycopene']","['Bell peppers','Carrots']"
+Snails,90,2,16,1,"['Iron',' Magnesium']",['B Vitamins'],"['Clams','Mushrooms']"
+Tigernuts,120,23,2,3,"['Iron','Potassium']",['Vitamin E'],['Almonds']
+Gelatin,100,2.5,0,0,[''],[],[]
+Vanilla,12,0.5,0,0,['Potassium'],[],[]
+Sour sop,66,16.8,1,0.3,"['Potassium','Magnesium']","['Vitamin C','Vitamin B6']",[]
+Cornflour,38,19,1.3,0.3,"['Iron','Calcium']",[],[]
+Evaporated milk,134,10,7,7.5,"['Calcium','Potassium']","['Vitamin D','Vitamin A']","['Almond milk','Coconut milk']"
+Custard powder,100,23,0.2,0.4,"['Sodium','Iron']",[],
